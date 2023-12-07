@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+/*부모 요소 초기화 적용부분*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*부모 요소 설정부분*/
+body{
+    width: 520px;
+    border: 5px solid red;
+    background-color: yellow;
+    margin: 50px auto;
+
+    color: black;
+    font-family: Arial, 
+    Helvetica, sans-serif;
+    font-weight: bold;
+    text-shadow: 3px 3px 4px rgb(117,47,13);
+    text-align: center;
+
+    line-height: 3em;
+
+}

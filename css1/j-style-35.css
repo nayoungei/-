@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+/*부모 요소 초기화*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background: url('../image/bg.png') repeat-x  top left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-indent: 30px; /*제목을 들여쓰기*/
+}
+
+p{
+    width: 400px;
+    height: auto;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    font-size: 1.2em;
+}
+.booktitle:hover{
+    background-color: #ece6e6;
+    color: black;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-shadow: 2px 2px 3px red;
+    border: 2px #ccc transparent;
+}

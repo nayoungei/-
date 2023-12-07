@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+/*부모 요소 초기화*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+    background-color: blue;
+    margin-top: 100px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+#displayBord{
+    width: 300px;
+    height: auto;
+    border: 1px solid white;
+    margin: 140px auto;
+}

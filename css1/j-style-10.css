@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+/*부모 요소 초기화 적용*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*body 설정부분*/
+body{
+    width: auto;
+    height: 300px;
+    white-space: nowrap;
+    margin: 50px auto;
+    padding: 10px;
+    border: 2px solid #ccc;
+    box-shadow: 4px 4px 4px #666;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    
+}

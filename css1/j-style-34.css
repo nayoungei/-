@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+/*부모요소 초기화 설정부분*/
+
+#displayBord{
+    width: 500px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height:30px;
+}

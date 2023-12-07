@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+/*부모 요소 초기화설정*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#container{
+    width: 50%;
+    margin: 30px auto;
+}
+
+ul{
+    list-style-position: inside;
+}
+
+#contents2{
+    width: 500px;
+    height: auto;
+    border: 2px solid rgb(9,112,104);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+/* #contents2 h3, p{
+    display: none;
+} */

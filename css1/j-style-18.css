@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+/*부모 요소 적용*/
+
+body{
+
+    padding-top: 20px;
+    font-size: 1.2em;
+
+    text-align: center;
+    color: white;
+    background-color: blue;
+}

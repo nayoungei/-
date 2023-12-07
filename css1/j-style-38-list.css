@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+/*배열값을 보여주는 스타일시트*/
+/*부모 요소 초기화*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+form::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+ul li{
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 8px;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;    
+}
+ul li:nth-child(odd){
+    background-color: #f9f9f9;
+}
+ul li:hover{
+    background-color: yellow;
+}
+.close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px;
+    border: none;
+    background: #b9b7b7;
+}
+.close:hover{
+    background-color: red;
+    color: white;
+}

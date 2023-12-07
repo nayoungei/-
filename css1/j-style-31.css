@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+/*부모 요소 초기화부분*/
+*{
+    margin: 0px;
+    padding: 0xp;
+    box-sizing: border-box;
+}
+#item{
+    width: 500px;
+    height: auto;
+    margin: 40px auto;
+    
+}
+
+ #cover{
+    border: 10px solid transparent;
+}
