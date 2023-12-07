@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input태그연습</title>
+    
+    <style>
+        ul>li{
+            list-style: none;
+        }
+        div.btn-container{
+            text-align: left;
+            
+        }
+    </style>
+    
+</head>
+<body>
+    
+    <!-- 1. input="number" 태그 속성값 연습 -->
+    <h3>input="number" 속성 값 연습</h3>
+
+    <form action="" method="" autocomplete="off">
+        주문개수:<input type="number" min="3"
+        max="21" value="" step="3" required/>
+        <input type="submit"/>
+        <input type="reset" />
+    </form>
+    <hr>
+    <br>
+
+
+    <!-- 2.  -->
+    <!-- 3. rang 속성 + number속성 값 연습 -->
+    <h3>봉사활동 참여인원 및 지원물품수량 신청</h3>
+    <form >
+        <fieldset>
+            <legend>등록 정보</legend>
+            <ul>
+                <li>
+                    <label for="member">참여인원<small>(최대10명)</small><input type="number" id="member" value="" min="0" max="10" step="1" required/></label>
+                    
+                </li><br>
+                <li>
+                    <label for="stffus">지원물품<small>(1인당5개)</small><input type="number" id="stffus" value="" min="0" max="50" step="5" required/></label>
+                    
+                </li><br>
+                <li>
+                    <label for="satis">희망단계<small>(하.중.상)</small><input type="range" id="satis" value="" min="1" max="3" step="1" required/></label>
+                    
+                </li><br>
+            </ul>
+            <div class="btn-container">
+                <input type="submit" value="신청하기" id="sub_1"/>
+                <input type="reset" value="다시작성" id="res_1"/>
+            </div>
+        </fieldset>
+    </form>
+    <hr>
+    <br>
+
+
+
+    <!-- 4. range 속성 사계절 표시, script문을 넣어서 코드 작성 -->
+    <form action="" method="" autocomplete="off">
+
+        <label for="seasonInput">슬라이드 바를 움직여 계절을 선택하세:</label>
+
+        <input type="range" id="seasonInput" name="seasonInput" min="0" 
+        max="3" step="1" onchange="showSeason(this.value)"/>
+        <output for="seasonInput" id="seasonOutput">봄</output>
+
+    </form>
+    <script>
+        function showSeason(value) {
+            const seasonOutput = document.getElementById("seasonOutput");
+            switch(parseInt(value)){
+                case 0:
+                    seasonOutput.textContent = "봄";
+                    break;
+
+                case 1:
+                    seasonOutput.textContent = "여름";
+                    break;
+                
+                case 2:
+                    seasonOutput.textContent = "가을";
+                    break;
+                    
+                case 3:
+                    seasonOutput.textContent = "겨울";
+                    break;
+            }
+        }       
+    </script>
+    <hr>
+    <br>
+</body>
+</html>

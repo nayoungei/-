@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프런트앤드 개발자 지원서</title>
+    <link rel="stylesheet" href="./css/test-35.css">
+</head>
+<body>
+    <div id="container">
+    <h1>프런트앤드 개발자 지원서</h1><br>
+    <p>HTML, CSS, Javascript에 대한 기술적 이해와 경험이 
+        있는 분을 찾습니다.</p>
+    <hr>
+    <form action="" method="" autocomplete="off"><br>
+        <h4>개인정보</h4>
+            <ul>
+                <li id="li1">
+                    <label for="user_name" class="title">이&nbsp;&nbsp;&nbsp;름</label>
+                    <input type="text" id="user_name"
+                    placeholder="공백없이 입력하세요" required/>
+                </li>
+                <li id="li2">
+                    <label for="user_tel" class="title">연락처</label>
+                    <input type="tel" id="user_tel"
+                    pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" required
+                    placeholder="010-1234-5678"/>
+                </li>
+            </ul><br>
+            <h4>지원 분야</h4>
+            <ul id="web1">
+                <li>
+                    <label for="webp"><input type="radio"
+                        id="webp" name="sw" checked/>웹 퍼블리싱</label>
+                </li>
+                <li>
+                    <label for="weba"><input type="radio"
+                        id="weba" name="sw"/>웹 애플리케이션 개발</label>
+                </li>
+                <li>
+                    <label for="webd"><input type="radio"
+                        id="webd" name="sw"/>개발환경개선</label> 
+                </li>
+            </ul><br>
+            <h4>지원동기</h4>
+            <label>
+                <textarea cols="60" rows="5" 
+                placeholder="본사 지원동기를 간략하게 써주세요!"></textarea>
+            </label>
+            <div class="sub1_res1">
+                <button type="submit" id="sub1">접수하기</button>
+                <button type="reset" id="res1">다시쓰기</button>
+            </div>
+    </form> 
+</div>   
+</body>
+</html>
+
+
+
+  

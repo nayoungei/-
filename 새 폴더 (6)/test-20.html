@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼(form)연습</title>
+    <style>
+        #tag1{
+            list-style: none;
+        }
+        #info1{
+            list-style: none; 
+        }
+        div.centered{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- 1. form 태그 연습1(action과 method에 대한 연습) -->
+    <form action="https://search.naver.com/search.naver" method="get">
+        <input type="text" name="query" title="검색어를 입력하세요">
+        <input type="submit" value="검색하기-1">
+    </form>
+    <hr>
+    <br>
+
+    <!-- 2. form 태그 연습2(autocomplete / on , off) -->
+    <form action="https://search.naver.com/search.naver" method="get" autocomplete="off">
+        <input type="text" name="query" title="검색어를 입력하세요">
+        <input type="submit" value="검색하기-2">
+    </form>
+    <hr>
+    <br>
+
+    <!-- 3. form 태그 연습3(label 태그와 input태그) -->
+    <form action="" method="" autocomplete="off">
+        <label for="id">아이디(6자 이상)<input type="text" name="id" value="" /><input type="submit" value="전송"/></label>
+    </form>
+    <hr>
+    <br>
+
+    <!-- 4. form 태그 연습4(lable 태그와 input태그) -->
+    <form action="" method="post" autocomplete="off">
+        <label for="user_id1">아이디(6자 이상)</label>
+        <input type="text" name="user_id1" value="" />
+        <input type="submit" value="제출하기"/>
+    </form>
+    <hr>
+    <br>
+
+
+    <!-- 5. label 태그 미사용과 사용시 차잇점 알아보기 -->
+
+    <form action="" method="" autocomplete="off">
+        <h3>수강 분야(다수 선택 가능)</h3>
+            <ul id="tag1">
+                <li><input type="checkbox" name="study_in" value=""/>문법</li>
+                <li><input type="checkbox" name="study_in" value=""/>작문</li>
+                <li><input type="checkbox" name="study_in" value=""/>독해</li>
+            </ul>
+            <br>
+        <h3>수강 과목(1개만 선택 가능)</h3>
+            <ul id="tag1">
+                <li>
+                    <label><input type="radio" name="subjet" value="eng"/>영어회화</label>
+                </li>
+                <li>
+                    <label><input type="radio" name="subjet" value="ch"/>중국어회화</label>
+                </li>
+                <li>
+                    <label><input type="radio" name="subjet" value="jp"/>일본어회화</label>
+                </li>
+            </ul>
+    </form>
+    <hr>
+    <br>
+
+
+    <!-- 6. fieldset, legend 태그를 적용한 개인 정보&로그인 정보 -->
+    <form action="" method="" autocomplete="off">
+        <fieldset>
+            <legend>개인 정보</legend>
+            <ul id="tag1">
+                <li>
+                    <label for="name">이름</label>
+                    <input type="text" id="name"/>
+                </li>
+                <li>
+                    <label for="mail">메일 주소</label>
+                    <input type="text" id="mail"/>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>로그인 정보</legend>
+            <ul id="tag1">
+                <li>
+                    <label for="id">아이디<input type="text" id="id"/></label>
+                </li>
+                <li>
+                    <label for="pwd">비밀번호<input type="text" id="pwd"/></label>
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+    <hr>
+    <br>
+
+
+    <!-- 복습 문제  -->
+    <form action="" method="" autocomplete="off">
+        <fieldset>
+            <legend>필수 정보</legend>
+            <label for="name_1">이름:</label>
+            <input type="text" id="name_1"/>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>선택 정보</legend>
+            <label for="birth">생일:</label>
+            <input type="date" id="birth"/>
+        </fieldset>
+    </form>
+    <hr>
+    <br>
+
+
+    <!-- 8. 폼(form) 응용 복습 문제(상품주문서) -->
+    <form action="" method="post" autocomplete="off">
+        <h3><mark>상품 주문서</mark></h3>
+        <fieldset>
+            <legend>개인 정보</legend>
+            <ul id="info1">
+                <li>
+                    <label for="name">이름</label>
+                    <input type="text" placeholder="여백없이 입력" id="name"/>
+                </li>
+                <li>
+                    <label for="phone">연락처</label>
+                    <input type="text" placeholder="연락가능한 번호" id="phone"/>
+                </li>
+            </ul>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>배송지 정보</legend>
+            <ul id="info1">
+                <li>
+                    <label for="addr">주소</label>
+                    <input type="text" id="addr"/>
+                </li>
+                <li>
+                    <label for="tel">전화번호</label>
+                    <input type="text" id="tel" />
+                </li>
+                <li>
+                    <label for="memo">메모</label>
+                    <textarea id="memo" cols="20" rows="3" 
+                    placeholder="배송관련 요청사항 입력해 주세요"></textarea>
+                </li>
+            </ul>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>주문 정보</legend>
+            <ul id="info1">
+                <li>
+                    <input type="checkbox" />
+                    <label>과테말라 안티구아<small>(100g)</small></label>
+                    <input type="number" min="1" max="10" step="2"/>개
+                </li>
+                <li>
+                    <input type="checkbox" />
+                    <label>인도네시아 만델링<small>(100g)</small></label>
+                    <input type="number" min="1" max="50" step="3"/>개
+                </li>
+                <li>
+                    <input type="checkbox" />
+                    <label>탐나는도다(블렌딩)<small>(100g)</small></label>
+                    <input type="number" min="1" max="30" step="5"/>개
+                </li>
+            </ul>
+        </fieldset>
+        <br>
+        <div class="centered">
+            <input type="submit" value="주문하기"/>
+            <input type="reset" value="다시작성"/>
+        </div>
+    </form>
+    
+    
+</body>
+</html>

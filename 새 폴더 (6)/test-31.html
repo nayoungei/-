@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>여름방학특강신청</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;800&family=Nanum+Pen+Script&family=Noto+Serif+KR:wght@500&display=swap');
+
+        .container{
+            margin: 0 auto;
+        }
+        h3{
+            text-align: center;
+            color: blue;
+        }
+        table{
+            border: 4px double #000;
+            background-color: bisque;
+        }
+        label.title{
+            color: red;
+            font-weight: bold;
+        }
+        ul>li{
+            list-style: decimal-leading-zero;
+            padding-bottom: 5px;
+        }
+        div.sub_res{
+            padding-top: 5px;
+            padding-bottom:5px ;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h3>여름방학 특강신청 다중학과선택</h3>
+    <form>
+        <table class="container">
+            <tr>
+                <td>
+                    <fieldset>
+                        <legend>수강신청인</legend>
+                            <ul>
+                                <li>
+                                    <label for="Student-ID" class="title">학번</label>
+                                    <input type="text"
+                                     id="Student-ID" size="12"
+                                     required placeholder="숫자만입력" style="font-family: Nanum Pen Script;"/>
+                                </li>
+                                <li>
+                                    <label for="u-name" class="title">이름</label>
+                                    <input type="text" id="u-name"
+                                    size="12" required placeholder="빈공간없이 이름 입력" style="font-family: Nanum Pen Script;"/>
+                                </li>
+                                <li>
+                                    <label for="class" class="title">학과</label>
+                                    <select id="class" style="font-family: Nanum Pen Script;">
+                                        <optgroup label="공과대학" >
+                                            <option value="archi">건축공학과</option>
+                                            <option value="mechanic">기계공학과</option>
+                                            <option value="indust">산업공학과</option>
+                                            <option value="elec">전기전자공학과</option>
+                                            <option value="computer" selected>컴퓨터공학과</option>
+                                            <option value="chemical">화학공학과</option>
+                                            <option value="interior">인테리어디자인학과</option>
+                                        </optgroup>
+                                        <optgroup label="인문대학" >
+                                            <option value="history">사회인문학과</option>
+                                            <option value="lang">어문학과</option>
+                                            <option value="phoilo">철학과</option>
+                                        </optgroup>
+                                        <optgroup label="SW융합대학" >
+                                            <option value="AI">인공지능SW학과</option>
+                                            <option value="Bigdata">빅데이터SW학과</option>
+                                            <option value="MSA">마이크로SW학과</option>
+                                        </optgroup>
+                                    </select>
+                                </li>
+                            </ul>
+                    </fieldset>
+                    <div class="sub_res">
+                        <input type="submit"/>
+                        <input type="reset" />
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

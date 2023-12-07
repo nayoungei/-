@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress 연습</title>
+
+    <!-- 1. progress 막대바 진행률에 따른 애니메이션 자바스크립트 코드 설명을 실습하지는 않고 
+        보여주고 설명만 1차적으로 한다.-->
+        
+    <style>
+        body {
+           background-color:#fff; 
+        }
+    </style>
+</head>
+<body>
+        <script>
+            function dwn(){
+                var bar=document.getElementById("bar"),
+                    progress=document.getElementById("progress"),
+                        loaded=0;
+            
+            var load=function(){
+            loaded += 2;
+            bar.value = loaded;		
+
+            if (loaded == 100){
+                clearInterval(dummyLoad);	
+            }		
+            };
+    
+        var dummyLoad = setInterval(function() {
+            load()	
+        }, 100);
+    }
+    </script>    
+   
+   <input type="button" value="다운로드 시작" onClick="dwn()">    
+   <progress id="bar" value="0" max="100"><span id="progress"></span></progress>    
+</body>
+</html>

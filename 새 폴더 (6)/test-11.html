@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블(표 연습) colgroup, col 태그 연습</title>
+    <style>
+        table, th, td {
+            border: 1px solid #000;
+        }
+        th, td {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 1. 1행4열을 연습(td) -->
+    <table>
+        <!-- 2. colgroup은 반드시 tr태그 위에서 선언한다. -->
+        <colgroup>
+            <col style="background-color: red;">
+            <col style="background-color: orange;">
+            <col style="background-color: yellow;">
+            <col style="background-color: green;">
+        </colgroup>
+        <tr>
+            <td>1행1열</td>
+            <td>1행2열</td>
+            <td>1행3열</td>
+            <td>1행4열</td>
+        </tr>
+    </table>
+    <hr>
+    <br>
+    <table>
+        <colgroup>
+            <col>
+            <col>
+            <col span="2" style="background-color: blue;">
+        </colgroup>
+        <tr>
+            <td>1행1열</td>
+            <td>1행2열</td>
+            <td>1행3열</td>
+            <td>1행4열</td>
+        </tr>
+        <tr>
+            <td>2행1열</td>
+            <td>2행2열</td>
+            <td>2행3열</td>
+            <td>2행4열</td>
+        </tr>
+    </table>
+    <hr>
+    <br>
+    <table>
+        <colgroup>
+            <col>
+            <col style="background-color: yellow;">
+            <col>
+            <col style="background-color: yellowgreen;">
+        </colgroup>
+        <tr>
+            <td>1행1열</td>
+            <td>1행2열</td>
+            <td>1행3열</td>
+            <td>1행4열</td>
+        </tr>
+    </table>
+</body>
+</html>

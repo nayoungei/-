@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>온라인 프로필</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        table, th, td{
+          
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        thead{
+            background-color: #eee;
+        }
+        th, td{
+            border: 1px solid #ccc;
+            padding: 5px;
+            font-size: 0.8em;
+        }  
+        a{
+            text-decoration: none;
+        }     
+    </style>  
+</head>
+
+<body>
+    <div id="container">
+        <!--사이드바-->
+        <aside>
+            <div id="namecard">
+                <img src="./image/슈야1.gif" alt="" width="200" height="200">
+                <h1>GillDong Hong</h1>
+                <p>kgitbank2023@naver.com</p>
+                <p>오늘은 남은 인생이 시작되는 첫째날!</p>
+            </div>
+            
+            <div id="detail">
+            </div>
+            
+            <div id="sns">
+                <h2>SNS</h2>
+                <ul>
+                    <a href="https://www.naver.com"><li>facebook</li></a>
+                    <a href="https://daum.net"><li>카카오스토리</li></a>
+                </ul>
+            </div>
+        </aside>
+        <div id="main">
+            <!--자기 소개-->
+            <section>
+                <h2 class="subtitle">Who am I?</h2>
+                <p><mark>프론트앤드 웹 개발에 관심이 많습니다.</mark><br>오늘도 열심히 웹 개발SW 열공 중~</p>
+            </section>
+
+            <!--경력-->
+            <section>
+                <h2 class="subtitle">Exoeruence</h2>
+                <ul>
+                    <li>프론트앤드 개발
+                        <ol type="1">
+                            <li>업무 내용 업무 내용</li>
+                            <li>업무 내용 업무 내용</li>
+                            <li>업무 내용</li>
+                        </ol>
+                    </li>
+                    <li>웹 디자인
+                        <ol type="A">
+                            <li>디자인 업무 내용</li>
+                            <li>디자인 업무 내용</li>
+                        </ol>
+                    </li>
+                </ul>
+            </section>
+
+            <!--숙련도-->
+            <section>
+                <h2 class="subtitle">Skill</h2>
+                <p>HTML태그정도 볼 능력</p>
+            </section>
+
+            <!--학력-->
+            <section>
+                <h2 class="subtitle">Education</h2>
+                <table>
+                    <caption><b>학력 사항</b></caption>
+                    <thead>
+                        <tr>
+                            <th>학교명</th>
+                            <th>전공</th>
+                            <th>기간</th>
+                            <th>구분</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>특성화고등학교</td>
+                            <td>컴퓨터제어학과</td>
+                            <td>2022.02~2023.07(현재)</td>
+                            <td>3학년 2학기 재학중</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </section>
+        </div>    
+    </div>    
+</body>
+</html>

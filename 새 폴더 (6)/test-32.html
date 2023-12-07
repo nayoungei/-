@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>드롭다운메뉴</title>
+    <link rel="stylesheet" href=""> 
+    <style>
+        #title1{
+            color: purple;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- 1. 드롭다운메뉴 연습 -->
+    <h3>학습단계선택</h3>
+    <form action="" method="" autocomplete="off">
+        <select>
+            <option value="beginner">초급</option>
+            <option value="Middle">중급</option>
+            <option value="advanced">고급</option>
+        </select>
+    </form>
+</body>
+</html>
+<hr>
+<br>
+
+
+
+<!-- 1-1. 주제별 단계 드롭다운메뉴 -->
+<h3>해당되는 무술단을 선택하세요</h3>
+<form action="" method="">
+    <select>
+        <optgroup label="태권도">
+            <option value="beginner">초급1단</option>
+            <option value="Middle">중급1단</option>
+            <option value="advanced">고급1단</option>
+        </optgroup>
+        <optgroup label="가라대">
+            <option value="beginner">초급1단</option>
+            <option value="Middle">중급1단</option>
+            <option value="advanced">고급1단</option>
+        </optgroup>
+        <optgroup label="쿵푸">
+            <option value="beginner">초급1단</option>
+            <option value="Middle">중급1단</option>
+            <option value="advanced">고급1단</option>
+        </optgroup>
+    </select>
+</form>
+<hr>
+<br>
+
+
+
+<!-- 2. datalist을 이용한 input태그 입력하기 -->
+<h3>datalist태그 목록 연습</h3>
+<form action="" method="" autocomplete="off">
+    <h2>8월 여름방학 세미나 신청서</h2>
+
+    <label for="u-Major">신청인<small>/(학과선택)</small></label>
+    <input type="text" id="u-Major"
+    list="University-Major" required/>
+
+    <datalist id="University-Major">
+        <option value="arch">건축공학과</option>
+        <option value="mechanic">기계공학과</option>
+        <option value="indust">산업공학과</option>
+        <option value="elec">전기전자공학과</option>
+        <option value="computer">컴퓨터공학과</option>
+        <option value="interior">인테리어디자인학과</option>
+    </datalist>
+    <input type="submit"/>
+    <input type="reset" />
+</form>
+<hr>
+<br>
+
+
+
+<!-- 3. dalist+input 태그 연습 -->
+<form action="" method="" autocomplete="off">
+    <fieldset>
+        <legend>수강 과목을 선택하세요</legend>
+        <label for="class1" id="title1">관심분야:</label>
+        <input type="text" id="class1" list="class2" required/>
+        <datalist id="class2">
+            <option value="grammar" label="문법"></option>
+            <option value="voca" label="어휘"></option>
+            <option value="speaking" label="회화"></option>
+            <option value="listening" label="리스닝"></option>
+            <option value="news" label="뉴스청취"></option>
+        </datalist>
+        <input type="submit" />
+        <input type="reset" />
+    </fieldset>
+    
+</form>
+
+

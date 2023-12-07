@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input태그연습4</title>
+</head>
+<body>
+    <!-- 1. input="color" 속성값 연습 -->
+    <h3>색상표에서 컬러 선택하기</h3>
+
+    <form action="" method="" autocomplete="">
+        <label for="colorPicker">원하는 색상을 선택:</label>
+        <input type="color" id="colorPicker" 
+        name="selectColor" value="#ff0000"/>
+    </form>
+    <hr>
+    <br>
+
+
+
+    <!-- 2. input="date" 속성값 연습 -->
+    <h3>렌트관련 조회기간 선택</h3>
+
+    <p><b><u>수강과목 신청기간을 조회 하세요!</u></b>
+        _<span style="color: yellowgreen;">
+        년-월-일 단위</span>
+    </p>
+    <form action="" method="" autocomplete="">
+        <label for="start1"><input type="date" id="start1" required/></label>
+        <label for="end1"><input type="date" id="end1" required/></label>
+
+        <input type="submit" value="조회" id="sub1"/>
+        <input type="reset" value="취소" id="res1"/>
+    </form>
+    <hr>
+    <br>
+
+
+    <!-- 3. input="month" 속성값 연습 -->
+    <h3>렌트관련 조회기간 선택</h3>
+
+    <p><b><u>수강과목 신청기간을 조회 하세요!</u></b>
+        _<span style="color:blue">
+        년-월 단위</span>
+    </p>
+    <form action="" method="" autocomplete="">
+        <label for="start2"><input type="month" id="start2" required/></label>
+        <label for="end2"><input type="month" id="end2" required/></label>
+
+        <input type="submit" value="조회" id="sub2"/>
+        <input type="reset" value="취소" id="res2"/>
+    </form>
+    <hr>
+    <br>
+
+
+    <!-- 4. input="week" 속성값 연습 -->
+    <h3>렌트관련 조회기간 선택</h3>
+
+    <p><b><u>수강과목 신청기간을 조회 하세요!</u></b>
+        _<span style="color:orangered">
+        년-주 단위</span>
+    </p>
+    <form action="" method="" autocomplete="">
+        <label for="start3"><input type="week" id="start3" required/></label>
+        <label for="end3"><input type="week" id="end3" required/></label>
+
+        <input type="submit" value="조회" id="sub3"/>
+        <input type="reset" value="취소" id="res3"/>
+    </form>
+    <hr>
+    <br>
+
+
+    <!-- 5.input="time" 속성값 연습 -->
+    <h3>장소대관시간을 선택해주세요(오늘)</h3>
+
+    <form action="" method="" autocomplete="off">
+        <label for="start4">시작 시간:<input type="time" value="09:00" id="start4" required/></label>
+        <label for="end5">종료 시간:<input type="time" value="18:00" id="end5" required/></label>
+
+        <input type="submit"/>
+        <input type="reset"/>
+    </form>
+    <hr>
+    <br>
+
+
+    <!-- 5-1 input="datetime" 속성값 연습 -->
+    <h3>장소대관시간을 선택해주세요(오늘)</h3>
+
+    <form action="" method="" autocomplete="off">
+        <label for="start5">시작 시간:<input type="datetime" value="09:00" id="start5" required/></label>
+        <label for="end6">종료 시간:<input type="datetime" value="18:00" id="end6" required/></label>
+
+        <input type="submit"/>
+        <input type="reset"/>
+    </form>
+    <hr>
+    <br>
+
+    <!-- 5-2 input="datetime-loca" 속성값 연습 -->
+    <h3>장소대관시간을 선택해주세요(오늘)</h3>
+
+    <form action="" method="" autocomplete="off">
+        <label for="start6">시작 시간:<input type="datetime-local" value="2023-07-19T09:00" id="start6" required/></label>
+        <label for="end7">종료 시간:<input type="datetime-local" value="2023-07-19T18:00" id="end7" required/></label>
+
+        <input type="submit"/>
+        <input type="reset"/>
+    </form>
+    <hr>
+    <br>
+
+
+    <!-- 6. type="submit" value="전송", "reset" 속성값 연습 
+    비슷한 버튼은 button에 type="submit" 있습니다.-->
+
+    <p>메일링 리스트 등록</p>
+    <form action="" method="" autocomplete="off">
+        <label for="email">메일 주소<input type="email" id="email" required/></label>
+
+        <input type="submit" value="제출"/>
+        <input type="reset" value="다시입력"/>
+    </form>
+    <hr>
+    <br>
+
+
+    <!-- 7. type="image" 속성값 연습 -->
+
+    <h3>image 속성값으로 submit(전송) 대체하기</h3>
+
+    <form action="" method="" autocomplete="off">
+        <label for="u-id">아이디</label>
+        <input type="text" size="15" id="u-id" required/>
+
+        <label for="u-pwd">비밀번호</label>
+        <input type="password" size="15" id="u-pwd" idrequired/>
+
+        <input type="image" id="butt" 
+        src="./image/submit_icon1.jpg" alt="login"
+        width="30" height="30"/><b>[전송]</b>
+    </form>
+    <hr>
+    <br>
+
+
+
+    <!-- 8. type="button" 속성값 연습 -->
+    <h3>새창 열기 버튼 연습</h3>
+
+    <form action="" method="" autocomplete="off">
+        <input type="button" value="New Window"
+        onclick="window.open()"/>
+    </form>
+    <hr>
+    <br>
+
+
+    <!-- 8-1. type="button" 속성값 연습
+    현재 열려있는 웹 브라우저 창을 닫을때 잠깐 사용! -->
+    <h3>열린 새창 화면을 닫기</h3>
+
+    <form action="" method="" autocomplete="off">
+        <input type="button" value="Close Window"
+        onclick="window.close()"/>
+    </form>
+    <hr>
+    <br>
+
+
+    <!-- 9. type="file"  속성 값 연습-->
+
+    <h3>파일 선택하기</h3>
+
+    <form action="" method="" autocomplete="off">
+        <label for="fileInput">파일을 선택하기:</label>
+        <input type="file" id="fileInput" 
+        name="selectFile"/>
+    </form>
+    <hr>
+    <br>
+    
+
+
+
+
+
+
+
+
+
+</body>
+</html>

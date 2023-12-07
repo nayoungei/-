@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li{
+            list-style: none;
+        }
+        .title{
+            font-weight: bold;
+            color: red;
+            width: 80px; 
+            display: inline-block;
+        }
+        li{   
+            line-height: 30px;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- 1. input 속성중에 readonly 연습 -->
+    <h3>여름방학 특강 신청</h3>
+    <form action="" method="" autocomplete="off">
+        <fieldset>
+            <legend>수강과목</legend>
+            <label>영어회화(초급)</label>
+            <input type="datetime" value="09:00~11:00"
+            title="수정할 수 없음" readonly/>
+        </fieldset>
+        <fieldset>
+            <legend>신청자명</legend>
+            <ul>
+                <li>
+                    <label for="user_name">이름</label>
+                    <input type="text" size="13"
+                    id="user_name" name="user_name" 
+                    required autofocus/>
+                </li>
+                <li> 
+                    <label for="user_num">학번</label>
+                    <input type="text" size="13"
+                    id="user_num" 
+                    placeholder="하이픈없이입력" required/>
+                </li>
+            </ul>
+        </fieldset>
+        <input type="image" id="butt" 
+        src="./image/submit_icon1.jpg" alt="login"
+        width="30" height="30"/><b>[전송]</b>
+    </form>
+    <hr>
+    <br>
+
+    <!-- 2. input 태그 속성 중 size, minlength, maxlength
+    속성 연습 -->
+    <h1>회원 가입을 환영합니다</h1>
+    <form action="" method="" autocomplete="off">
+        <ul>
+            <li>
+                <label for="user_id" class="title">아이디:</label>
+                <input type="text"
+                    id="user_id" size="10" minlength="4"
+                         maxlength="15" required/>
+                
+                <small style="color: blue;">4~15자리 이내의 영문과 숫자</small>
+            </li>
+            <li>
+                <label for="user_email" class="title">이메일:</label>
+                <input type="email"
+                    id="user_email" size="10" minlength="4"
+                        maxlength="15" required/>
+                
+                <small style="color: blue;">4~15자리 이내의 영문과 숫자</small>
+            </li>
+            <li>
+                <label for="user_pwd" class="title">비밀번호:</label>
+                <input type="email"
+                    id="user_pwd" size="10" minlength="4"
+                        maxlength="15" required/>
+                
+                <small style="color:red;">4~15자리 이내의 영문과 숫자</small>
+            </li>
+        </ul>
+        <input type="submit" value="가입신청"/>
+        <input type="reset"  value="가입취소"/>
+    </form>
+    <hr>
+    <br>
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>button태그연습</title>
+    <link rel="stylesheet" href="./css/test-33.css">
+    
+</head>
+<body>
+    <!-- 1. input type="submit"와 
+        button type="submit" 버튼 비교 연습 -->
+        <label>비밀번호:</label>
+        <input type="submit" value="전송하기"/>
+        <br><br>
+        <label>비밀번호:</label>
+        <button type="submit">전송하기</button>
+        <hr>
+        <br>
+
+        <form>
+            <label>비밀번호:</label>
+            <input type="password" id="u-pwd"
+            name="u-pwd" required placeholder="비밀번호입력"/>
+
+            <button type="submit" class="sub-button"><img 
+                src="./image/tick.png"
+                alt="로그인"/>전송하기</button>
+        </form>
+        <hr>
+        <br>
+
+
+        <!-- 3. output 태그 연습 -->
+        <form oninput="result.value=
+        parseInt(num1.value)+parseInt(num2.value)">
+            <label>덧셈</label>
+            <input type="number" name="num1" value="0"/>+
+            <input type="number" name="num2" value="0"/>=
+            <output name="result"></output>
+        </form>
+        <hr>
+        <br>
+
+
+
+        <!-- 4.output 연습 -->
+        <h3>사칙연산</h3>
+        <table>
+            <thead>
+               <tr>
+                <th>
+                    사칙연산
+                </th>
+               </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <form oninput="result.value=
+                        parseInt(num1.value)+parseInt(num2.value)">
+                            <label class="title0">덧셈</label>
+                            <input type="number"  name="num1" value="0"/>+
+                            <input type="number"  name="num2" value="0"/>=
+                            <output name="result"></output>
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <form oninput="result.value=
+                        parseInt(num1.value)-parseInt(num2.value)">
+                            <label class="title1">뺄셈</label>
+                            <input type="number" name="num1" value="0"/>-
+                            <input type="number" name="num2" value="0"/>=
+                            <output name="result"></output>
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <form oninput="result.value=
+                        parseInt(num1.value)*parseInt(num2.value)">
+                            <label class="title2">곱셈</label>
+                            <input type="number" name="num1" value="0"/>*
+                            <input type="number" name="num2" value="0"/>=
+                            <output name="result"></output>
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <form oninput="result.value=
+                        parseInt(num1.value)/parseInt(num2.value)">
+                            <label class="title3">나눗셈</label>
+                            <input type="number" name="num1" value="0"/>/
+                            <input type="number" name="num2" value="0"/>=
+                            <output name="result"></output>
+                        </form>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <br>
+           
+
+
+        <!-- 5. progress 태그 연습 -->
+        <h3>progress 태그 연습</h3>
+        <ul>
+            <li>
+                <label>10초 남음</label>
+                <progress value="50" max="60" id=""></progress>
+            </li>
+            <li>
+                <label>진행률 30% </label>
+                <progress value="30" max="100" id=""></progress>
+            </li>
+        </ul> 
+            
+
+
+
+
+</body>
+</html>

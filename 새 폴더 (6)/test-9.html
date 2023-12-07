@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블(표 연습) thead-tbody-tfoot</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        td {
+            padding: 20px;
+        }
+        th {
+            padding: 20px;
+        }
+        thead, tfoot {
+            background-color:orange;
+        }  
+    </style>
+
+</head>
+<body>
+    <table>
+        <caption>제주도 객실 현황</caption>
+        <thead>
+            <tr>
+                <th>방 이름</th><th>대상</th><th>크기</th><th>가격</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>유채방</th><td>여성</td><td rowspan="3">4인</td><td rowspan="4">1인 20,000원</td>
+            </tr>
+            <tr>
+                <th rowspan="2">동백방</th><td>동성</td>
+            </tr>
+            <tr>
+                <td>가족1팀</td>
+            </tr>
+            <tr>
+                <th>천혜향방</th><td>-</td><td>2인실</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="4">바깥채는 전체를 렌트합니다.
+            </tr>
+        </tfoot>
+       
+    </table>
+    <hr>
+    <br>
+
+    <table>
+        <caption>제주도 객실현황</caption>
+        <thead>
+            <tr>
+                <th>방 이름</th>
+                <th>대상</th>
+                <th>크기</th>
+                <th>가격</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>유채방</th>
+                <td>여성</td>
+                <td rowspan="3">4인</td>
+                <td rowspan="4">1인 20,000원</td>
+            </tr>
+            <tr>
+                <th rowspan="2">동백방</th>
+                <td>동성</td>
+                
+                
+            </tr>
+            <tr>
+                
+                <td>가족1팀</td>
+                
+                
+            </tr>
+            <tr>
+                <th>천혜향방</th>
+                <td>-</td>
+                <td>2인</td>
+                
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="4">바깥채는 전체를 렌트합니다.!</th>
+                
+            </tr>
+        </tfoot>
+    </table>
+    <hr>
+    <br>
+
+    <h1>1행 1열</h1>
+    <table>
+        <tr>
+            <td>1행1열</td>
+            <td>1행2열</td>
+            <td>1행3열</td>
+            <td>1행4열</td>
+        </tr>
+    </table>
+    <hr>
+    <br>
+    <h1>3행 6열</h1>
+    <p>셀 제목으로 6칸을 만들어라...th 태그를 이용해서 6칸 만드세요</p>
+    <table>
+        <thead>
+            <tr>
+                <th>1행1열</th>
+                <th>1행2열</th>
+                <th>1행3열</th>
+                <th>1행4열</th>
+                <th>1행5열</th>
+                <th>1행6열</th>
+            </tr>
+        </thead>
+        <tr>
+            <th>2행1열</th>
+            <th>2행2열</th>
+            <th>2행3열</th>
+            <th>2행4열</th>
+            <th>2행5열</th>
+            <th>2행6열</th>
+        </tr>
+        <tr>
+            <th>3행1열</th>
+            <th>3행2열</th>
+            <th>3행3열</th>
+            <th>3행4열</th>
+            <th>3행5열</th>
+            <th>3행6열</th>
+        </tr>
+    </table>
+
+
+</body>
+</html>

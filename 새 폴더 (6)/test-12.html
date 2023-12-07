@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블(표 연습)colgroup,col태그복습</title>
+    <style>
+        table, th, td{
+            border: 1px solid black;
+        }
+        th{
+            padding: 10px;
+            /* text-align: center;  */
+        }
+        td{
+            padding: 10px;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>1인당 연간 설탕 소비량(단위kg)</caption>
+        <colgroup>
+            <col style="background-color: bisque;">    
+        </colgroup>
+        <tr>
+            <th>WHO권장량</th><td>18.25</td>
+        </tr>
+        <tr>
+            <th>한국</th><td>22</td>
+        </tr>
+        <tr>
+            <th>중국</th><td>25</td>
+        </tr>
+        <tr>
+            <th>싱가포르</th><td>58</td>
+        </tr>
+        <tr>
+            <th>미국</th><td>33</td>
+        </tr>
+        <tr>
+            <th>브라질</th><td>69</td>
+        </tr>
+        <tr>
+            <th>세계평균</th><td>23</td>
+        </tr>
+    </table>
+    <hr>
+    <br>
+
+
+
+    <!-- 반복연습 -->
+    <table>
+        <caption>1인당 연간 설탕 소비량<small>(단위kg)</small></caption>
+        <colgroup>
+            <col style="background-color:bisque;">
+            <col style="background-color: yellow;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WHO권장량&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th><td>18.25</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>한국</th><td>22</td>
+            </tr>
+            <tr>
+                <th>중국</th><td>25</td>
+            </tr>
+            <tr>
+                <th>싱가포르</th><td>58</td>
+            </tr>
+            <tr>
+                <th>미국</th><td>33</td>
+            </tr>
+            <tr>
+                <th>브라질</th><td>69</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>세계평균</th><td>23</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>

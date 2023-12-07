@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input태그연습</title>
+</head>
+<body>
+    <!-- 1. hidden 속성 값 연습 -->
+    <h3>input="hidden"태그 연습</h3 >
+
+        <form action="어떤 방식으로 처리할 것인가?" 
+        method="어떻게 데이터를 입력/추출 할 것인가?" autocomplete="off">
+            아 이 디:<input type="text" size="10" maxlength="5" 
+            name="user_id"/><br>
+            비밀번호:<input type="password" size="10" name="user_pwd"/>
+
+            <input type="hidden" id="gameToken" 
+            name="game_token" value="xm234jp"/>
+            <input type="submit" value="로그인"/>
+        </form>
+        <hr>
+        <br>
+
+
+        <!-- 2. text 속성 값 연습 -->
+        <h3>inpt="text" 태그 연습</h3>
+
+        <form action="" method="" autocomplete="off">
+            이름:<input type="text" size="10" maxlength="7" value="홍길동"/>
+                <input type="submit" value="신청하기"/>
+                <input type="reset" value="취소하기"/>
+        </form>
+        <hr>
+        <br>
+
+
+        <!-- 3. input="password" 태그 연습  -->
+           <form action="" method="" autocomplete="off">
+               <fieldset>
+                <label>아이디:<input type="text"
+                    id="user_name" size="10" required/></label>
+                <label>비밀번호:<input type="password" 
+                    id="user_pwd" size="10" required/></label>
+                <input type="submit" value="로그인"/>        
+               </fieldset> 
+           </form> 
+           <hr>
+           <br>
+
+
+           <!--4. input="search" 태그 연습  -->
+           <form action="https://search.naver.com/search.naver"
+            method="get" autocomplete="off">
+
+                <input type="search" name="query" 
+                title="검색창이요~" placeholder="검색어를 입력하세요" />
+
+                <input type="submit" value="검색"/>
+                <input type="reset" value="취소"/>
+           </form>
+           <hr>
+           <br>
+
+
+           <!-- 5. input="url" 태그 연습-->
+           <form action="" method="" autocomplete="off">
+                <label for="Website">Website URL</label>
+                <input type="url" id="Website" name="Website" 
+                placeholder="https://example.com" required/>
+
+                <input type="submit" value="제출하기"/>
+                <input type="reset" value="취소하기" />
+           </form>
+           <hr>
+           <br>
+
+
+           <!-- 6. input="email" 태그 연습 -->
+           <form action="" method="" autocomplete="on">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" 
+                placeholder="example@example.co.kr" required/>
+
+                <input type="submit" value="Submit"/>
+                <input type="reset" value="Reset"/>
+         </form>
+          <hr>
+          <br>
+          
+          
+
+          <!-- 7. input="tel" 태그 연습 -->
+          <form action="" method="" autocomplete="">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" 
+            placeholder="063-535-5353" 
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required/>
+
+            <input type="submit" value="전송"/>
+            <input type="reset" value="취소"/>
+          </form>
+
+          
+
+</body>
+</html>

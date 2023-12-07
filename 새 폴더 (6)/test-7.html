@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표(table) 작성 연습</title>
+    <!-- 2. 테이블 경계선을 표현하고자 할때 style을 적용한다. -->
+    <style>
+        table,th, td {
+            border: 1px solid #000; 
+            /*border-collapse: collapse;*/       
+        }
+        th, td {
+            padding: 10px;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <!--1. 테이블 작성 연습-->
+    <table>
+        <tr>
+            <th><mark>제목 셀1</mark></th>
+            <td>1행2열</td>
+            <td>1행3열</td>
+            <td>1행4열</td>
+        </tr>
+        <tr>
+            <th><mark>제목 셀2</mark></th>
+            <td><em>2행2열</em></td>
+            <td>2행3열</td>
+            <td><span style="color: red;"><b>2행4열</b></span></td>
+        </tr>
+    </table>
+    <hr>
+    <br>
+
+    <!-- 3. 셀 병합 연습 3행 4열 셀만들기 -->
+    <table>
+        <tr>
+            <th>제목셀1행1열</th>
+            <td rowspan="2">1행2열</td>
+            <td colspan="2">1행3열</td>
+            <!--<td>1행4열</td>-->
+        </tr>
+        <tr>
+            <th>제목셀2행1열</th>
+            <td>2행2열</td>
+            <td rowspan="2">
+                <em><span style="color: red;">
+                    <u>2행3열</u></span></em></td>
+            <!--<td>2행4열</td>-->
+        </tr>
+        <tr>
+            <th>제목셀3행1열</th>
+            <td>3행2열</td>
+            <td>3행3열</td>
+            <!--<td>3행4열</td>-->
+        </tr>
+    </table>
+    <hr>
+    <br>
+
+    <!-- 4. 셀 병합 연습을 위한 3행4열 만들기  -->
+    <table>
+        <tr>
+            <th>1행1열 제목셀</th>
+            <td colspan="2">1행2열</td>
+            <td>1행3열</td>
+            <!--<td>1행4열</td>-->
+        </tr>
+        <tr>
+            <th>2행1열 제목셀</th>
+            <td>2행2열</td>
+            <td>2행3열</td>
+            <td>2행4열</td>
+        </tr>
+        <tr>
+            <th>3행1열 제목셀</th>
+            <td>3행2열</td>
+            <td>3행3열</td>
+            <td>3행4열</td>
+        </tr>
+
+    </table>
+    <hr>
+    <br>
+    <!-- 5. 셀 병합 달력 만들기 -->
+    <table>
+        <tr>
+            <th colspan="7"><mark>2023년 7월</mark></th>
+            
+        </tr>
+        <tr>
+            <th><span style="color: red;">일</span></th>
+            <th>월</th>
+            <th>화</th>
+            <th>수</th>
+            <th>목</th>
+            <th>금</th>
+            <th><span style="color: blue;">토</span></th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>30</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td><b><u><a href="https://daum.net" target="_blank">13</a></u></b></td>
+            <td><b><u>14</u></b></td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td><b><u>17</u></b></td>
+            <td><b><u>18</u></b></td>
+            <td><b><u>19</u></b></td>
+            <td>20</td>
+            <td>21</td>
+            <td>22</td>
+        </tr>
+        <tr>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+            <td>29</td>
+        </tr>
+        <tr>
+            <td>30</td>
+            <td>31</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <hr>
+    <br>
+
+    <!-- 6. 셀 병합 : 개인 신상 소개 -->
+    <table>
+        <tr>
+            <th>이름</th>
+            <td>홍길동</td>
+            <th>연락처</th>
+            <td>010-1234-5678</td>
+        </tr>
+        <tr>
+            <th>주소</th>
+            <td colspan="3">서울시 종로구 효제동 315-1 단성사4층</td>
+            <!-- <td></td>
+            <td></td> -->
+        </tr>
+        <tr>
+            <th>자기소개</th>
+            <td colspan="3">프론트 앱 개발에 열공하고 있습니다.</td>
+            <!-- <td></td>
+            <td></td> -->
+        </tr>
+        
+    </table>
+</body>
+</html>

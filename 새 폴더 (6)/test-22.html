@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 폼 만들기</title>
+    <style>
+        #tag1{
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="" autocomplete="off">
+        <h1><mark>회원 가입</mark></h1>
+        <fieldset>
+            <legend>로그인 정보</legend>
+            <ul>
+                <li>
+                    <label for="user_id">아이디</label>
+                    <input type="text" id="user_id" name="user_id" placeholder="ID입력" required/>
+                </li>
+                <li>
+                    <label for="user_pwd">비밀번호</label>
+                    <input type="password" id="user_pwd" name="user_pwd" placeholder="비밀번호 입력" required/>
+                </li>
+                <li>
+                    <label for="user_id1">비밀번호확인</label>
+                    <input type="password" id="user_id1" name="user_id1" required/>
+                </li>
+            </ul>
+        </fieldset><br>
+        <fieldset>
+            <legend>개인 정보</legend>
+            <ul id="tag1">
+                <li>
+                    <label for="user_name">이름</label>
+                    <input type="text" id="user_name" name="user_name" placeholder="이름 입력" required/>
+                </li>
+                <li>
+                    <label for="user_email"><strong>E-메일주소</strong></label>
+                    <input type="email" id="user_email" name="user_email" placeholder="example@example.com" required/>
+                </li>
+                <li>
+                    <label for="user_tel">연락처</label>
+                    <input type="tel" id="user_tel" name="user_tel" placeholder="010-1234-5678" required/>
+                </li>
+                <li>
+                    <label for="user_url">블로그/홈페이지</label>
+                    <input type="url" id="user_url" name="user_url" placeholder="http://example.com" required/>
+                </li>
+            </ul>
+        </fieldset>
+        <input type="submit" value="제출하기"/>
+        <input type="reset" value="다시작성"/>
+    </form>
+</body>
+</html>

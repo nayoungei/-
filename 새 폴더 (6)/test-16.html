@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지맵(map)연습</title>
+    <style>
+        table, th, td{
+            border: 1px solid #000;
+        }
+        td{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- 1. table을 이용해서 하나의 이미지에서 두개의 url링크를
+    연결하는 이미지 맵(Map) 연습 -->
+    <table>
+        <caption<u>이미지 맵(Map)을 활용한 하나 이상에 링크 연습</u></caption>
+        <tr>
+            <th>이미지 맵(Map)<br>활용</th>
+            <td><img src="./image/kids.jpg" alt="여자남자인형 이미지" width="100%" height="90%" usemap="#favorites" /></td>
+
+            <map name="favorites">
+                <area shape="rect" coords="82,22,232,306" href="https://cafe.naver.com/hanzdoll03" target="_blank">
+                <area shape="rect" coords="362,38,533,338" href="https://www.legoland.kr" target="_blank">
+            </map>
+        </tr>
+    </table>
+</body>
+</html>

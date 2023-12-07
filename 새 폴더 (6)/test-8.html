@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블(표 연습)-caption</title>
+    <!-- 1. style에서 테이블 선 적용하기 -->
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th {
+            padding: 10px;
+        }
+        td {
+            padding: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- 2. caption 태그-테이블 가운데정렬 제목달기! -->
+    <table>
+        <caption>
+            <b>Modern Browser</b>
+            <p><em><u>국내에서 자주 사용하는 모던 웹 브라우저!</u></em></p>
+        </caption>
+        <tr>
+            <th>브라우저</th><th>제조업체</th><th>다운로드</th>
+        </tr>
+        <tr>
+            <th>크롬(Chrome)</th>
+            <td>Google</td>
+            <td><a href="http://www.Google.com/chrome" target="_blank">http://www.Google.com/chrome</a></td>
+        </tr>
+        <tr>
+            <th>파이어폭스(Firefox)</th>
+            <td>Mozile</td>
+            <td>http://www.mozile.org/ko.firefox</td>
+        </tr>
+        <tr>
+            <th>엣지(Edge)</th>
+            <td>Microsoft</td>
+            <td>http://www.microsoft.com/ko-kr/windows/
+                microsoft-edge</td>
+        </tr>
+    </table>
+    <hr>
+    <br>
+
+
+    <!-- 3. figcaption 태그-테이블 왼쪽정렬 제목달기! -->
+    <!-- 3-1. 이미지 하단에 안내문 달기 -->
+
+    <figure>
+        <figcaption>
+            <b>국내에서 자주 사용하는 모던 웹 브라우저!</b>
+        </figcaption>
+    </figure>
+    <table>
+        <tr>
+            <th>브라우저</th><th>제조업체</th><th>다운로드</th>
+        </tr>
+        <tr>
+            <th>크롬(Chrome)</th>
+            <td>Google</td>
+            <td>http://www.Google.com/chrome</td>
+        </tr>
+        <tr>
+            <th>파이어폭스(Firefox)</th>
+            <td>Mozile</td>
+            <td>http://www.mozile.org/ko.firefox</td>
+        </tr>
+        <tr>
+            <th>엣지(Edge)</th>
+            <td>Microsoft</td>
+            <td>http://www.microsoft.com/ko-kr/windows/
+                microsoft-edge</td>
+        </tr>
+    </table>
+    <hr>
+    <br>
+
+    <!-- 4. 셀 병합 연습-->
+    <table>
+        <caption>재무상태표</caption>
+        <tr>
+            <td rowspan="2">자산:현금,<br>현금외 자산</td>
+            <td>부채:차입금</td>
+        </tr>
+        <tr>
+            <!-- <td>????</td> -->
+            <td>자본:자본금, 이익잉여금</td>
+        </tr>
+    </table>
+
+</body>
+</html>

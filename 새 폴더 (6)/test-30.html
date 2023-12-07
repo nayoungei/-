@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>여름방학 특강 신청</title>
+    <style>
+        .container{
+           margin: 0 auto;
+           
+        }
+        
+        h3{
+            text-align: center;
+            color: rgb(32, 12, 121);
+        }
+        table{
+            border: 3px solid black;
+            background-color: rgb(187, 187, 97);
+        }
+        label.title{
+            color: purple;
+            font-weight: bold;
+        }
+        ul>li{
+            list-style: none;
+            padding-bottom: 5px;
+        }
+        div.sub_res{
+            padding-top: 5px;
+            padding-bottom: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h3>여름방학 특강 신청</h3>
+    <form action="" method="" autocomplete="off">
+        <table class="container">
+            <tr>
+                <td>
+                   <fieldset>
+                        <legend>수강 신청인</legend>
+                        <ul>
+                            <li>
+                                <label for="Studend-ID" class="title">학번</label>
+                                <input type="text"
+                                id="Studend-ID" size="12" required
+                                placeholder="숫자만 입력"/>
+                            </li>
+                            <li>
+                                <label for="u-name" class="title">이름</label>
+                                <input type="text" id="u-name"
+                                size="12" required/>
+                            </li>
+                            <li>
+                                <label for="class" class="title">학과</label>
+                                <select size="5" multiple id="class">
+                                    <option value="archi">건축공학과</option>
+                                    <option value="mechanic">기계공학과</option>
+                                    <option value="indust">산업공학과</option>
+                                    <option value="elec">전기전자공학과</option>
+                                    <option value="computer" selected>컴퓨터공학과</option>
+                                    <option value="chemical">화학공학과</option>
+                                    <option value="interior">인테리어디자인학과</option>
+                                </select>
+                            </li>
+                        </ul>
+                   </fieldset>
+                   <div class="sub_res">
+                        <input type="submit"/>
+                        <input type="reset" />
+                   </div> 
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
