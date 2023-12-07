@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자(아이디 #)연습</title>
+    <script src="./js/jquery_3.7.0_jquery.js"></script>
+    <script src="./js/3.4.1_jquery-migrate.min.js"></script>
+
+    <script>
+        $(function(){
+            $("#tit").css("background-color","#ff0")
+            .css("font-size","2em")
+            .css("border","3px solid red");
+            //체이닝기법으로 선택한 요소에 css메서드 연속으로 적용
+            
+            //<<실습형과제1>> 
+            //조건: <h2>요소에 마우스가오버되면 그림자 효과
+            //조건: 글자크기:3em, 글자색상: 하얀색, 그림자효과:("text-shadow","2px 3px 4px black")가 생기겠금 
+            //조건: JQuery쿼리 코드로 작성
+            //==코드작성부분
+
+            //  $("#tit").mouseover(function(){
+            //      $(this).css("font-size","3em").css("color","white")
+            //      .css("text-shadow","2px 3px 4px black");
+            //  });
+            //  $("#tit").mouseout(function(){
+                
+            //      $(this).css("font-size","").css("color","").css("text-shadow","");
+            //  });            
+         });
+
+    </script>
+</head>
+<body>
+    <h1>제이쿼리</h1>
+    <h2 id="tit">선택자</h2>
+    <h3>직접선택->아이디 #선택자 연습</h3>
+</body>
+</html>

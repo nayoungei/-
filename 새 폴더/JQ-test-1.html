@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자(jquery)연습</title>
+    <!-- <link rel="stylesheet" type="text/css" href="./css/~"> -->
+    <script src="./js/jquery_3.7.0_jquery.js"></script>
+    <script src="./js/3.4.1_jquery-migrate.min.js"></script>
+    <script>
+        $(function(){ //제이쿼리 이벤트핸들러 안에 제이쿼리와 자바스크립트 동시 선언
+            $("#title").css("color","blue");
+
+            $("#title").mouseover(function(){
+                this.style.color ="red";
+            });
+
+            //==자바스크립트 즉시실행함수
+            // var t1 = document.querySelector("#title");  
+            // t1.addEventListener("mouseover", function(){
+           //      t1.style.color = "red";
+            // });
+             
+            // t1.addEventListener("mouseout", function(){
+            //     t1.style.color = "green";
+            // });
+        });     
+    </script>
+
+
+</head>
+<body id="contatiner">
+    <!--1.제이쿼리 선택자를 이용해서 글자색 변경하기 -->
+    <div id="contents1">
+        <h1 id="title">제이쿼리입문</h1>
+    </div>
+    <!-- <script>
+        $(document).ready(function(){
+           $("#container").css("text-align","center");
+           
+           $("#contents1").css("border", "2px solid green");
+           $("#contents1").css({"background":"url('./image/베스트2.gif') repeat"});
+
+           $("#title").css("color","blue");
+           $("#title").css("text-shadow","4px 4px 5px black");
+           $("#title").css("font-size","5em");
+        });
+    </script> -->
+</body>
+</html>

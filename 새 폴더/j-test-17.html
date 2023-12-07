@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>팩토리얼계산기</title>
+    <link rel="stylesheet" type="text/css" href="./css/j-style-17.css">
+</head>
+<body>
+    <script>
+        var n = prompt(`숫자를 입력하세요:`);
+        var nFact = 1;
+        var i = 2;
+
+        while(i < n){
+            nFact *= i; //할당연산자 적용부분
+            i++;
+        }
+        document.write(`${n}팩토리얼 계산값은? ${nFact}다`);
+        document.write(`<hr>`);
+        document.write(`((1*2)*3)*num)*num)*.)...)=${nFact}이 
+        나오게 괄호 수선대로<br>곱하는 방식이 팩토리얼 계산이다.`);
+    </script>
+</body>
+</html>

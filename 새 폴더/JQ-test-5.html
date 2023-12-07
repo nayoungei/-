@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자(요소 선택자)연습</title>
+    <script src="./js/jquery_3.7.0_jquery.js"></script>
+    <script src="./js/3.4.1_jquery-migrate.min.js"></script>
+
+    <script>
+        $(function(){
+            $("h2").css("backgroud-color","#0ff")
+            .css("border","2px dashed #f00")
+            .css("font-sise","3em")
+            .css("text-align","center");
+
+            //<<실습형과제3>> 
+            //조건: <h2>태그 요소에 마우스오버가 되면 바탕색이 노랑색변경
+            //조건: <h2>태그 요소에 마우스가아웃 되면 글자가 오른쪽 정렬!
+            //조건: <h2>태그 요소에 마우스클릭이 발생되면 가운데 정렬되고
+            //조건: 바탕색은 녹색으로 적용    
+            //조건: JQuery 이벤트 핸들러 안에..."JavaScript DOM접근자 방식 코드작성" 
+            //조건: "즉지 실행 함수 선언()으로 처리합시다(~function(){})
+            //==코드작성부분
+            
+            //  var text_h2 = document.getElementsByTagName("h2")[0];
+            //      text_h2.addEventListener("mouseover",function(){
+            //          this.style.backgroundColor = "yellow";
+            //      });
+            //      text_h2.addEventListener("mouseout",function(){
+            //          this.style.textAlign = "right";
+            //      });
+            //      text_h2.addEventListener("click",function(){
+            //          this.style.textAlign = "center";
+            //          this.style.backgroundColor = "green";
+            //          this.style.color = "";
+            //      });
+
+        });
+    </script>
+</head>
+<body>
+    <h1>제이쿼리</h1>
+    <h2>선택자</h2>
+    <h3>직접선택자->요소 선택자 연습</h3>
+</body>
+</html>

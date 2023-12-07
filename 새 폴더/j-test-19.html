@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>짝수일까,홀수일까</title>
+    <style>
+        body{
+            padding-top: 20px;
+            font-size: 1.2em;
+            text-align: center;
+            color: white;
+            background-color: blue;              
+        }
+        .bold-hover1{
+            font-weight: bold;
+            text-shadow: 4px 4px 4px black;
+        }
+        .bold-hover1:hover{
+            color: red;
+            font-size: 1.4em;
+        }
+
+
+        .bold-hover2{
+            font-weight: bold;
+            text-shadow: 4px 4px 4px black;
+        }
+        .bold-hover2:hover{
+            color: yellow;
+            font-size: 1.4em;
+        }
+    </style>
+</head>
+<body>
+    <h2>짝수일까, 홀수일까</h2>
+
+    <script>
+        var userNumber = parseInt(prompt(`숫자를 입력하시오.`));
+
+        if(userNumber != null){
+            if(userNumber % 2 == 0){
+                document.write(`<span class='bold-hover1'; style='font-weight:bold; text-shadow:4px 4px 4px black;'>${userNumber}은 짝수입니다.</span>`);
+            }else
+                document.write(`<span class='bold-hover2'; style='font-weight:bold; text-shadow:4px 4px 4px black;'>${userNumber}은 홀수입니다.</span>`);
+        }
+    </script>
+  
+</body>
+</html>

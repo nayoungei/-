@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window객체함수 연습</title>
+</head>
+<body>
+    <h1>포커스 예제</h1>
+    <p>아래 버튼을 눌러 입력 필드에 포커스를 주세요.</p>
+    <button onclick="focusInput()">포커스 주기</button>
+    <button onclick="blurinput()">포커스 해제</button>
+    <input type="text" id="myInput" />
+
+    <script>
+        function focusInput(){
+            var inputElement = document.getElementById("myInput");
+
+            inputElement.focus();
+        }
+        function blurinput(){
+            var inputElement = document.getElementById("myInput");
+
+            inputElement.blur();
+        }
+    </script>
+    <hr>
+    <h1>새 창 열기 예제</h1>
+    <button onclick="openNewWindow()">새로운 창 열기</button>
+    <script>
+        var newWindow;
+        //새로운 창 열기 위해서 window()함수 사용
+        // 첫 번째 매개변수는 열고자하는 URL이나 파일 경로 설정하면된다.
+        // 두 번째 매개변수는 창의 이름("롯데월드 놀이기구")
+        // 세 번째 매개변수는 창의 속성(창의 폭, 높이 값)
+        // 네 번째 매개변수는 창의 재사용활용여부(true 또는false);
+        
+        function openNewWindow(){
+            newWindow = window.open("j-test-59.html","롯데월드 놀이기구",
+            "width=700, height=600, resizable=true, scrollbars=true");
+
+            //열린 창에 내용 추가
+             if(newWindow){
+                
+                 newWindow.document.write(`<h1>롯데월드 놀이기구 내용</h1>`);
+                 newWindow.document.write(`<p>아래 내용은 새로운 창에 추가된 내용입니다</p>`);
+                 newWindow.document.write(`<img src='./image/boy.png' alt='소년이미지' />`);
+                 newWindow.moveBy(200,200)                 
+             }
+        }        
+    </script>
+    <hr>
+    <h1>모달 대화 상자 예제</h1>
+    <button onclick="openModal()">모달 대화 상자 열기</button>
+    <script>
+        var modalWindow = null;
+        function openModal(){
+            modalWindow = window.open("j-test-59.html", "모달 대화 상자", 
+            "width=700, height=450, modal=no");
+     }
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자(그룹 선택자)연습</title>
+    <script src="./js/jquery_3.7.0_jquery.js"></script>
+    <script src="./js/3.4.1_jquery-migrate.min.js"></script>
+
+    <script>
+        $(function(){
+              $("#tit3, h1, h3").css("background-color","#0ff")
+             .css("border","3px dashed #f00")
+             .css("text-shadow","3px 3px 3px blue")
+             .css("font-size","3em").css("text-align","center");
+        });
+    </script>
+
+</head>
+<body>
+    <div id="box1">
+        <h1>제이쿼리</h1>
+        <h2>선택자</h2>
+        <h3 id="tit3">직접 선택자</h3>
+        <h3>인접 선택자</h3>
+    </div>   
+</body>
+</html>

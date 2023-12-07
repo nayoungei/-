@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>복습 문제-테이블 이미지 정렬 이미지 정렬하기</title>
+    <!-- 쥬얼리 주식회사 메인 페이지 샘플 반지와 관련된 태그를 작성하고 
+    작은 이미지 클릭시 해당 이미지가 큰 이미지에 추가 될수있도록 
+    자바스크립트 작성 -->
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        /* 반지 선책 표 테이블 스타일 적용 부분 */
+        .bigbox{
+            float: left;
+        }
+        .mainbox_img{/*테이블 적용값*/
+            width: 540px;
+            height: 547px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            border-collapse: separate;
+            box-sizing: border-box;
+        }
+        .mainbox_img td{/*컬럼에 (td)대한 스타일 적용*/
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: middle;
+
+        }
+        .mainbox_img > td > img{/*컬럼(td)안에 보여질 이미지에대한 스타일 적용*/
+            border: none;
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+        }
+
+        /* 반지선택 표 스타일 적용부분 */
+        .smallbox{
+            float: left;
+        }
+        .smallbox_img{/* smallbox_img에 대한 테이블 적용값*/
+            width: 547px;
+            height: 547px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            border-collapse: separate;
+            box-sizing: border-box;
+        }
+        .smallbox_img td{/*smallbox_img 컬럼에 (td)대한 스타일 적용*/
+            border: 1px solid #ccc;
+            border-collapse: separate;
+            
+            width: 136.75px;/*컬럼(td)한칸에 너비값*/
+            height: 136.75px;/*컬럼(td)한칸에 높이값*/
+            text-align: center;
+            vertical-align: middle;
+
+        }
+        .smallbox_img img{/*smallbox_img  컬럼에 (td)대한 스타일 적용*/
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: middle;
+
+        }
+        .smallbox_img  td  img{/*smallbox_img 컬럼(td)안에 보여질 이미지에대한 스타일 적용*/
+            border: none;
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <article id="best1">
+        <div class="bigbox">
+            <table class="mainbox_img">
+                <caption><h3><strong>BEST&heartsuit;RIMG&heartsuit;</strong>PRODUCT</h3></caption>
+                <tr>
+                    <td><img src="./images-ring/반지_1.png" alt="18K 다이아 반지" id="big_ring"/></td>
+                </tr>
+            </table>
+        </div>
+        <div class="smallbox">
+         <table class="smallbox_img">
+            <caption><h3><strong>Please select a&heartsuit;</strong> ring image</h3></caption>
+            <tr>
+                <td><img src="./images-ring/반지_1.png" class="small_ring"/></td>
+                <td><img src="./images-ring/반지_2.png" class="small_ring"/></td>
+                <td><img src="./images-ring/반지_3.png" class="small_ring"/></td>
+                <td><img src="./images-ring/반지_4.png" class="small_ring"/></td>
+            </tr>
+            <tr>
+                <td><img src="./images-ring/반지_5.png" class="small_ring"/></td>
+                <td><img src="./images-ring/반지_6.png" class="small_ring"/></td>
+                <td><img src="./images-ring/반지_7.png" class="small_ring"/></td>
+                <td><img src="./images-ring/반지_8.png" class="small_ring"/></td>
+            </tr>
+            <tr>
+                <td><img src="./images-ring/반지_1.png" class="small_ring"/></td>
+                <td><img src="./images-ring/반지_2.png" class="small_ring"/></td>
+                <td><img src="./images-ring/반지_3.png" class="small_ring"/></td>
+                <td><img src="./images-ring/반지_4.png" class="small_ring"/></td>
+            </tr>
+            <tr>
+                <td><img src="./images-ring/반지_5.png" class="small_ring"/></td>
+                <td><img src="./images-ring/반지_6.png" class="small_ring"/></td>
+                <td><img src="./images-ring/보석_다이아_1.png" class="small_ring"/></td>
+                <td><img src="./images-ring/보석_다이아_2.png" class="small_ring"/></td>
+            </tr>
+         </table>
+        </div>
+    </article>
+    <script src="./js/jewelry_html5-프레임-2(쥬얼리 주식회사).js"></script>
+</body>
+</html>

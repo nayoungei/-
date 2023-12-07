@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인접관계선택자(하위요소 선택자)연습</title>
+    <script src="./js/jquery_3.7.0_jquery.js"></script>
+    <script src="./js/3.4.1_jquery-migrate.min.js"></script>
+
+    <script>
+        $(function(){
+            $("#wrap h1").css({
+                "background-color":"yellow",
+                 "border":"2px dashed #f00"
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <h1>인접관계선택자</h1>
+        <p>내용1</p>
+        <section>
+            <h1>하위요소선택자2<small>(section태그에 h1글자가 작게보임)</small></h1>
+            <p>내용2</p>
+        </section>
+        <div>
+            <h1>하위요소선택자3</h1>
+            <p>내용3</p>
+        </div>
+    </div>    
+</body>
+</html>

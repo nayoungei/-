@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>위치탐색선택자 only-child / slice(index)연습</title>
+    <script src="./js/jquery_3.7.0_jquery.js"></script>
+    <script src="./js/3.4.1_jquery-migrate.min.js"></script>
+        
+    <script>
+        $(function(){
+            $("#menu1 li").slice(1,5)
+            .css({"background-color":"#ff0",
+            "border":"2px solid black","box-shadow":"2px 3px 3px black"});
+
+            $("li:only-child").css("background-color","#ff0");
+        });
+    </script>
+    
+</head>
+<body>
+    <h1>탐색 선택자</h1>
+    <ul id="menu1">
+        <li>내용1-1서울</li>
+        <li>내용1-2부산</li>
+        <li>내용1-3대구</li>
+        <li>내용1-4대전</li>
+        <li>내용1-5전주</li>
+        <li>내용1-6여수</li>
+        <li>내용1-7강릉</li>
+        <li>내용1-8제주</li>
+    </ul>
+    <ul id="menu2">
+        <li>내용2-1</li>        
+    </ul>
+    <script src="./js/JQ-test-22.js"></script>
+    <!-- <ul>태그에 위치한 li태그 중 <li>내용1-6여수</li>에 저장된 텍스트 요소의 값을
+    추출해서 새로운 윈도우 창에 해당 값을 출력하고, 새로운 텍스트 값을 넣어주는 연습 -->
+</body>
+</html>

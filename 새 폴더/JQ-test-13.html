@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인접관계선택자(전체 형제 요소 선택자)연습</title>
+    <script src="./js/jquery_3.7.0_jquery.js"></script>
+    <script src="./js/3.4.1_jquery-migrate.min.js"></script>
+
+    <script>
+        $(function(){
+            var style_1 = {
+                "background-color":"#0ff",
+                "border":"2px solid #f00"
+            };
+            $(".txt").siblings().css(style_1);
+            
+
+            //인접 관계 선택자 중에 기준 이전 단계 선택자 활용(추가 연습)
+            // $(".txt").prev()
+            // .css({"color":"red","background-color":"yellow"});
+            
+            //인접 관계 선택자 중에 부모에 자식요소 선택자 활용(추가 연습)
+            // $("#wrap > h1").css({"color":"green","background-color":"black"});
+            
+        });          
+    </script>
+    
+</head>
+<body>
+    <div id="wrap">
+        <h1>인접 관계 선택자</h1>
+        <p>내용1-부산</p>
+        <!-- <section> -->
+        <p class="txt">내용2-대구</p>
+        <p><strong><i>내용3-대전</i></strong></p>
+        <p>내용4-여수</p>
+        <!-- </section> 을 활성화 시켜서 인접 관계 선택자 연습을 해 주세요!-->
+    </div>
+</body>
+</html>

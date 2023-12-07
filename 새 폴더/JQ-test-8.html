@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인접 관계 선택자연습</title>
+    <script src="./js/jquery_3.7.0_jquery.js"></script>
+    <script src="./js/3.4.1_jquery-migrate.min.js"></script>
+
+    <script>
+        $(function(){
+            $("h2").next().css("color","blue").css("font-weight","bold");
+            $("h2").parents().css("border","1px solid #f00");
+            // // $("h3").next().next().parents().css("color","green");
+            $("h3").next().next().css("color","red");
+        });
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <div id="inner_wrap">
+            <h1>제목</h1>
+            <h2>제목</h2>
+            <h3>내용1</h3>
+            <h3>내용2</h3>
+            <h3>내용3</h3>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>위치 탐색 선택자(first /last)연습</title>
+    <script src="./js/jquery_3.7.0_jquery.js"></script>
+    <script src="./js/3.4.1_jquery-migrate.min.js"></script>
+
+    <script>
+        $(function(){
+            $("#menu1 li:first").css("background-color","#ff0");
+
+            $("#menu1 li:last").css("background-color","#0ff");
+
+            
+            //(추가연습)
+            //id선택자 menu2에 포함된 요소중 2n승에 해당하는 것만 선택 적용?
+            //  $("#menu2 > li:nth-child(2n)")
+            //  .css({"background-color":"red","color":"white"}); 
+
+            //id선택자 menu3에 포함된 요소중 2n승에 해당하는 것만 선택 적용?
+            // $("#menu3 > li:nth-child(2n)")
+            // .css({"background-color":"blue","color":"white"});
+            // 위 코드는 menu2, menu3에 포함된 li태그요소중 2n승에 해당하는 모든 요소를
+            // 변경하기에~ menu2에 포함된 li태그에만 값을 적용할 수 있도록 수정.
+            // 
+        });
+    </script>
+</head>
+<body>
+    <h1>탐색 선택자</h1>
+    <ul id="menu1">
+        <li>웹 문서 내용1-서울</li>
+        <li>웹 문서 내용2-부산</li>
+        <li>웹 문서 내용3-대구</li>
+        <li>웹 문서 내용4-전주</li>
+        <li>웹 문서 내용5-충남</li>
+        <li>웹 문서 내용6-강릉</li>
+        <li>웹 문서 내용7-제주</li>
+        <li>웹 문서 내용8-울산</li>
+        <li>웹 문서 내용9-포항</li>
+    </ul> 
+    <!-- <ul id="menu1">
+        <li>웹 문서 내용1-서울</li>
+        <li>웹 문서 내용2-부산</li>
+        <li>웹 문서 내용3-대구</li>
+        <li>웹 문서 내용4-전주
+            <ul id="menu2">
+                <li>웹 문서 내용2-서울</li>
+                <li>웹 문서 내용2-부산</li>
+                <li>웹 문서 내용2-대구</li>
+                <li>웹 문서 내용2-전주</li>
+                <li>웹 문서 내용2-충남</li>
+                <li>웹 문서 내용2-강릉</li>
+                <li>웹 문서 내용2-제주</li>
+                <li>웹 문서 내용2-울산</li>
+                <li>웹 문서 내용2-포항
+                    <ul id="menu3">
+                        <li>웹 문서 내용3-서울</li>
+                        <li>웹 문서 내용3-부산</li>
+                        <li>웹 문서 내용3-대구</li>
+                        <li>웹 문서 내용3-전주</li>
+                        <li>웹 문서 내용3-충남</li>
+                        <li>웹 문서 내용3-강릉</li>
+                        <li>웹 문서 내용3-제주</li>
+                        <li>웹 문서 내용3-울산</li>
+                        <li>웹 문서 내용3-포항</li>
+                    </ul>    
+                </li>
+            </ul>    
+        </li>
+        <li>웹 문서 내용5-충남</li>
+        <li>웹 문서 내용6-강릉</li>
+        <li>웹 문서 내용7-제주</li>
+        <li>웹 문서 내용8-울산</li>
+        <li>웹 문서 내용9-포항</li>
+    </ul>      -->
+</body>
+</html>

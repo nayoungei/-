@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인접관계선택자(부모요소선택자)연습</title>
+    <script src="./js/jquery_3.7.0_jquery.js"></script>
+    <script src="./js/3.4"></script>
+    <script>
+        $(function(){
+            //parent() 함수명 선언시 
+            //parents() s문자가 들어가면 전체 부모를 선택한다.(주의!)
+
+            $("#list_1").parent().css("border","3px dashed #f00")
+            .css("background-color","rgba(75,75,255,0.7)")
+            .css("color","white");
+
+            $("li").next().next().css("color","red")
+            .css("font-size","1.5em");
+
+            $("#wrap").css("border","2px solid black")
+            .css("box-shadow","3px 3px 4px red");
+        });
+    </script>
+</head>
+<body>
+    <h1>인접관계 선택자<br>(부모요소선택자)</h1>
+    <ul id="wrap">
+        <li>리스트1
+            <ul>
+                <li id="list_1">리스트1-1</li.>
+                <li>리스트1-2</li.>
+            </ul>
+        </li>
+        <li>리스트2</li>
+        <li>리스트3</li>
+    </ul>
+    
+</body>
+</html>

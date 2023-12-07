@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인접관계선택자(형(이전)/동생(다음)요소 선택자)연습</title>
+    <script src="./js/jquery_3.7.0_jquery.js"></script>
+    <script src="./js/3.4.1_jquery-migrate.min.js"></script>
+
+    <script>
+        $(function(){
+            var style_1 = {
+                "background-color":"#0ff",
+                "border":"2px solid #f00"
+            };
+            var style_2 = {
+                "background-color":"#ff0",
+                "border":"2px solid #f00"
+            };
+
+            $(".txt").prev().css(style_1);
+            $(".txt + h3").css(style_2);
+
+
+            $(".txt").next().next().css(style_2);
+            //추가연습
+            // $(".txt + h3").parent().css(style_2);
+        })
+    </script>
+</head>
+    <div id="wrap">
+        <h1>인접 관계 선택자</h1>
+        <p>내용1-서울</p>
+        <p class="txt">내용2-대구</p>
+        <h3>내용3-대전</h3>
+        <p>내용4-부산</p>
+    </div>
+</body>
+</html>

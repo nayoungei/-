@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자(클래스 선택자 .)연습</title>
+    <script src="./js/jquery_3.7.0_jquery.js"></script>
+    <script>
+        $(function(){
+            $(".tit").css("background-color","#ff0")
+            .css("border","2px solid #f00").css("font-size","3em")
+            .css("text-align","center");
+
+            //<실습형과제2> 
+             //조건: class="tit"에 마우스오버시 text-shadow 5px 5px 6px black 효과 적용
+             //조건: 배경색은 파랑색으로 적용
+             //조건: 마우스아웃시 문장내용이 "jQuery 3.7.0 선택자의 중요성!" 문장 변경
+             //조건: 단, 배경색은 검정색에 글씨는 흰색으로 적용 
+             //조건: 단, jQuery 이벤트 핸들러에 "코드에 추가 작성하되 "JavaScript DOM접근자방식"
+             //조건: getElementsByClassName(), createElement(), createTextNode(), 함수등 활용 적용
+             //==코드작성부분
+
+            //    var mouse_over = document.getElementsByClassName("tit")[0];
+
+            //       mouse_over.onmouseover = function(){
+            //        this.style.cursor = "pointer";
+            //        this.style.textShadow= "5px 5px 6px black";
+            //        this.style.backgroundColor = "blue";
+            //        this.style.color = "white";      
+            //        }
+
+            //    var mouse_out = document.getElementsByClassName("tit")[0];
+
+            //        mouse_out.onmouseout = function(){
+            //        this.style.cursor = "pointer";   
+            //        this.style.textShadow= "5px 5px 6px green";
+            //        this.style.backgroundColor = "black";
+            //        this.style.color = "white"; 
+                
+            //      var newh2 = document.createElement("h2");
+            //         var newh2_txt = document.createTextNode("jQuery 3.7.0 선택자의 중요성!");                
+            //         mouse_out.innerHTML = "";
+            //         this.style.fontSize = "1.0em";
+            //         newh2.appendChild(newh2_txt);
+            //         mouse_out.appendChild(newh2);  
+            //    }
+           });
+    </script>
+
+</head>
+<body>
+    <h1>제이쿼리</h1>
+    <h2 class="tit">선택자</h2>
+    <h3>직접 선택자 - 클래스 . 선택자 연습</h3>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자(종속 선택자)연습</title>
+    <script src="./js/jquery_3.7.0_jquery.js"></script>
+    <script src="./js/3.4.1_jquery-migrate.min.js"></script>
+
+    <script>
+        $(function(){
+            $("h1.tit").css("background-color","#0ff")
+            .css("border","3px dashed #f00")
+            .css("text-align","center");
+
+            // $("h3.tit").onclick(function(){
+            //     this.style.textAlign = "right";
+            //     this.style.backgroundColor = "blue";
+            //     this.style.color = "white";                
+            // })
+        });
+    </script>
+</head>
+<body>
+    < clash1s="tit">제이쿼리</>
+    <h2>선택자</h2>
+    <h3 class="tit">직접 선택자 -> 종속 선택자 연습</h3>
+</body>
+</html>
