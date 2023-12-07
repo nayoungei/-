@@ -1,0 +1,312 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+
+/* 부모 요소 외 공통요소(태그) 초기화 */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+ul{
+    list-style-type: none;
+}
+a:link, a:visited{
+    text-decoration: none;
+    color: black;
+}
+/* 개별 카드 가로배열 설정하기~ */
+#flax-container{
+    display: flex; /*1번*/
+    justify-content: space-between; /*2번*/
+    flex-wrap: wrap; /*3번*/    
+}
+
+/* 1번: #flax-container로 분류된 요소들에 대해서 flax박스모델 분류(정의)한다*/
+/* 2번: flax 박스모델로 정의된 요소(section 태그~들)를 가로로 배열합니다. */
+/* 3번: flax 박스모델로 정의된 요소(section 태그~들)를 가로로 배열시켜주면서...화면이
+작아지면 자동으로 하단에 배치시켜 주는 역할을 한다. */
+
+
+
+
+/* 프로필 박스 만들기 */
+body{
+    background-color: #ebfaff;
+}
+
+section{
+    width: 340px;
+    padding: 30px;
+    background-color: #fff;
+    margin: 50px auto;
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.4);
+    border-radius: 10px; 
+}
+
+/* 상단 버튼 만들기 */
+section nav.menu{
+    width: 100%;
+}
+section nev.menu::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+section nav.menu a{
+    font-size: 20px;
+    color: #666;
+}
+section nav.menu a:nth-of-type(1){
+    float: left;
+}
+section nav.menu a:nth-of-type(1){
+    float: right;
+}
+
+/* 프로필 영역에 대한 스타일 적용부분 */
+section article.profile{
+    width: 100%;
+    text-align: center;
+}
+section article.profile img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+section article.profile h1{
+    font-weight: bold;
+    font-size: 22px;
+    font-family: "arial";
+    color: #555;
+    margin-bottom: 5px;
+}
+
+section article.profile h2{
+    font-weight: normal;
+    font-size: 12px;
+    font-family: "arial";
+    color: #bbb;
+    margin-bottom: 30px;
+}
+section a.btnView{
+    display: block;
+    width: 180px;
+    height: 32px;
+    margin: 0px auto 20px;
+    background-color: #444;
+    font-weight: bold;
+    font-size: 10px;
+    font-family: "arial";
+    color: #fff;
+    line-height: 32px;
+    text-align: center;
+}
+
+/* 연락처 목록만들기 설정 부분 */
+section ul.contact{
+    margin-bottom: 25px;
+}
+section ul.contact li{
+    width: 100%;
+    padding: 10px 0px; 
+    border-bottom: 1px solid #b4b3b3;
+}
+section ul.contact li:last-child{
+    border-bottom: none;
+}
+
+section ul.contact li i{
+    width: 20%;
+    text-align: center;
+    color: #555;
+    font-size: 15px;
+    text-shadow: 2px 2px 2px #b4b3b3;
+}
+section ul.contact li span{
+    font-weight: 700;
+    font-size: 11px;
+    font-family: "orbitron";
+    color: #555;
+    letter-spacing: 1.5px; /*글자 간격*/
+}
+
+
+
+
+/* 멤버별 프로필카드 색상 적용 부분~특색있게~!! 시작 */
+/* member1 */
+section.memberList1{
+    background-color: #ebfaff;
+}
+section.memberList1 article.profile img{
+    box-shadow: 5px 15px 20px rgba(173,216,230,0.8);
+}
+section.memberList1 a.btnView{
+    background: linear-gradient(45deg, #4affff, #35e0f7);
+    box-sizing: 5px 10px 20px rgba(0,255,255,0.493);
+}
+
+/* member2 */
+section.memberList2{
+    background-color: #edffeb;
+}
+section.memberList2 article.profile img{
+    box-shadow: 5px 15px 20px #bdccb783;
+}
+section.memberList2 a.btnView{
+    background: linear-gradient(45deg, #a0ff9d, #55f5b2);
+    box-sizing: 5px 10px 20px rgba(33,250,105,0.3);
+}
+
+/* member3 */
+section.memberList3{
+    background-color: #fff3fd;
+}
+section.memberList3 article.profile img{
+    box-shadow: 5px 15px 20px rgba(252,99,214,0.2);
+}
+section.memberList3 a.btnView{
+    background: linear-gradient(45deg, #ef74ff, #ff11cd);
+    box-sizing: 5px 10px 20px rgba(255,17,196,0.357);
+}
+
+/* member4 */
+section.memberList4{
+    background-color: #f5f0ff;
+}
+section.memberList4 article.profile img{
+    box-shadow: 5px 15px 20px rgba(183,82,250,0.2);
+}
+section.memberList4 a.btnView{
+    background: linear-gradient(45deg, #8e74ff, #a011ff);
+    box-sizing: 5px 10px 20px rgba(160,17,255,0.4);
+}
+
+/* member5 */
+section.memberList5{
+    background-color: #f5f0ff;
+}
+section.memberList5 article.profile img{
+    box-shadow: 5px 15px 20px rgba(192, 151, 61, 0.323);
+}
+section.memberList5 a.btnView{
+    background: linear-gradient(45deg, #e7cd7d, #e5a00c);
+    box-sizing: 5px 10px 20px rgba(160,17,255,0.4);
+}
+/* 멤버별 프로필카드 색상 적용 부분~특색있게~!! 종료 */
+
+
+
+
+
+/* 멤버리스트 페이지에 연결하기(memberList 1번 부터 3번까지) */
+/* 반드시 순서대로 만들어 봅시다.(1번부터 3번까지) */
+
+/* (1번) 멤버리스트 하단에 위치한 버튼(원)을 만드는 코드 적용부분 */
+div.bt-button a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0px 10px;
+    opacity: 0.5;
+    filter: saturate(0.7);
+    cursor: pointer;
+}
+/*(1-1) 버튼활성화 하기~버튼을 클릭했을때 진하게 표시하고
+선택이 안된 버튼은 흐리게 표현하기 */
+div.bt-button a.on{
+    opacity: 1;
+    filter: saturate(1);
+
+}
+
+
+
+/* (2)멤버리스트 하단에 위치한 버튼(원/ <a>태그로 정의된~)에 색상 적용부분 */
+div.bt-button a:nth-of-type(1){
+    background-color: #35e0f7;
+    box-shadow: 5px 5px 5px rgba(74,255,255,0.7);
+}
+div.bt-button a:nth-of-type(2){
+    background-color: #a5ed81;
+    box-shadow: 5px 5px 5px rgba(120,236,82,0.7);
+}
+div.bt-button a:nth-of-type(3){
+    background-color: #6a9cd1;
+    box-shadow: 5px 5px 5px rgba(59,113,212,0.7);
+}
+
+
+/*(3) 페이지 연결 버튼에 대한 보여지는 위치 설정 부분 */
+ div.bt-button{
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    position: sticky;
+    bottom: 200px;
+} 
+
+
+
+
+/* footer 스타일 적용부분 */
+footer{
+    position: relative;
+    top: 200px;
+}
+
+footer div#fnb{
+    width: 100%;
+    max-width: 1468.8px;
+    margin: 0px auto; /*div#fnb 박스모델 중심이동*/
+    text-align: center;/*중심이동된 박스모델에 텍스트 가운데 이동*/
+ /* border: 1px dashed red; */
+}
+footer div#fnb .logo{
+    width: 30%;
+    max-width: 440.64px;
+    margin: 0px auto;
+    text-align: center;
+}
+footer div#fnb .logo img{
+    float: left;
+    margin-right: 30px;
+    max-width: 88px;
+    max-height: 88px;
+    opacity: 0.75; 
+}
+
+
+footer div#fnb #fnb1{
+    width: 70%;
+    max-width: 1028.16px;
+    height: 120px;
+}
+div.fnb1_1{
+    max-width: 100%;
+    height: 60px;
+}
+div.fnb1_1 nav ul{
+    float: left;
+}
+div.fnb1_1 nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+
+    font-family: "orbitron";
+    color: #555;
+    letter-spacing: 1.2px;
+}
+div.fnb1_2{
+    max-width: 100%;
+    height: 60px;
+    text-align: justify;
+
+    font-family: "orbitron";
+    font-weight: bold;
+    color: #555;
+    letter-spacing: 1.2px;
+}
