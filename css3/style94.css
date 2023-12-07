@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+/*부모 요소 적용부분*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+div{
+    width: 520px;
+    height: 400px;
+    margin: 30px auto;
+}
+
+.grad1{
+    background: red;
+    background:-webkit-radial-gradient(white, yellow, red);
+    background:-moz-radial-gradient(white, yellow, red);
+    background: radial-gradient(white, yellow, red);  
+}
+
+.grad2{
+    background: red;
+    background:-webkit-radial-gradient(white, yellow, red);
+    background:-moz-radial-gradient(white, yellow, red);
+    background: radial-gradient(circle, white, yellow, red);  
+}
+
+.grad3{
+    background: red;
+    background:-webkit-radial-gradient(white, yellow, red);
+    background:-moz-radial-gradient(white, yellow, red);
+    background: radial-gradient(circle, farthest-side, white, yellow, red);  
+} /*뒤쪽에서 다시 진행하기....*/
+

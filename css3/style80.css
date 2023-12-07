@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+/*부모 요소 초기화*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* list-style-position: inside; */
+}
+/*ul 태그에 클래스 선택자(공통) 설정값 적용 부분*/
+.comp1, .comp2{
+    list-style-position: inside;
+    padding: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+.comp2:hover{
+    list-style-type: none; 
+    list-style-image: url('../image/dot.png');
+    overflow: visible;
+
+} 
+/*a태그에 대한 밑줄 없애기*/
+.a1{
+    text-decoration: none;/*텍스트에 대한 a태그 링크 없애기*/
+}

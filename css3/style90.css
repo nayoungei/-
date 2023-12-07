@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+/*부모요소 초기화*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/*부모 요소 설정 부분*/
+.padding1, .border1, .content1{
+    width: 600px;
+    height: 300px;
+    margin: 10px auto;
+    color: red;
+}
+.padding1{
+
+    background: url('../image/bg3.jpg') no-repeat;
+    background-origin: padding-box;
+
+    /*연습을 위한 기준 적용부분*/
+    border: 15px solid blue;
+    padding: 35px;
+}
+
+.border1{
+    background: url('../image/bg3.jpg') no-repeat;
+    background-origin: border-box;
+
+    /*연습을 위한 기준 적용부분*/
+    border: 15px dotted blue;
+    padding: 35px; 
+}
+
+.content1{
+    background: url('../image/bg3.jpg') no-repeat;
+    background-origin: content-box;
+
+    /*연습을 위한 기준 적용부분*/
+    border: 15px solid blue;
+    padding: 35px; 
+}

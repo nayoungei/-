@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+/*부모 요소 초기화 설정*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+body{
+    margin-left: 10px; /*15픽셀만큼 작성되라*/
+    text-indent: 15px; /*들여쓰기*/
+    font-variant: small-caps; /*작은대문자 표현*/
+
+    background: url('../image/bottom-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+
+    /*이미지를 고정시키는 속성값*/
+    background-attachment: fixed;
+}

@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+/*부모 요소 초기화 작업*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: 0px;
+}
+body{
+    font-family: "맑은 고딕", 돋움;
+}
+h1{
+    font-size: 17px;
+}
+
+p{
+    font-size: 16px;
+    line-height: 25px;    
+}
+/*전체 내용에 대한 설정*/
+.container{
+    width: 750px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+/*책 이미지에 대한 설정*/
+.book-img{
+    float: left;
+    padding: 10px ;
+    margin-right: 20px;
+}
+
+/*책 내용에 대한 설정*/
+.book-desc{
+    padding: 10px;
+}
+
+/*accent 클래스 선택자 설정*/
+.accent{
+    font-weight: bold;
+    color: red;
+}
+
+.a1{
+    text-decoration: none;
+    font-weight: bold;
+}

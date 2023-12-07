@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+/*부모 요소 초기화 설정부분*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*body 부모 요소 색상 설정*/
+body{
+    background-color: #0094ff;
+}
+div{
+    background-color: white;
+    width: 90%;
+    padding: 15px;
+    border: 1px solid black;
+}
+h1{
+    font-variant: small-caps;
+}
+
+p{
+    line-height: 30px;
+}
+
+/*text-overflow*/
+.txt1{
+    display: block;/*1번*/
+    width: 320px; /*반드시 특정 문장안에서 필요한 만큼 span태그로 묶어주고 
+    그안에 원하는 문장이 들어가겠금 하려면 display:block 1번을 이용해서
+    span으로 잡은 영역을 별도에 인라인 블럭으로 지정해야된다.
+    반드시 함께 적용하세요*/
+
+    border: 1px solid #ffffff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+ .txt1:hover{
+    overflow: visible;
+} 

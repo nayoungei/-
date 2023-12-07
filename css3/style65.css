@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+/*웹 문서 초기화 적용부분*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*웹 문서 아웃라인 스타일 적용*/
+ #container{
+    width: 300px;
+    height: auto;
+    border: 2px solid #000;
+    margin: 30px auto;
+    padding: 10px;
+    background-color: bisque;
+ }
+
+ /*영어 대소문자 변환 속성 적용부분*/
+h1{
+    text-transform: capitalize;
+}
+.trans1{
+    text-transform: uppercase;
+}
+.trans2{
+    text-transform: capitalize;
+}
+
+/*<ul>태그 padding 값 적용하기 */
+ul{
+    list-style-position: inside;
+} 
+
+/* .ul-1{
+    padding-left: 25px;
+} */

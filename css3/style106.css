@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+/*부모 요소 적용하기*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;    
+}
+
+nav ul{
+    list-style-type: none;
+}
+nav ul li{
+    display: inline;
+    padding: 10px 15px;
+    margin-right: 40px;
+    border-top: 3px solid #222;
+}
+
+nav ul li:hover{
+    background-color: rgb(196,196,196,0.6);
+}
+nav ul li a{
+    color: black;
+    text-decoration:none ;
+}

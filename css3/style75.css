@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+/*부모 요소 초기화*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/*아웃라인 부모 요소 적용부분*/
+#container{
+    width: 520px;
+    height: auto;
+    margin: 30px auto;
+    padding: 20px;
+    border: 3px solid black;
+    
+    text-indent: 10px;/*전체 문단에 대해서 
+    들여쓰기 적용 부분*/
+
+     
+}
+
+/* h1{
+    font-variant: small-caps; 
+} */
+/*자식 요소에 대한 설정*/
+div.default{
+    width: 480px;
+    border: 2px solid red;
+    color: red;
+    padding: 5px;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* text-transform: lowercase; */
+    
+}
+div.small-line{
+    width: 480px;
+    border: 2px solid orange;
+    color:orange;
+    padding: 5px;
+
+    margin-bottom: 10px;
+    line-height: 0.7;
+    
+}
+div.big-line{
+    width: 480px;
+    border: 2px solid green;
+    color:green;
+    padding: 5px;
+
+    line-height: 2.0;
+    text-indent: 20px;
+}

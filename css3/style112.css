@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+/*부모요소 초기화 적용*/
+ *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}  
+
+/*안쪽여백 지정하기*/
+article{
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+}
+
+article:nth-of-type(1){
+    padding: 0px;
+}
+article:nth-of-type(2){
+    padding: 30px;
+    /* width: 40px;
+    height: 40px; */
+    /* box-sizing: border-box; */
+}

@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+/*웹 문서 초기화 부분*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*웹 문서 아웃라인 적용*/
+#continer{
+    width: 520px;
+    height: auto;
+    border: 2px solid black;
+    margin: 40px auto;
+    padding: 10px;
+    background-color: bisque;
+}
+
+.accent{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+}

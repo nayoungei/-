@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+/*초기화작업*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/*웹 문서 아웃트라인 설정*/
+#container{
+    width: 520px;
+    height: auto;
+    border: 2px solid black;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: rgba(214,213,212,0.447);
+    font-weight: bold;
+}
+
+/*문단 정렬*/
+.align-left{
+    width: 480px;
+    border: 1px solid red;
+    color: red;
+    background-color: yellow;
+    text-align: left;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.align-right{
+    width: 480px;
+    border: 1px solid orange;
+    color:orange;
+    background-color: white;
+    text-align: right;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.align-center{
+    width: 480px;
+    border: 1px solid green;
+    color:green;
+    background-color: black;
+    text-align:center;
+    padding: 10px;
+    
+}
+.align-justify{
+    width: 480px;
+    border: 1px solid blue;
+    color:blue;
+    background-color: rgba(255,0,0,0.3);
+    text-align:center;
+    padding: 10px;
+    margin-top: 10px;
+}

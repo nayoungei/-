@@ -1,0 +1,171 @@
+@charset "utf-8";
+
+/*부모 요소 초기화 적용*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*body 스타일 적용 부분*/
+body{
+    font-family: "맑은 고딕","고딕","굴림";
+    background: radial-gradient(circle at 20% 70%,
+     #ffffff, #1b1b1f, #000000);
+     width: 100%;
+     height: 100vh;
+     margin: 0 auto;
+}
+
+#wrapper{
+    width: 100%;
+    margin: 0 auto; 
+    
+}
+
+header{
+    width: 100%;
+    height: 250px;
+    background-color: #f46075;
+    /* background-color: #069; */
+    background-image: url('../image/nav2.png');    
+    background-repeat: no-repeat;
+    background-position: right center;
+   
+   
+}
+
+header nav{
+    float: left;
+    width: 70%;
+    margin-top: 50px;
+}
+nav li{
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline;
+    float: left;
+    font-weight: bold;
+    margin: 15px;
+} /*header 부분에 네비게이션 주요 메뉴 4개를 가로정렬*/
+nav ul li a{
+    color: white;
+    text-decoration: none;
+} /*header 부분에 네비게이션 주요 메뉴 4개에 글자색과 a링크 밑줄 삭제*/
+
+nav ul li:hover{
+    background-color: rgba(196,196,196,0.7);
+} /*header 부분에 네비게이션 주요 메뉴 4개에 마우스가 올라갔을때 배경색 반색기능 적용*/
+
+
+footer p{
+    padding: 20px;
+}
+
+/*글자스타일 적용 부분*/
+h1{font-size: 2em;}
+h2{font-size: 1.5em;}
+h3{font-size: 1.0em;}
+p{
+    line-height: 20px;
+    font-size: 12px;
+}
+
+/*section 스타일 적용 부분*/
+section{
+    float: left;
+    width: 1160px; /*580px;*/
+    padding: 5px;
+}
+section article{
+    float: left;
+    width: 250px;
+    height: 220px;
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+/*aside 스타일 적용 부분*/
+aside{
+    float: right;
+    width: 200px;
+    height: auto;
+    border: 1px solid whitesmoke;
+    margin-top: 40px;
+    padding: 5px;
+    /* text-align: center; */
+}
+footer{
+    clear: both;
+    width: 100%;
+    margin-bottom:0;
+
+    color: white;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+/*at1 ~ at4에 대한 hover기능 색상반전 적용 부분*/
+.at1, .at2, .at3, .at4{
+    transition: 2s;
+    -webkit-transition: 2s;
+    -moz-transition: 2s;
+    -o-transition: 2s;
+}/*at1~at4공통적인 스타일 적용 부분*/
+
+/*개별적인 hover 적용 부분*/
+.at1:hover{
+    background-color: #cf9;
+    border: 1px solid green;
+}
+.at2:hover{
+    background-color: #a2d0ff;
+    border: 1px solid blue;
+}
+.at3:hover{
+    background-color: #ebcbfe;
+    border: 1px solid purple;
+}
+.at4:hover{
+    background-color: #fc3;
+    border: 1px solid red;
+}
+
+/*nav네비게이션/ ul태그/li태그/ul태그에 대한 메뉴 스타일 적용 ul*/
+ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}/*nav부모에 ul부모(li)에 대한 자식 ul태그 초기화 설정 부분*/
+
+li{
+    display: inline-block;
+    margin-left: 0px;
+}/*<li>요소를 인라인 블록으로 표시하도록 지정합니다.
+인라인 블록은 인라인 요소처럼 한 줄에 표시되지만, 블록 요소 처럼
+가로 폭과 높이를 설정할 수 있습니다. 따라서 리스트 항목들이 한 줄에
+나란히 표시되면서 너비와 높이 등을 조정할 수 있게 됩니다. */
+
+ul ul{
+    display: none;
+    position: absolute;
+    background-color: #eacdd1; 
+    /* background-color: blue ; */
+}
+
+li:hover ul{
+    display: table-column;
+    font-size: 0.85em;
+    
+}
+
+li ul li{
+    display: inline;  
+}
+
+ul li ul li a{
+    color: #000000;
+}

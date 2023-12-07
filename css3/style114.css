@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+/*부모 요소 설정*/
+/* *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+} */
+
+p{
+    border: 1px solid red;
+
+     /* height: 100px;  */
+    /* <p>태그가 보일수 있도록 테두리선을 그어주고, 높이값을 100px 만큼 준 내용 */
+}
+
+strong, em{
+   border: 1px solid blue;
+   
+   /* height: 50px;  1번 값을 주고 시행하지만 적용이 되지 않는다 */
+   /* display: inline-block;  */
+   /*반드시 display: inline-block; 이라는 값을 가지고
+   블록요소로 만들어 주어야 적용된다. 블록요소는 넓이+높이+색상+위치값을 가질수 있다!*/
+
+
+
+   /* width: 200px; 블록요소가 되었기에 차례대로 값을 적용해 본다.*/
+   /* background-color: yellow; */
+   /* text-align: center; */
+
+   /* position: relative;  */
+   
+    /*블록요소가 된 인라인 요소에 위치를 이동하고자 할때 포지션 값을 
+   유연하게 변경할 수 있도록 설정값을 준다.*/
+
+   /* top: 30px; */
+   /* left: 100px; */
+  
+   
+}

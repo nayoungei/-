@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+/*부모 요소 설정*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;    
+}
+div{
+    width: 500px;
+    min-height: 400px;
+    border: 1px solid black;
+    margin: 3px auto;
+    margin-bottom: 10px;
+}
+/*선형 그라데이션 적용*/
+.grad1{
+    background: repeating-linear-gradient(yellow, rgb(233,11,137)20px);
+}
+/*선형 그라데이션에 호버 기능 적용*/
+.grad1:hover{
+    background: repeating-linear-gradient(yellow, black 15px);
+ }                                    /*~ent() 괄호와 띄어쓰기가 있으면 적용되지 않는다.*/
+
+.grad2{
+    background: repeating-linear-gradient(yellow, yellow 20px, red 20px, red 40px);
+ }                                    /*~ent() 괄호와 띄어쓰기가 있으면 적용되지 않는다.*/
+
+.grad2:hover{
+    background: repeating-linear-gradient(red, red 20px, yellow 20px, yellow 40px);
+ }                                    /*~ent() 괄호와 띄어쓰기가 있으면 적용되지 않는다.*/
+ 
+hr{
+    width: 700px;
+    border-style: dotted;
+    margin: 0 auto;
+    margin-bottom: 10px;
+ }
+
+ /*원형 그라데이션 적용부분*/
+.grad3{
+    background: repeating-radial-gradient(circle, white, #ccc 10%);
+}                                      /*~ent() 괄호와 띄어쓰기가 있으면 적용되지 않는다.*/
+
+.grad3:hover{
+    background: repeating-radial-gradient(circle, white, white 10%, #ccc 10%, #ccc 20%);
+}                                     /*~ent() 괄호와 띄어쓰기가 있으면 적용되지 않는다.*/
+

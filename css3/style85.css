@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+/*웹 문서 초기화 적용부분*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('../image/bg1.png');
+    /* background-repeat: no-repeat; */
+    text-align: center;
+    margin-top: 100px;/*body 자식 요소를 위에서 100px만큼
+    내려오게 합니다.*/
+    font-weight: bold;
+}
+
+h1{
+    color: green;
+}
+p{
+    font-size: 1.5em;
+}

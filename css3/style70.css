@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+/*초기화부분*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#container{
+    width: 700px;
+    border: 2px solid black;
+    margin: 50px auto;
+    padding: 20px;
+    color: blue;
+    font-size: 0.8em;
+}
+.letter1{
+    letter-spacing:0.2em ;
+}
+.letter2{
+    letter-spacing:0.5em ;
+}
+
+.word3{
+    word-spacing: 0.5em ;
+    letter-spacing:0.2em
+}
+

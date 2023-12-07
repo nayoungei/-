@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+/*부모 요소 초기화 부분*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*자식 요소 bg1대한 설정부분*/
+.bg1{
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    margin: 20px auto;
+
+    background-image: url(../image/bg4.jpg);
+
+    /* background-size: auto; */
+    /*원래 배경이미지 크기만큼(도화지) 좌측상단을 0,0으로 적용*/
+
+    /* background-size: cover; */
+    /*이미지 요소가 다 들어오도록 확대 축소 한다.(자동배율)*/
+
+    /* background-size: contain; */
+    /*요소(도화지)안에 모든 배경 이미지가 표시되도록 확대
+    축소한다.*/
+
+    /* background-size: 100% 100%; */
+    /*요소(도화지)의 너비와 높이에 맞도록 배경 이미지를 확대
+    축소합니다. 100% 한번 주고 연습 해본다.*/
+
+    background-size: 60% 40%;
+    /*현재 요소(도화지)의 가로 60% 세로40%으 크기에 이미지를 
+    맞추어 적용한다.*/
+}

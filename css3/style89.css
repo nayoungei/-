@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+/*부모 요소 적용 부분*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+/*부모 요소 설정 부분*/
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../image/bg4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: left;/*가로위치*/
+    align-items: center;/*세로위치*/
+}
+
+.content{
+    width: 300px;
+    background-color: rgba(255,255,255,0.7);
+    text-align: left;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+
+    /*넘쳐나는 설명글을 작은 상자에 포함시켜 처음에는
+    보이지 않다가...마우스를 갖다대면 추가내용이 보이겠금*/
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;/*...말줄임표 표기*/
+}
+.content:hover{
+    overflow: visible;
+    color: yellow;
+    text-shadow: 3px 4px 5px red;
+}
+
+.container{
+    background-position: 30% 50% ;
+}

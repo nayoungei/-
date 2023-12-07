@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+/*부모 요소 설정 초기화*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+div{
+    width: 400px;
+    height: 300px;
+    margin: 30px auto;
+}
+.grad{
+    background: blue;
+
+    background: 
+    -webkit-radial-gradient(10% 10%, circle, white, blue);
+    background: 
+    -moz-radial-gradient(10% 10%, circle, white, blue);
+    
+    background: 
+    radial-gradient(circle at 10% 10%, white, blue);
+
+}

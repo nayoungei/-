@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+/*웹 문서 초기화 부분*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*웹 문서의 아웃라인 스타일 적용*/
+#container{
+    width: 600px;
+    height: auto;
+    border: 2px solid black;
+    margin: 30px auto;
+    padding: 10px;
+}
+
+/*글자에 대한 색상 변화 적용부분*/
+h1{
+    color: green;
+    background-color: black;
+    width: 300px;
+    text-align: center;
+}
+h2{
+    color: blue;
+}
+.accent{
+    font-style: italic;
+    color: red;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.accent1{
+    color: orangered;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+
+img{
+    float: right ;
+    margin: 10px 10px 25px 10px;
+    border: 3px double red;
+}
+
+

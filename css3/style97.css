@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+/*부모 요소 설정하기*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#div_1{
+    width: 400px;
+    height: 400px;
+    margin: 30px auto;
+    border: 1px solid black;
+    list-style-type: none;
+    color: white;
+    font-size: 1.2em;
+    text-align: right;
+    font-weight: bold;
+
+    /*그라디에이션 적용부분*/
+    background: darkgreen;
+    background: radial-gradient(circle closest-side at 30% 40%, white, yellow, green);
+}                            /*~ent() 괄호와 띄어쓰기가 있으면 적용되지 않는다.*/
+
+
+#div_2{
+    width: 400px;
+    height: 400px;
+    margin: 30px auto;
+    border: 1px solid black;
+    list-style-type: none;
+    color: white;
+    font-size: 1.2em;
+    text-align: right;
+    font-weight: bold;
+
+    /*그라디에이션 적용부분*/
+    background: darkgreen;
+    background: radial-gradient(circle closest-corner at 30% 40%, white, yellow, green);
+}                             /*~ent() 괄호와 띄어쓰기가 있으면 적용되지 않는다.*/
+
+
+#div_3{
+    width: 400px;
+    height: 400px;
+    margin: 30px auto;
+    border: 1px solid black;
+    list-style-type: none;
+    color: white;
+    font-size: 1.2em;
+    text-align: right;
+    font-weight: bold;
+
+    /*그라디에이션 적용부분*/
+    background: darkgreen;
+    background: radial-gradient(circle farthest-side at 30% 40%, white, yellow, green);
+}                         /*~ent() 괄호와 띄어쓰기가 있으면 적용되지 않는다.*/
+
+#div_4{
+    width: 400px;
+    height: 400px;
+    margin: 30px auto;
+    border: 1px solid black;
+    list-style-type: none;
+    color: white;
+    font-size: 1.2em;
+    text-align: right;
+    font-weight: bold;
+
+    /*그라디에이션 적용부분*/
+    background: darkgreen;
+    background: radial-gradient(circle farthest-corner at 30% 40%, white, yellow, green);
+}                            /*~ent() 괄호와 띄어쓰기가 있으면 적용되지 않는다.*/
+

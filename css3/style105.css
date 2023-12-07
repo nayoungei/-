@@ -1,0 +1,15 @@
+@charset "ytf-8";
+
+/*부모설정 적용 부분*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#block img{
+    display: block;
+    /*<img >태그는 인라인 레벨 값이지만, 블록 베벨 속석을
+    가지게 된다.*/
+    margin: 10px;
+}

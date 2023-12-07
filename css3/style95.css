@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+/*부모 요소 적용*/
+*{
+    margin: 0px;
+    padding: 0xp;
+    box-sizing: border-box;
+}
+/*body 전체화면에 원형 그라데이언트 적용하는 값으로 설정*/
+body{
+    /*그라디언트 적용할 요소의 배경을 설정합니다.*/
+    background: radial-gradient(circle at 30% 50%, #ffffff, #1b1b1f, #000000);
+    /*그라디언트의 크기와 위치를 조정합니다. 50% 50%로 중앙을 기준으로 설정합니다.*/
+    /*첫 번째색상은 중심, 두 번째 색상적용, 이후 세 번째 색상이 적용된다.*/
+
+    /*웹 페이지에 대한 설정*/
+    width: 100%;
+    height: 100vh;
+    /*css에서 사용되는 속성으로 웹 페이지의 높이를 뷰포트의
+    높이와 동일하게 설정하는 것을 의미합니다.*/
+    margin: 0;
+
+
+    display: flex;
+    /*이 속성은 부모 요소에 적용하며, 해당 요소를 flex 컨테이너로 설정한다.*/
+
+    justify-content: center;
+    /*이 속성은 Flex 아이템들을 가로 축(행)에서 정렬하는 방법을 지정함*/
+    
+    align-items: center;
+    /*이 속성은 Flex 아이템들을 세로 축(열)에서 정렬하는 방법을 지정함.*/
+
+}
+
+
+h1{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}

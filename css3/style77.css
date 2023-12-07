@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+/*부모 요소 초기화부분*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/*부모 요소 2번째 요소 적용부분*/
+#container{
+    width: 660px;
+    height: auto;
+    border: 2px solid black;
+    margin-left: 40px;
+    padding: 5px;
+    background-color: bisque;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+/*2번째 부모 요소에 포함되어있는 content 크기적용
+text-overflow적용*/
+.content{
+    width: 220px;
+    border: 1px solid bisque;
+    /*text-overflow 진행시 꼭 묶여서 진행되어야 할 속성*/
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.content:hover{
+    overflow: visible;
+    /* font-size: 0.8em; */
+}
