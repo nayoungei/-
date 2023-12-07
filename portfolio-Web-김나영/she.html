@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Page of nayoung Kim : who is she</title>
+        <!--구글에서 font 가져오기-->
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+        <style type="text/css">
+        body{
+            
+            background-size: cover;
+        }
+        /* 화면 너비가 1024픽셀 부터 이하까지 */
+        @media all and (max-width:1024px){
+            body{
+                
+                background-size: cover;
+            }
+        }
+
+        /* 화면 너비가 768픽셀 부터 이하까지~ */
+        @media all and (max-width:768px){
+            body{
+                
+                background-size: cover;
+            }
+        }
+
+        /* 화면 너비가 320픽셀 부터 이하까지~ */
+        @media all and (max-width:320px){
+            body{
+                
+                background-size: cover;
+            }
+        }
+        /* 화면 너비가 16/19픽셀 부터 이하까지~ */
+        @media all and (device-aspect-ratio:16/9){
+            body{
+                background-size: cover;
+            }
+        }
+        @media all and (min-device-aspect-ratio:16/9){
+            body{
+                background-size: cover;
+            }
+        }
+        @media all and (max-device-aspect-ratio:16/9){
+            body{
+                background-size: cover;
+            }
+        }
+        @media all and (min-width:768px)and (max-width:1719px){
+    body{
+    background-size:hover;
+}
+}
+@media all and (max-width:1720px){
+    body{
+        background-size: hover;
+    }
+}
+
+            p {font-size: 14pt; text-align: center; font-weight: 400; letter-spacing: 6px;}
+            h5 {font-size: 9pt; text-align: center; font-weight: 400; letter-spacing: 2px;}
+            h3 {font-size: 8pt; font-weight: 400; letter-spacing: 1px;}
+            strong {font-weight: 800; font-size: larger;}
+            a {text-decoration: none; color:white;} 
+            #box1 {display: block; background-color: #000000; margin: 30px 10px 10px 10px; padding: 15px 100px 15px 100px; color: white; text-align: center;}
+            #box2 {display: block; background-color: #767575; margin: 10px 10px 10px 10px; padding: 15px 60px 15px 60px; color: white; text-align: center;}
+            #box3 {height: 400pt; display: block; background-color: #B6B4CE; margin: 10px 10px 10px 10px; padding: 10px 10px 10px 30px; color: white; font-size:12pt; text-align:center; overflow: scroll;}
+            #box4 {display: block; background-color: white; margin: 10px 0px 0px 20px; color:#707070; text-align: center;}
+            .nanumGothic {font-family: 'Nanum Gothic', sans-serif;}
+            .shadow {box-shadow: 3px 3px 5px silver;}
+        </style>
+    </head>
+    <body>
+        <p class="nanumGothic shadow" id="box1"> <a href="index1.html"> page of <strong>nayoung kim </strong></a></p>
+        <h5 class="nanumGothic shadow" id="box2"> 
+            <a href="she.html"; onclick="music_alert();"> 
+                1) who is she </a> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <a href="porfile.html"> 2) profile </a> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 
+            <a href="experience.html"> 3) experience </a> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 
+            <a href="contact.html"; onclick="ContactAlert.Tell();"> 4) contact </a>
+        </h5>
+        <h3 class="nanumGothic" id="box3">
+                <video controls src="viedo/viedo1.mp4" width="260mm" height="470mm" autoplay muted loop> 브라우저에서 현재 비디오를 재생할 수 없습니다 :( </video>
+                <img src="image/베스트1.gif" alt="나 멋있다고 해주는 슈야사진" width="250mm" height="470mm">
+                <img src="image/베스트2.gif" alt="나의 일 열심히 하는 슈야 사진" width="250mm" height="470mm">
+                <img src="image/베스트3.gif"alt ="나 대신 꽃 단장 하는 슈야 사진" width="250mm" height="470mm">
+                <img src="image/portfolio3.jpg" alt="구름사진" width="250mm" height="470mm"><br>
+            <img src="image/portfolio1.jpg" alt="구름 사진" width="460mm" height="240mm">
+            <img src="image/portfolio2.jpg" alt="바닷가 사진" width="460mm" height="240mm">
+            <img src="image/블랙이오빠.jpg" alt="내가 좋아하는 가수" height="240"><br>
+            </figure>
+            <iframe width="450" height="230" src="image/슈야1.gif" alt="나 힘들어하는 모습을 슈야 보고 힘내!" title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="450" height="230" src="image/베스트1.gif" alt="나는 멋있는 프론트엔드 개발자 슈야 사진" title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <audio controls autoplay><source src="audio/블랙BLACK널잊을수있어MVgetover320kbps벨소리.mp3" type="audio/mp3"> 브라우저에서 현재 음악을 재생할 수 없습니다 :( </audio>
+        </h3>
+        <h3 class="nanumGothic" id="box4"> 
+            <script type = text/javascript>
+            for(i=0;i<MemoArr.length;i++) document.write(MemoArr[i]);
+            </script>
+            <br> ©nayoung Kim 2023 </h3>
+            <script type="text/javascript">
+                function music_alert(){
+                    alert('본 페이지에서는 음악이 자동으로 재생됩니다.\n듣고 싶지 않으시다면 시스템 소리를 꺼 주세요.\nChrome 브라우저를 사용하시는 경우 재생되지 않을 수 있습니다.');
+                }
+                var MemoArr = new Array("[충주 놀러가서 찍은 영상]", "[구름사진]", "[구름사진]", "[바닷가 모래해변사진]", "[내가 좋아하는 가수 사진]", 
+                    "[풍경사진]", "[좋아하는 가수]", "[영상 출처: nayoung]")
+                var ContactAlert = new Object();
+                ContactAlert.A = '인스타그램';
+                ContactAlert.B = '이메일';
+                ContactAlert.C = '전화번호';
+            </script>
+    </body>
+</html>

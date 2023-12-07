@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--  스타일 지정 부분-->
+    <style type="text/css">
+        body{
+           
+            background-size: cover;
+        }
+
+        /* 화면 너비가 1024픽셀 부터 이하까지 */
+        @media all and (max-width:1024px){
+            body{
+                
+                background-size: cover;
+            }
+        }
+
+        /* 화면 너비가 768픽셀 부터 이하까지~ */
+        @media all and (max-width:768px){
+            body{
+               
+                background-size: cover;
+            }
+        }
+
+        /* 화면 너비가 320픽셀 부터 이하까지~ */
+        @media all and (max-width:320px){
+            body{
+               
+                background-size: cover;
+            }
+        }
+        @media all and (max-width:1280px){
+            body{
+                
+                background-size: cover;
+            }
+        }
+        /* 화면 너비가 16/19픽셀 부터 이하까지~ */
+        @media all and (device-aspect-ratio:16/9){
+            body{
+                /* background: url('./image/background-3.jpg')no-repeat fixed; */
+                background-size: cover;
+            }
+        }
+        @media all and (min-device-aspect-ratio:16/9){
+            body{
+                /* background: url('./image/background-3.jpg')no-repeat fixed; */
+                background-size: cover;
+            }
+        }
+        @media all and (max-device-aspect-ratio:16/9){
+            body{
+                /* background: url('./image/background-3.jpg')no-repeat fixed; */
+                background-size: cover;
+            }
+        }
+        @media all and (min-width:768px)and (max-width:1719px){
+        body{
+        background-size:hover;
+    }
+    
+}
+        p {font-size: 14pt; text-align: center; font-weight: 400; letter-spacing: 6px;}
+        h5 {font-size: 9pt; text-align: center; font-weight: 400; letter-spacing: 2px;}
+        h3 {font-size: 8pt; font-weight: 400; letter-spacing: 1px;}
+        strong {font-weight: 800; font-size: larger;}
+        a {text-decoration: none; color:white;} 
+        #box1 {display: block; background-color: #75d2f4; margin: 30px 10px 10px 10px; padding: 15px 100px 15px 100px; color: white; text-align: center;}
+        #box2 {display: block; background-color: #bb4a4a; margin: 10px 10px 10px 10px; padding: 15px 60px 15px 60px; color: white; text-align: center;}
+        #box3 {height: 400pt; width: 42%; display: block; float: left; background-color: #B6B4CE; 
+            margin: 10px -30px 10px 10px; padding: 10px 60px 10px 60px; color: white; text-align: left; font-size:12pt}
+        #box4 {height: 400pt; width: 42%; display: block; float: right; background-color: #df7f7f; 
+            margin: 10px 10px 10px -30px; padding: 10px 60px 10px 60px; color: #707070; text-align: right; font-size:12pt}
+        #box5 {display: block; float: left; background-color: white; margin: 5px 0px 0px 20px; color:#c52b2b; text-align: left;}
+        웹 폰트 지정 부분
+        .nanumGothic {font-family: 'Nanum Gothic', sans-serif;}
+        .shadow {box-shadow: 3px 3px 5px silver;}
+    </style>
+</head>
+<body>
+    <P class="nanumGothic shadow" id="box1"><a href="index1.html">page of<strong>KIMnayoung</strong></a></P>
+    <h5 class="nanumGothic shadow" id="box2">
+    <a href="she.html"; onclick="music_alert();"> 
+        1) who is she </a> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+    <a href="porfile.html"> 2) profile </a> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 
+    <a href="experience.html"> 3) experience </a> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 
+    <a href="contact.html"; onclick="ContactAlert.Tell();"> 4) contact </a>
+    </h5>
+    <h3 class="nanumGothic shadow" id="box3"> <br><br><br><br><br><br><br><br><br><br>this is <strong>main page</strong> <br> please click menu category on the upper side to look around :) 
+        <br><br> - <br><br> 이곳은 <strong>메인 페이지</strong>입니다 <br> 살펴보시려면 위쪽의 메뉴 페이지를 클릭해 주세요 :) </h3>
+<h3 class="nanumGothic shadow" id="box4"> <br><br><br><br><br><br><br><br><br>this page introduces <strong>nayoung kim</strong> and her experiences <br> look around freely, and please contact me 
+        <br> through the 4) contact page! <br><br> - <br><br> 이 페이지는 <strong>김나영</strong>에 대해, 그리고 경험한 바에 대해 설명합니다 <br> 자유롭게 둘러보시고 제게 연락하고 싶으시다면 <br> 4번 페이지를 활용해주세요! </h3>
+<h3 class="nanumGothic" id="box5"> © Nayoung Kim 2023 </h3>
+<!-- 자바스크립트 작성 부분 -->
+<script type="text/javascript">
+    function music_alert(){
+        alert('본 페이지에서는 음악이 자동으로 재생됩니다.\n듣고 싶지 않으시다면 시스템 소리를 꺼 주세요.\nChrome 브라우저를 사용하시는 경우 재생되지 않을 수 있습니다.');
+    }
+    var ContactAlert = new Object();
+    ContactAlert.A = '인스타그램';
+    ContactAlert.B = '이메일';
+    ContactAlert.C = '전화번호';
+</script>
+</body>
+</html>

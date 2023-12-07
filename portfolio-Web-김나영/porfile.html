@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Page of nayoung Kim : profile</title>
+        <!--구글에서 font 가져오기-->
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+        <style type="text/css">
+        body{
+            
+            background-size: cover;
+        }
+         /* 화면 너비가 1024픽셀 부터 이하까지 */
+        @media all and (max-width:1024px){
+            body{
+                
+                background-size: cover;
+            }
+        }
+
+        /* 화면 너비가 768픽셀 부터 이하까지~ */
+        @media all and (max-width:768px){
+            body{
+               
+                background-size: cover;
+            }
+        }
+
+        /* 화면 너비가 320픽셀 부터 이하까지~ */
+        @media all and (max-width:320px){
+            body{
+                background-size: cover;
+            }
+        }
+        @media all and (min-width:768px)and (max-width:1719px){
+    body{
+    background-size:hover;
+}
+}
+@media all and (max-width:1720px){
+    body{
+        background-size: hover;
+    }
+}
+        /* 화면 너비가 16/19픽셀 부터 이하까지~ */
+        @media all and (device-aspect-ratio:16/9){
+            body{
+                background-size: cover;
+            }
+        }
+        @media all and (min-device-aspect-ratio:16/9){
+            body{
+                background-size: cover;
+            }
+        }
+        @media all and (max-device-aspect-ratio:16/9){
+            body{
+                background-size: cover;
+            }
+        }
+            p {font-size: 14pt; text-align: center; font-weight: 400; letter-spacing: 6px;}
+            h5 {font-size: 9pt; text-align: center; font-weight: 400; letter-spacing: 2px;}
+            h3 {font-size: 8pt; font-weight: 400; letter-spacing: 1px;}
+            strong {font-weight: 800; font-size: larger;}
+            small {font-size: xx-small;}
+            a {text-decoration: none; color:white;} 
+            img{float: left; margin: 0px 20px 0px 0px;}
+            #box1 {display: block; background-color: #f9cf00; margin: 30px 10px 10px 10px; padding: 15px 100px 15px 100px; color: white; text-align: center;}
+            #box2 {display: block; background-color: #3979cd; margin: 10px 10px 10px 10px; padding: 20px 60px 20px 60px; color: #707070; text-align: center;}
+            #box3 {display: block; background-color: #fb5b5b; margin: 10px 10px 10px 10px; padding: 15px 60px 15px 60px; color: white; text-align: center;}
+            #box4 {height: 305pt; display: block; background-color: #F3DBCF; margin: 10px 10px 10px 10px; padding: 30px 10px 30px 30px; color: #707070; font-size: 10pt; text-align: left;}
+            #box5 {width:"460mm"; height:"240mm"; display: block; background-color: white; border-spacing: 2pt; border-color: gainsboro; margin: 10px 10px 10px -10px; padding: 10px 60px 10px 60px; color: #707070; font-size:12pt}
+            #box6 {display: block; background-color: white; margin: 10px 0px 0px 20px; color:#707070; text-align: center;}
+            .right {text-align: right;}
+            .nanumGothic {font-family: 'Nanum Gothic', sans-serif;}
+            .shadow {box-shadow: 3px 3px 5px silver;}
+        </style>
+    </head>
+    <body>
+        <p class="nanumGothic shadow" id="box1"> <a href="index1.html"> page of <strong>nayoung kim </a></strong></p>
+        <h5 class="nanumGothic shadow" id="box3"> 
+            <a href="she.html"; onclick="music_alert();"> 
+                1) who is she </a> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <a href="porfile.html"><strong><u> 2) profile </u></strong></a> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 
+            <a href="experience.html"> 3) experience </a> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 
+            <a href="contact.html"; onclick="ContactAlert.Tell();"> 4) contact </a>
+        </h5>
+        <h3 class="nanumGothic shadow" id="box4">
+            <img id="selfie1" src="image/peulopil sajin.jpg.jpg" alt="selfie 1" width="240mm" height="400mm">
+            <br><br><form method="post" action="action1.php" onreset="reset_alert()">
+                    <strong>이름:</strong><small> 김나영</small><br>
+                    <strong>생년월일:</strong><small>2005-04.04</small><br>
+                    <strong>거주지:</strong><small> 경기도 성남</small>
+                <br><br><strong>나의 꿈:</strong> <small>프론트엔드 개발자</small> 
+                    <script type="text/javascript">
+                        var count = 0;
+                        while(count < likes.length){
+                            document.write('<input type="checkbox" name="hobby" value="game"/'+ likes[count] +'">&nbsp;'+ likes[count]);
+                            count += 1
+                        }
+                    </script>
+                <br><br><strong>직업</strong> <small></small> :
+                <select name="job" size="1">
+                    <option>학생</option>
+                  </select>
+                <br><br><strong>현재 상태</strong> <small>(중복 선택 불가능)</small> :
+                    <label for="working">열심히 노력하는 중</label>
+                    <input type="radio" name="status" id="working" value="working" checked>
+                    <label for="resting">쉬는 중</label>
+                    <input type="radio" name="status" id="resting" value="resting">
+                <br><br><strong>학력</strong> <small>(추가할 내용 작성)</small> :
+                    <br> <small>대원초등학교 <br> 성일중학교 <br> 성남테크노과학고등학교 : 정보보안과 전공<br> </small><br><br>
+                    <textarea name="comments" rows="4" cols="40"/></textarea>
+                <br>
+                <input type="submit" value="전송하기"/> &nbsp; 
+                <input type="reset" value="초기화"/>
+                <h3 class="right">취미 : 책읽기, 사진촬영&nbsp;/ 직업 : 학생 / 상태 : 열심히 노력하는 중 / 학력: 성남테크노과학고등학교 정보보안과 재학중&nbsp;&nbsp;</h3>
+            </form>
+        </h3>
+        <h3 class="nanumGothic" id="box6"> © nayoung Kim 2023 <button onclick = "Visibility('selfie1');">hiding😎image</button> </h3>
+        <!-- 자바스크립트 작성 -->
+        <script type="text/javascript">
+            function Visibility(id) {
+                var dom = document.getElementById(id);
+                if (dom.style.visibility == "hidden")
+                  dom.style.visibility = "visible";
+                else
+                  dom.style.visibility = "hidden";
+            }
+        </script>
+        <script type="text/javascript">
+            function music_alert(){
+                alert('본 페이지에서는 음악이 자동으로 재생됩니다.\n듣고 싶지 않으시다면 시스템 소리를 꺼 주세요.\nChrome 브라우저를 사용하시는 경우 재생되지 않을 수 있습니다.');
+            }
+            var ContactAlert = new Object();
+            ContactAlert.A = '인스타그램';
+            ContactAlert.B = '이메일';
+            ContactAlert.C = '전화번호';
+            function reset_alert(){
+                alert('초기화 버튼을 눌러 모든 기록을 원래대로 되돌렸습니다.')
+            }
+            var likes = ["사진 촬영","여행","음악","영화","독서","개발공부하기"];
+        </script>
+    </body>
+</html>
