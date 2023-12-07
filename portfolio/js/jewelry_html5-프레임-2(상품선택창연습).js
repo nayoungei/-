@@ -1,4 +1,4 @@
-var isOpen =false;
+var isOpen = false;
 var bigPic = document.querySelector("#ring");
 var smallPic = document.querySelectorAll(".small");
 
@@ -7,4 +7,5 @@ for(i = 0; i < smallPic.length; i++){
        newPic = this.src;
        bigPic.setAttribute("src", newPic);               
    });
+   
 }

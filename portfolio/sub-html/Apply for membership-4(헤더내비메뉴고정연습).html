@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link rel="stylesheet" type="text/css" href="./Apply for membership(회원가입).css">
+</head>
+<body>
+    <div id="container">
+        <h1 class="bb1000">회윈가입신청</h1>
+        <form name="" action="" method="post" id="register" autocomplete="off">
+            <ul id="user-info">
+                <li>
+                    <label for="user-id" class="field">아이디</label>
+                    <input type="text" id="user-id" name="user-id"
+                     title="4~15자 영문숫자특수기호!@#$%^입력" required>
+                </li>
+                <li>
+                    <label for="user-email" class="field">이메일</label>
+                    <input type="email" id="user-email" name="user-email"
+                    title="알림받을이메일" required>
+                </li>
+                <li>
+                    <label for="user-pwd" class="field">비밀번호</label>
+                    <input type="password" id="user-pwd" name="user-pwd"
+                    title="8자특수기호!@#$%^입력" required>
+                </li>
+                <li>
+                    <label for="user-pwd2" class="field">비밀번호확인</label>
+                    <input type="password" id="user-pwd2" name="user-pwd2"
+                    title="8자특수기호!@#$%^입력" required>
+                </li>
+                <li>
+                    <label class="field" class="field">메일링수신</label>
+                    <label class="radio1"><input type="radio" value="yes" name="mailling">예</label>
+                    <label class="radio1"><input type="radio" value="no" name="mailling">아니오</label>
+                </li>
+            </ul>
+            <ul id="buttons">
+                <li>
+                    <button type="submit" class="btn btnBlack" >가입하기</button>
+                </li>
+                <li>
+                    <button type="reset" class="btn btnGray" id="no_register">가입취소</button>
+                </li>
+            </ul>
+            <h2 class="bb1000">회원가입약관</h2>
+            <iframe src="./Apply for membership(회원가입-약관).html" 
+            width="540px" height="250px" seamless></iframe>
+        </form>
+    </div>
+    <footer class="bt1ccc">
+            <div id="address">
+                <address>상호명 : 쥬얼리주식회사.Co.Ltd | 대표 : 홍길동 | 
+                    주소 : 서울시 종로구 종로동 에르비앙<br> 메일 : <a href="">help114@jewelry.co.kr</a> | 
+                    통신판매업신고번호 : 0000000000 | <a href="">사업자등록번호 : 081-56-7896</a><br> 대표번호 : 031-9689-4567 | 팩스번호 : 031-1234-5678 | 개인정보관리자 : 홍길동</address>
+                <small>copyright 2023.<a href="">jewelry.co.kr</a> all right reserved</small>
+            </div>        
+    </footer>
+    <script src="./Apply for membership-4(헤더내비메뉴고정연습).js"></script>
+</body>
+</html>

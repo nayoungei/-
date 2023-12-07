@@ -1,0 +1,185 @@
+@charset "utf-8";
+
+/****** 웹 페이지 초기화 부분 ******/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+
+/******웹 페이지 공통적인 부분******/
+li{
+    list-style-type: none;
+    float: left;
+}
+a:link, a:visited{
+    text-decoration: none;
+    color: #000;
+}
+a:hover{
+    color: #f65d5d;
+    font-weight: 700;
+   
+}
+img{
+    vertical-align: top;
+}
+/*이미지에 "vertical-align: top;" CSS 스타일을 적용하면 이미지가 텍스트와 함께 표시될 때 이미지의 상단 부분이 텍스트의 맨 위에 위치하도록 조정됩니다.
+특별히 글자처럼 기본행간을 가진 img태그의 여백 제거  */
+
+address{
+    font-style: normal;
+} /*기본설정값이 italict 값이기에 해당 문자 스타일을 기본값으로 돌려 놓는다.*/
+
+small{
+    font-size: 100%;
+}/*기본설정값이 smaller(약85%)이다*/
+
+
+/***** title(타이틀 속성값에 색상적용)*****/
+.title_color{
+    color: red;
+}
+
+
+/***** style.css ******/
+
+/***** margin *****/
+.mr10 {margin-right: 10px;}
+.mr16 {margin-right: 16px;}
+.mr17 {margin-right: 17px;}
+
+/***** padding *****/
+.pl10 {padding-left: 10px;}
+.pl15 {padding-left: 15px;}
+.pr10 {padding-right: 10px;}
+.pr15 {padding-right: 15px;}
+
+/***** border *****/
+.bt1ddd {border-top: 1px solid #ddd;}
+.bt1000 {border-top: 1px solid #000;}
+.bb1000 {border-bottom: 1px solid #000;}
+.bb4000 {border-bottom: 4px solid #000;}
+.bl1ddd {border-left: 1px solid #ddd;}
+.br1ddd {border-right: 1px solid #ddd;}
+
+
+
+/******웹 페이지 CSS 부분 header / nav(gnb) ******/
+#wrap{
+    min-width: 1110px;
+}
+/*#wrap ID를 가진 HTML 요소는 화면 너비가 1110px보다 작아지지 않도록 최소 너비를 1110px로 유지하게 하며, 브라우저 창의 크기가 1110px 미만으로 줄어들 때 요소의 크기를 자동으로 줄이지 않고 유지하게 해 줍니다. 이것은 주로 레이아웃을 설계하거나 요소의 최소 크기를 정의하는 데 사용됩니다.*/
+
+.hidden{
+    /*콘텐츠의 크기를 0으로 설정, 이래야 다른 요소와의 크기에 따른 위치값에 영향을 주지않음*/
+    font-size: 0px;
+    line-height: 0px;
+    /*영역의 크기를 0으로 설정, 이래야 다른 요소와의 크기에 따른 위치값에 영향을 주지않음*/
+    width: 0px;
+    height: 0px;
+    /*CSS적용시 시각적으로 해당 클래스 선택자를 보이지 않게 한다. */
+    visibility: hidden;
+}
+
+
+/* 헤더(header) 메뉴를 고정 시기고자 스타일 적용 */
+header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;    
+    height: 60px;
+    background-color: #fff;
+    box-shadow: 0px 3px 5px rgba(0,0,0,1);
+    z-index: 100;
+    /* margin: 40px auto; */
+    /* box-sizing: border-box;  */
+}
+header > div{
+    float: left;
+}
+#logo{
+    margin-top: 5px;
+    width: 23%; /*253px 사용해도 되지만 % 적용함*/
+    height: 52px;
+}
+#header_right{
+    margin-top: 10px;    
+    width: 77%;/*857px 사용해도 되지만 % 적용함*/
+    height: 52px;
+}
+
+#gnb{
+    float: right; 
+    margin-right:30px;   
+    font-size: 12px;
+}
+
+
+
+
+
+
+/*****footer 적용부분*****/
+footer {
+    width: 100%;
+    height: 120px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 100;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  footer > div {
+    float: left;
+  }
+
+  #bottom_logo {
+    width: 253px;
+    height: 90px;
+    margin-top: 30px;
+  }
+
+  #footer_right {
+    width: 857px;
+    height: 120px;
+  }
+
+
+  #fnb {
+  width: 857px;
+  height: 30px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#fnb a {
+    display: block;
+    line-height: 30px;
+    margin-right: 20px;
+  }
+  
+  #address {
+    width: 857px;
+    height: 90px;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  #address address {
+  height: 60px;
+}
+
+#address a {
+    font-weight: bold;
+  }
