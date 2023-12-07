@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>복습문제(광고)</title>
+    <style>
+        body{
+            font-family: "맑은 고딕", 돋움;
+        }
+        .container{
+            position: relative;
+            width: 600px;
+            height: 400px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            /*조건에 가칭정답*/
+            /* background:url('./image/apple-bg.jpg') no-repeat ; */
+            background-image: url('./image/apple-bg.jpg');
+            background-repeat: no-repeat;
+            background-size:cover;
+        }
+        .content{
+            position: absolute;
+            top: 300px;
+            width: 90%;
+            padding: 10px;
+            background: rgb(232, 228, 228,0.5);
+        }
+        h1{
+            font-size: 30px;
+            text-align: center;
+        }
+        p{
+            font-size: 16px;
+            line-height: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>하루 한 개의 사과는 의사를 멀리 한다.</h1>
+        </div>
+    </div>
+</body>
+</html>
+<!-- 조건
+1. 영역 전체를 감싸는 스타일은 .contatiner이고 텍스트 영역을 감싸는
+스타일은 .content입니다.
+2. 영역 전체에 배경 이미지(image/apple-big.jpg)를 삽입하는데
+반복하지 않고, 영역 전체를 덮을 수 있도록 합니다.(.container) 
+3. 배경 이미지를 추가하면 텍스트가 눈에 잘 띄지 않습니다.
+텍스 영역에 흰색 배경을 깔되 너무 진하지 않게 불투명으로 값을 0.5로 지정합니다.
+(.content)-->
