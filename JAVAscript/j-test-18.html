@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>짝수끼리 더하기</title>
+    <link rel="stylesheet" type="text/css" href="./css/j-style-18.css">
+</head>
+<body>
+    <p>짝수끼리 더하기</p>
+    <script>
+        var n = 10;
+        var sum = 0;
+
+        for(var i = 0; i <= n; i++){
+            if(i % 2 == 1){
+                continue; //if(i % 2 == 0) 조건문이 참일때(true)만 실행.
+                            }
+                sum += i;
+                document.write(`${i}..........${sum}<br>`);
+        }
+
+    </script>
+</body>
+</html>

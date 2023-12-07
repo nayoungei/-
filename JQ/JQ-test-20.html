@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>위치탐색선택자 first-of-type/last-of-type연습</title>
+    <script src="./js/jquery_3.7.0_jquery.js"></script>
+    <script src="./js/3.4.1_jquery-migrate.min.js"></script>
+    
+    <script>
+        $(function(){
+            $("li:first-of-type").css("background-color","#ff0");
+            
+            $("li:last-of-type").css("background-color","#0ff");
+
+
+            
+            //(추가연습)
+            //<ul>태그 3개중에서 포함된 1-2,2-2,3-2 
+            // li 태그요소 선택을 어떻게 할 것인가? 
+            //$("li:nth-child(2)").css("background-color","red");   
+
+
+        });
+    </script>
+</head>
+<body>
+    <h1>탐색 선택자</h1>
+    <ul>
+        <li>내용1-1</li>
+        <li>내용1-2</li>
+        <li>내용1-3</li>
+    </ul>
+    <ul>
+        <li>내용2-1</li>
+        <li>내용2-2</li>
+        <li>내용2-3</li>
+    </ul>
+    <ul>
+        <li>내용3-2</li>
+        <li>내용3-1</li>
+        <li>내용3-3</li>
+    </ul>
+</body>
+</html>

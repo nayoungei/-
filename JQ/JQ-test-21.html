@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>위치탐색선택자 nth-child(숫자n)/nth-last-of-type(숫자)연습</title>
+    <script src="./js/jquery_3.7.0_jquery.js"></script>
+    <script src="./js/3.4.1_jquery-migrate.min.js"></script>
+    
+    <script>
+        $(function(){
+            $("#menu1 li:nth-child(1)").css("background-color","#ff0");
+            //li:nth-child(1) li태그 첫번째 요소를 선택하고 적용 
+
+            $("#menu1 li:nth-child(3n)")
+            .css({"background-color":"blue",
+            "border":"2px dashed #f00","color":"white"});
+            //li:nth-child(3n) li태그 세번째 요소를 기준으로 배수 선택 
+            //세번째와 여섯번째 요소가 선택된다.
+
+            $("#menu2 li:nth-last-child(5)").css("background-color","#0ff")
+
+        });
+    </script>
+</head>
+<body>
+    <h1>탐색 선택자</h1>
+    <ul id="menu1">
+        <li>내용1-1서울</li>
+        <li>내용1-2부산</li>
+        <li>내용1-3대구</li>
+        <li>내용1-4대전</li>
+        <li>내용1-5전주</li>
+        <li>내용1-6여수</li>
+        <li>내용1-7강릉</li>
+        <li>내용1-8제주</li>
+    </ul>
+    <ul id="menu2">
+        <li>내용2-1</li>
+        <li>내용2-2</li>
+        <li>내용2-3</li>
+        <li>내용2-4</li>
+        <li>내용2-5</li>
+        <li>내용2-6</li>
+        <li>내용2-7</li>
+        <li>내용2-8</li>
+    </ul>
+
+    
+</body>
+</html>

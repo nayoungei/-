@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM CSS스타일값 수정연습</title>
+    <style>
+        @charset "utf-8";
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        #container{
+            width: 600px;
+            margin: 50px auto;
+            text-align: center;
+        }
+        #rect{
+            width: 200px;
+            height: 200px;
+            border: 1px solid #222;
+            margin: 30px auto;
+
+            transition: 0.5s;
+            /*선택한 요소에 대한 전환(transition)효과
+            를 정의합니다. 이 경우 1초 동안 변화가
+            일어날대 부드럽게 전환되도록 설정하며,
+            CSS속성이 변경될 때 애니메이션 효과를
+            적용하기위한 것입니다.*/
+        }
+    </style>
+</head>
+<body>
+    <div  id="container">
+        <p>도형 위에 마우스 포인터를 올려놓으세요!</p>
+        <!-- <p>도형 위에 마우스 포인터를 클릭하세요!</p> -->
+    </div>
+    <div id="rect"></div>
+    <!-- <script src="./js/j-test-49.js"></script> -->
+</body>
+</html>

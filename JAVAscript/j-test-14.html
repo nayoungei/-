@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for반복문복습(1-100까지 더하기)</title>
+</head>
+<body>
+    <!-- 1.내부스클립트적용 / 인라인스타일방식 색상 등 적용 -->
+    <script>
+        var sum = 0;
+        for(var i = 1; i <= 100; i++){
+            sum += i;
+        }
+        document.write(`<p style='color:blue; font-size:2em; 
+        font-weight:bold; text-anigin:center; background:yellow; 
+        width:520px; height:auto; border:1px solid black; 
+        margin:40px auto; padding: 10px 10px 10px 40px; 
+        text-shadow: 2px 2px 4px red;'>1부터 100까지 더하면:${sum}이다.</p>`);
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch-case문 연습</title>
+    <link rel="stylesheet" type="text/css" href="./css/j-style-12.css">
+</head>
+<body>
+    <!-- 1.session(세션)변수에 prompt()함수에서
+    전달받은 값을 저장하도록 하고, 이값을 가지고
+switch~case 문에서 해당되는 번호와 비교해서 결과를
+찾을수 있도록 진행 -->
+    <script>
+        var session = prompt("관심세션을 선택하세요: 1-마케팅, 2-개발, 3-디자인","1");
+
+            switch(session){
+                case"1":document.write(`<p><a href='https://www.braincube.kr/ target=_blank' 
+                    title='행사장 페이지 이동'>마케팅 세션은</a><strong>201호</strong>에서 진행됩니다.</p>`);
+                break;
+
+                case"2":document.write(`<p><a href='https://techblog.woowahan.com/11045/ target=_blank' 
+                    title='행사장 페이지 이동'>개발 세션은</a><strong>203호</strong>에서 진행됩니다.</p>`);
+                break;
+
+                case"3":document.write(`<p><a href='https://seoul.designfestival.co.kr/ target=_blank' 
+                    title='행사장 페이지 이동'>디자인 세션은</a><strong>205호</strong>에서 진행됩니다.</p>`);
+                break;
+
+                default:alert(`잘못 입력했습니다`);
+
+            }
+    </script>
+
+</body>
+</html>

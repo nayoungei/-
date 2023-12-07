@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>할인가격구하기</title>
+    <link rel="stylesheet" type="text/css" href="./css/j-style-9.css">
+</head>
+<body>
+    <!--1. 다음 프로그램은 가격할인구하기 
+        자바스크립트 코드입니다.  -->
+        <div id="contents">
+            <img src="./image/sale.png" alt="가격할인 이미지" />
+            <ul>
+                <li>
+                    <label for="oPrice">원래가격</label>
+                    <input type="text" id="oPrice" /><b>원</b>
+                </li>
+                <li>
+                    <label for="rate">할인률</label>
+                    <input type="text" id="rate"/><b>%</b>
+                </li>
+                <li class="li3">
+                    <button onclick="showPrice()">할인가격계산하기</button>
+                </li>
+            </ul>
+            <div id="showResult"></div>
+        </div>
+
+        <!-- 2. 첫번째 script연습은 
+            내부 연결방식+직접 값 대입  -->
+        <!-- <script>
+            function showPrice(){
+                var orignPrice = 10000;
+                var rate = 25;
+                document.querySelector("#showResult").innerHTML = 
+                ("상품의 원래 가격은"+orignPrice+"원이고, "+"할인율은"+rate+"%입니다.");
+            }
+        </script> -->
+        <script src="./js/j-test-9.js"></script>
+</body>
+</html>
