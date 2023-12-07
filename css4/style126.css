@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+/*부모 요소 초기화*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: "맑은 고딕","고딕","굴림";
+}
+header{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgb(3,124,185);
+    padding: 10px;
+    overflow: hidden; 
+    /*header 메뉴에 포함된 각종 요소들의 너비나 높이에 의해서
+    모양에 변화가 생기는데....이 모양을 감추기 위해서 사용*/    
+}
+header h1{
+    width: 40%;
+    float: left;
+    color: #fff;
+}
+header nav{
+    width: 60%;
+    float: right;
+}
+nav ul{
+    list-style-type: none;
+}
+nav ul li{
+    display: inline;
+    float: left;
+    margin: 17px;
+}
+nav ul li:hover{
+    background-color: rgba(110, 108, 110, 0.603);
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+nav ul a{
+    color: white;
+    text-decoration: none;
+}
+
+/*footer태그에 p태그 요소 값 스타일 지정*/
+p{
+    font-size: 15px;
+    line-height: 30px;
+}
+dt{
+    font-weight: bold;
+    color: purple;
+}
+h1{
+    font-size: 2em;
+}
+section{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    border: 5px solid #333;
+    padding: 5px;
+    overflow: hidden;
+}
+article h3{
+    background-image: url(../image/강아지.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    padding-left: 30px;
+}
+aside{
+    clear: both;
+    height: auto;
+    padding: 10px;
+    list-style-position: inside;    
+}
+footer{
+    clear: both;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+

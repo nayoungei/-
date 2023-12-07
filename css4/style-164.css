@@ -1,0 +1,138 @@
+@charset "utf-8";
+
+/*부모 요소 초기화 부분*/
+ /* *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}   */
+
+
+/*공통 부분 스타일 적용부분*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+p{ 
+    font-size: 15px;
+}
+h1{
+    font-size: 2em;
+}
+
+
+
+
+/*header 스타일 적용 부분*/
+header{
+    width: 80%;
+    height: 60px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #069;
+    padding: 10px;
+    /* overflow: hidden;  */
+}
+header h1{
+    width: 30%;
+    float: left;
+    color: orange;
+    text-shadow: 1px 2px 2px black;   
+    margin-top: 10px;
+    margin-bottom: 10px; 
+    
+    /* border: 1px solid red; */
+}
+header nav{
+    width: 60%;
+    float: right;
+    
+   /* border: 1px solid red; */
+}
+nav ul{
+    list-style-type: none;
+}
+nav ul li{
+    display: inline;
+    margin: 15px;
+}
+nav ul li a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+
+
+/*article 스타일 적용 부분*/
+article{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    border: 5px solid #333;
+    padding: 5px;
+    overflow: hidden;      
+}
+article section{
+    width: 31%;    
+    float: left;
+    margin-right: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+   /* border: 1px dashed red; */
+}
+section h3{
+    background: url(../image-시맨틱/bg-note.png) no-repeat;
+    padding-left: 30px;
+}
+
+
+
+
+/*aside 스타일 적용 부분*/
+aside{
+    clear: both;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #99cc33;    
+}
+
+footer{
+    clear: both;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    text-align: center;    
+}
+
+
+
+
+/*시멘틱 태그를 완벽하게 지원하지 못하는 브라우저 IE8
+ 등...사용자를 위한 방법으로 다음과 같은 태그를 적용해 
+ 놓는다.*/
+header, section, footer, article, aside, figure{
+    display: block;
+}
+
+
+
+
+/*토들메뉴 강아지사진 스타일 적용 부분*/
+.hidden{
+
+    display: none;
+}
+
+.dynamic1:hover,.dynamic2:hover,.dynamic3:hover,.dynamic4:hover,.dynamic5:hover,.dynamic6:hover,.dynamic7:hover,.dynamic8:hover,.dynamic9:hover,.dynamic10:hover{
+    color: red;
+    text-shadow: 2px 2px 3px gray;
+    font-weight: bold;
+    font-size: 1.1em;
+    cursor: pointer;
+}

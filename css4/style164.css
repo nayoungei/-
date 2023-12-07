@@ -1,0 +1,152 @@
+@charset "utf-8";
+
+/*부모요소 초기화*/
+/* *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+} */
+
+body{
+    font: 14px 맑은 고딕;
+}
+/*웹 문서의 틀에 해당은 부분 스타일 적용*/
+.container{
+     position: absolute; 
+    /* position: relative; */
+    width: 960px;
+    margin: 0px auto;
+    background-color: #fff;
+    border: 1px solid #e7e7e7;
+    
+}
+
+
+
+/*헤더부분 스타일 적용 부분*/
+header{
+    position: relative;
+    height: 280px;
+    background-image: url('../image-시맨틱/bg.png');
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+header h1{
+    position: absolute;
+    right: 20px;
+    bottom: 70px;
+    font-size: 3em;
+    color: #ffc;
+    text-shadow: 1px 2px 2px #000;
+}
+header h2{
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+    font-size: 2em;
+    color: #ff0;
+    text-shadow: 0px 1px 1px #000;
+}
+
+
+/*네이게이션메뉴 스타일 적용 부분*/
+.navi{
+    position: relative; 
+    /*position: relative; 속성을 주게되면 
+    이 태그가 포함하고 있는 요소(노드)가 함께 움직인다.*/
+
+    background-color: #271717;
+    margin-top: -15px;
+    width: 960px;
+    height: 60px;
+}
+.navi ul{
+    list-style: none;
+    height: 40px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.navi ul li{
+    display: inline-block;
+    font-size: 15px;    
+}
+.navi a, .navi a:visited{
+   padding: 10px 5px 5px 35px;
+   display: block; 
+   color: #fff;
+   width: 150px;
+   text-decoration: none;
+}
+.navi a:hover, .navi a:active, .navi a:focus{
+    text-shadow: 0px 2px 2px black;
+    color: #fc0;
+}
+
+/*.sidebar에 대한 속성 적용부분*/
+.sidebar{
+    float: right;
+    width: 200px;
+    height: 550px;
+    background-color: #dfd;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;    
+}
+.sidebar img{
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+
+
+
+/*.content <section>부분에 대한 스타일 적용부분*/
+ .article1{
+    width: 720px;
+    float: left;
+}  
+.content{
+    background-color: #fff;
+    padding-top: 5px;
+    padding-left: 10px; 
+    width: 720px;
+    float: left;
+}
+.banner{
+    width: 720px;
+    margin: 20px 10px 15px 10px;
+    padding: 0px;
+}
+
+ .iframe1{
+    width: 720px;
+    margin: 20px 10px 15px 10px;        
+} 
+
+
+/*footer 스타일 적용부분*/
+
+footer{
+    clear: both;
+    padding: 10px 0px;
+    background-color: #030;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+}
+address{
+    font-style: normal;
+}
+
+
+
+/**/
+/*사용자의 웹 브라우저 엔진은 다르다.
+iE8 파이어폭스, 오페라 브라우저를 사용하는 사람도 있다.
+그래서, 해당 브라우저에서 웹 표준 시멘틱 태그를 인식할 수 없기에
+첫 번째 대응방안으로 CSS문서에 웹 표준 시멘틱 태그를 작성해 준다.*/
+ header, section, footer, article, aside, figure{
+    display: block;
+} 
+
