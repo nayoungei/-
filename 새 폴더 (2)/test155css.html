@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>복습 문제</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a:link{
+            text-decoration: none;
+        }
+        nav ul{
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+        }
+        nav li{
+            font-size: 1.5em;
+            padding-left: 7px;
+            margin-bottom: 15px;
+            border-left: 5px;
+            border-color: #990066;
+            border-left-style: solid;
+
+            margin-right: 15px; 
+            /*1 번태그가 자체가 블록요소 이기에 display인라인 속성값으로 오른 쪽 정렬 할수 있다*/
+            float: left;/*2번 태그 1번에서 적용된 display 인라인 요소 속성 값을 사용 하지않고  float: left; 를 사용하면  <section>태그안에 h1부터 요소들이 함께left 정렬된다 */
+        }
+        #content{
+            /*2번연습시 활성화 시켜서 연습하고 이후에 해당값을 적용하여 브라우저에서 확인 할수 있다.*/
+            /*2번 태그 1번에서 적용된 display 인라인 요소 속성 값을 사용 하지않고  float: left; 를 사용하면  <section>태그안에 h1부터 요소들이 함께left 정렬된다 */
+            clear: both;
+        }
+    </style>
+</head>
+<body> 
+        <nav>
+            <ul>
+                <li><a href="#">애완견 종류</a></li>
+                <li><a href="#">입양하기</a></li>
+                <li><a href="#">건강돌보기</a></li>
+                <li><a href="#">더불어 살기</a></li>
+            </ul>
+        </nav>
+        <section id="content">
+            <h2>강아지 용품 준비하기</h2>
+            <article>
+                <h3>강아지집</h3>
+                <p>강아지가 편히 살수 있는 집이 필요합니다 강아지의 집은 강아지가 다 큰후 에도 계속 쓸수 있는 집으로 구입하세요 집을 구입하실떄는 박음질이 잘되어 있는지, 세탁이 간편한 제품인지 꼭 확인 하시고 사는 것이 좋습니다.</p>
+            </article>
+            <article>
+                <h3>강아지먹이</h3>
+                <p>강아지의 먹이는 꼭 어린 강아지용으로 나와 있는 사료를 선택하세요 강아지들을 사람에 비래 성장속도가 8배 정도 빠릅니다 따라서 강아지에겐는 성장속도에 맞는 사료를 급여 하셔야 합니다 사람이 먹는 음식을 먹게되면 양념과 향신료에 입맛이 익숙해지고 비만이 될 가능성이 매우 높습니다 강아지용 사료는 생후 12개월까지 급여 하셔야 합니다</p>
+            </article>
+        </section>
+        <footer>
+            <p>copyright 2023 ㉿ zooo</p>
+        </footer>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>복습문제-테이블 이미지 정렬하기</title>
+    <!-- 쥬얼리주식회사 메인 페이지 샘플 반지와 관련된 태그를 작성하고
+    작은 이미지 클릭시 해당 이미지가 큰 이미지에 추가될 수 있도록
+    자바스크립트 작성 -->
+
+    <style>
+        /**부모요소초기화**/
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;            
+        }
+
+        /**반지선택 .bigbox 표(테이블) 스타일 적용부분**/
+        .bigbox{
+            float: left;
+        }
+        .mainbox_img{ /*mainbox_img 테이블 적용 값*/
+            width: 547px;
+            height: 547px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            border-collapse: separate;
+            
+            box-sizing: border-box;
+
+            margin-right: 16px;
+
+        }
+        .mainbox_img td{/*칼럼(td)에 대한 스타일 적용*/
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .mainbox_img td img{/*칼럼(td)에 보여질 이미지에 대한 스타일 적용*/
+            border: none;
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+        }
+
+
+
+        /**반지선택 .smallbox표(테이블) 스타일 적용부분**/
+        .smallbox{
+            float: left;
+        }
+        .smallbox_img{/*smallbox_img에 테이블(표) 스타일 적용부분*/
+            width: 547px;
+            height: 547px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            border-collapse: separate;
+
+            box-sizing: border-box;
+        }
+        .smallbox_img td{/*칼럼(td)에 대한 스타일 적용 부분*/
+            border: 1px solid #ccc;
+            border-collapse: separate;
+
+            width: 136.75px; /*컬럼(td)한칸에 너비 값*/
+            height: 136.75px; /*컬럼(td)한칸에 높이 값*/
+            text-align: center;
+            vertical-align: middle;
+        }
+        .smallbox_img img{
+            border: none;
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+        }
+
+
+    </style>
+</head>
+<body>
+    <article id="best1">
+        <div class="bigbox">
+            <table class="mainbox_img">
+                <caption><h3><strong>BEST&heartsuit;RING&heartsuit;</strong>PRODUCT</h3></caption>
+                <tr>
+                    <td><img src="portfolio/images-ring/반지_1.png" alt="18k 다아아 반지" id="big_ring" /></td>
+                </tr>
+            </table>
+        </div>
+        <div class="smallbox">
+            <table class="smallbox_img">
+                <caption><h3><strong>Please select a&heartsuit;</strong>ring image</h3></caption>
+                <tr>
+                    <td><img src="portfolio/images-ring/반지_1.png" class="small_ring"/></td>
+                    <td><img src="portfolio/images-ring/반지_2.png" class="small_ring"/></td>
+                    <td><img src="portfolio/images-ring/반지_3.png" class="small_ring"/></td>
+                    <td><img src="portfolio/images-ring/반지_4.png" class="small_ring"/></td>
+                </tr>
+                <tr>
+                    <td><img src="portfolio/images-ring/반지_5.png" class="small_ring"/></td>
+                    <td><img src="portfolio/images-ring/반지_6.png" class="small_ring"/></td>
+                    <td><img src="portfolio/images-ring/반지_7.png" class="small_ring"/></td>
+                    <td><img src="portfolio/images-ring/반지_8.png" class="small_ring"/></td>
+                </tr>
+                <tr>
+                    <td><img src="portfolio/images-ring/반지_1.png" class="small_ring"/></td>
+                    <td><img src="portfolio/images-ring/반지_2.png" class="small_ring"/></td>
+                    <td><img src="portfolio/images-ring/반지_3.png" class="small_ring"/></td>
+                    <td><img src="portfolio/images-ring/반지_4.png" class="small_ring"/></td>
+                </tr>
+                <tr>
+                    <td><img src="portfolio/images-ring/반지_5.png" class="small_ring"/></td>
+                    <td><img src="portfolio/images-ring/반지_6.png" class="small_ring"/></td>
+                    <td><img src="portfolio/images-ring/보석_다이아_1.png" class="small_ring"/></td>
+                    <td><img src="portfolio/images-ring/보석_다이아_2.png" class="small_ring"/></td>
+                </tr>
+            </table>
+        </div>
+    </article>
+
+    <!-- 스크립트코드작성 -->
+    <script>
+        var bigPic = document.querySelector("#big_ring");
+        var smallPic = document.querySelectorAll(".small_ring");
+
+        for(let i=0; i<smallPic.length; i++){
+            smallPic[i].addEventListener("click", function(){
+                newPic = this.src;
+                bigPic.setAttribute("src",newPic);
+            });
+        }
+    </script>
+</body>
+</html>

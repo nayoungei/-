@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>복습문제</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a:link{
+            text-decoration: none;
+        }
+        nav ul{
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+        }
+        nav li{
+            font-size: 1.5em;
+            padding-left: 7px;
+            margin-bottom: 15px;
+            border-left: 5px;
+            border-color: #990066;
+            border-left-style: solid;
+
+            margin-right: 20px;
+
+            /* 1번 연습 li태그 자체가 블록요소이기에 display:inline 속성값으로 오른쪽 정렬할 수 있다 */
+            /* display: inline; */
+
+            /* 2번 연습 : 1번 연습에서 적용된 display: inline; 속성값을 사용하지 않고
+              float: left;를 사용하면 <section>태그안에 <h1> 부터 요소들이 함께 left정렬된다.*/
+            /* float: left; */
+        }
+
+         /* #content{
+            clear: both;
+        } */
+        /* 2번 연습 활성화 시켜서 연습하고, 이후에 해당 값을 적용하여 브라우저 확인하기! */
+        /* 그래서 <section>태그안에 <h1>부터 위에서 전이되는 속성값을 차단하기 위해서
+            clear: both; 라는 속성 값을 적용한다. */
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">애완견 종류</a></li>
+            <li><a href="#">입양하기</a></li>
+            <li><a href="#">건강돌볼기</a></li>
+            <li><a href="#">더블어살기</a></li>
+        </ul>
+    </nav>
+    <section id="content">
+        <h2>강아지 용품 준비하기</h2>
+        <article>
+            <h3>강아지집</h3>
+            <p>강아지가 편히 살수 있는 포근한 집이 필요합니다. 
+                강아지의 집은 강아지가 다 큰 후에도 계속 쓸 수 있는
+                 집으로 구입하세요. 집을 구입하실때는 박음질이 잘 되어 있는지,
+                세탁이 간편한 제품인지 꼭 확인하히고 고르시는 것이 좋습니다.</p>
+        </article>
+        <article>
+            <h3>강아지 먹이</h3>
+            <p>강아지의 먹이는 꼭 어린 강아지용으로 나와있는 사료를
+                선택하세요. 강아지들은 사람에 비해 성장속도가 8배정도
+                빠릅니다. 따라서 강아지에게는 성장속도에 맞는 사료를 
+                급여하셔야 됩니다. 사람이 먹는 음식을 먹게 되면 양념과
+                향신료에 입맛이 익숙해지고, 비만이 될 가능성이 매우 높아집니다.
+                강아지용 사료는 생후 12개월까지 급여하셔야 됩니다.
+            </p>
+        </article>
+    </section>
+    <footer>
+        <P>Copyright 2023 ⓒ zoozzooz.Co.Ltd</P>
+    </footer>
+</body>
+</html>

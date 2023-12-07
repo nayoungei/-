@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표 너비 지정하기 연습3</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .t1{
+            width: 300px;
+        }
+        .t2{
+            width: 300px;
+            table-layout: fixed;
+        }
+        .t3{
+            width: 300px;
+            table-layout: fixed;
+            word-break: break-all;
+        }
+    </style>
+</head>
+<body>
+    <table border="2px" class="t1">
+        <caption>테이블 레이아웃1</caption>
+        <tr>
+            <td>한글로띄어쓰기없이길게붙이기</td>
+            <td>long descscription</td>
+        </tr>
+    </table>
+    <hr><br>
+    <table border="2px" class="t2">
+        <caption>테이블 레이아웃2</caption>
+        <tr>
+            <td>한글로띄어쓰기없이길게붙이기_한글로띄어쓰기없이길게붙이기</td>
+            <td>long_descscription_without_long_descscription</td>
+        </tr>
+    </table>
+    <hr><br>
+    <table border="2px" class="t3">
+        <caption>테이블 레이아웃3</caption>
+        <tr>
+            <td>한글로띄어쓰기없이길게붙이기_한글로띄어쓰기없이길게붙이기</td>
+            <td>long_descscription_without_long_descscription</td>
+        </tr>
+    </table>
+</body>
+</html>

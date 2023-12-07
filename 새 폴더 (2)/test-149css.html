@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border 속성값(외곽선과 안쪽선 바꾸기 연습)Document</title>
+
+    <style>
+        *{
+            margin: 0xp;
+            padding: 0px;
+            box-sizing: border-box;
+            
+        }
+        table{
+            border: 3px solid black;
+            border-collapse: collapse;
+        }
+        th,td{
+            border: 2px dashed red;
+            border-collapse: collapse;
+        }
+        th{
+          width: 200px;
+          height: 30px;         
+        }
+        td{
+            height: 30px;
+        }
+        caption{
+          caption-side: top;
+            /* caption-side: bottom; */
+        }
+    </style>
+</head>
+<body>
+    <h1>caption-side 속성갑(표 제목 위치바꾸기)</h1>
+    <table aria-describedby="대한민국 주식회사 직원현황">
+        <caption><mark><b>대한민국 주식회사Co.Ltd</b></mark></caption>
+        <thead style="background-color: green; color: white;">
+            <tr>
+                <th>번호</th><th>이름</th><th>연락처</th><th>취미</th>
+            </tr>
+        </thead>
+        <tbody align="center">
+            <tr>
+                <td>1</td><td>홍길동</td><td>010-1234-5678</td><td>등산</td>
+            </tr>
+            <tr>
+                <td>1</td><td>박길동</td><td>010-1234-5678</td><td>영화</td>
+            </tr>
+            <tr>
+                <td>1</td><td>최길동</td><td>010-1234-5678</td><td style="background-color: yellow;"><b><i>낚시</i></b></td>
+            </tr>
+        </tbody>
+        <tfoot align="right" style="font-weight: bold;">
+            <tr>
+                <td>총계(명)</td><td></td><td></td><td></td>
+            </tr>
+            <tr>
+                <td>3(명)</td><td></td><td></td><td></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

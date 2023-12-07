@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index</title>
+    <!--z-index 값을 이용해서 박스모델 요소의 위치를 변경할 수 있다.
+    겹쳐있는 요소를 앞 또는 뒤로 이동실킬수 있다.  -->
+
+    <style>
+        div #wrapper{
+            position: relative;
+        }
+        .box{
+            position: absolute; 
+
+            width: 230px;
+            height: 230px;
+            border: 1px solid black;
+            font-size: 26px;
+            font-weight: bold;
+            color: white;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #b1{
+            left: 50px;
+            top: 50px;
+            background-color: red;
+
+            z-index: 3;
+        }
+        #b2{
+            left: 200px;
+            top: 0px;
+            background-color: yellowgreen;
+
+            z-index: 1;
+        }
+        #b3{
+            top: 180px;
+            left: 120px;
+            background-color: blue;
+
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="b1" class="box">1카드</div>
+        <div id="b2" class="box">2카드</div>
+        <div id="b3" class="box">3카드</div>
+    </div>
+</body>
+</html>

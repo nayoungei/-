@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position속성 static 연습</title>
+
+    <style>
+        div{
+            /* display:inline-flex; 이 값으로도 연습해보기*/
+            display:flex; /*요소안에 콘텐츠를 가운데 정렬한다*/
+            justify-content: center;
+            align-items: center;
+        }
+
+        #box1{
+            width: 300px;
+            background-color: yellow;
+
+            /* position: static; 1번*/
+            /* float: left; 2번*/
+            /* margin-top: 0px; 30px 4번*/
+            /* margin-left: 0px;  150px 6번*/
+
+
+        }
+        #box2{
+            /* clear: both; */
+            width: 300px;
+            background-color: blue;
+            
+
+            /* float: left;  3번*/
+            /* margin-top: 0px; 30px 5번*/
+            /* margin-left: 0px; 150px 7번 -150px 8번으로 순서대로 연습*/
+            
+           
+            
+
+        }
+    </style>
+</head>
+<body>
+    <div id="box1"><b>박스1</b></div>
+    <div id="box2"><b>박스2</b></div>   
+</body>
+</html>

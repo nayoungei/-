@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>column 복습문제(3단으로 .wraper를 만들기)</title>
+    <script src="./js/prefixfree.min.js"></script>
+    
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .wraper{
+            margin: 20px;
+
+            column-count: 4; /*컬럼을 3단 적용*/
+            -moz-column-count: 4;/*접두사 적용*/
+            -webkit-column-count: 4;/*접두사 적용*/
+
+            column-gap: 20px;/*컬럼과 컬럼 간격을 10px*/
+            -moz-column-gap: 20px;/*접두사 적용*/
+            -webkit-column-gap: 20px;/*접두사 적용*/
+
+            column-rule: 1px dashed black;/*컬럼 경계선 2픽셀 빨강색 적용*/
+            -webkit-column-rule: 1px dashed black;/*접두사 적용*/
+            -moz-column-rule: 1px dashed black;/*접두사 적용*/
+
+            text-align: justify;
+        }
+         
+        #contents{
+            break-after: column;
+        }
+
+        .colSpan{
+            background-color: #ccc;
+            margin: 20px 0px;
+            padding: 10px;
+            border-radius: 5px;
+
+            column-span: all;
+            -webkit-column-span: all;            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wraper">
+        <h1><u>3단 웹 문서 작성하기</u></h1><br><br>
+
+        <div id="contents">
+        <h3><mark>대한민국</mark></h3>
+        <p>연소자의 근로는 특별한 보호를 받는다. 국회의 정기회는 법률이
+             정하는 바에 의하여 매년 1회 집회되며, 국회의 임시회는
+              대통령 또는 국회재적의원 4분의 1 이상의 요구에 의하여
+               집회된다.연소자의 근로는 특별한 보호를 받는다. 국회의 정기회는 법률이
+               정하는 바에 의하여 매년 1회 집회되며, 국회의 임시회는
+                대통령 또는 국회재적의원 4분의 1 이상의 요구에 의하여
+                 집회된다.</p>
+
+        <h3><mark>서울</mark></h3>
+        <p>연소자의 근로는 특별한 보호를 받는다. 국회의 정기회는 법률이
+            정하는 바에 의하여 매년 1회 집회되며, 국회의 임시회는
+             대통령 또는 국회재적의원 4분의 1 이상의 요구에 의하여
+              집회된다.연소자의 근로는 특별한 보호를 받는다. 국회의 정기회는 법률이
+              정하는 바에 의하여 매년 1회 집회되며, 국회의 임시회는
+               대통령 또는 국회재적의원 4분의 1 이상의 요구에 의하여
+                집회된다.</p>
+
+        <div class="colSpan">
+            <h3><mark>부산세계박람회</mark></h3>
+            <p>연소자의 근로는 특별한 보호를 받는다. 국회의 정기회는 법률이
+                정하는 바에 의하여 매년 1회 집회되며, 국회의 임시회는
+             대통령 또는 국회재적의원 4분의 1 이상의 요구에 의하여
+              집회된다.연소자의 근로는 특별한 보호를 받는다. 국회의 정기회는 법률이
+              정하는 바에 의하여 매년 1회 집회되며, 국회의 임시회는
+               대통령 또는 국회재적의원 4분의 1 이상의 요구에 의하여
+              집회된다.</p>
+        </div>        
+
+        </div>      
+    </div>
+</body>
+</html>

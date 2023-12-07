@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    }
+         tabla,th,td{
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    th{
+        width: 200px;
+        height: 30px;
+        text-align: center;
+    }
+    td{
+        height: 30px;
+    }
+    </style>
+   
+</head>
+<body>
+    <h1>caption-side속성값 표 위치 바꾸기</h1>
+    <table aria-describedby="대한민국 주식회사 직원현황">
+        <caption><map><b>대한민국 주식회사Co.Ltd</b></map></caption>
+        <thead>
+            <tr>
+                <th>번호</th><ht>이름</ht><th>연락처</th><th>취미</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td><td>홍길동</td><td>010-1234-5678</td><td>낚시</td>
+            </tr>
+            <tr>
+                <td>1</td><td>박길동</td><td>010-1234-5678</td><td>등산</td>
+            </tr>
+            <tr>
+                <td>1</td><td>최길동</td><td>010-1234-5678</td><td>여행</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>총계(명)</td><td></td>><td></td>
+            </tr>
+            <tr>
+                <td>3(명)</td><td></td>><td></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

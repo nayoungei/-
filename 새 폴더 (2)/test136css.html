@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position속성 absolute연습</title>
+    <style>
+    #wrap{
+            position:relative;
+            width:300px;
+            height:300px;
+            border :1px solid red;
+        }
+        .box{
+            position:absolute;
+            
+            width: 50px;
+            height: 50px;
+            background-color: #0099ff;
+            border: 1px solid black;
+            color: white;
+            font-weight: bold;
+            box-sizing: border-box;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #crd1{
+            top: 250px;
+            left:0px;
+        }
+        #crd2{
+            top: 200px;
+            left: 0px;
+        }
+        #crd3{
+            top: 100px;
+            left: 0px;
+        }
+        #crd4{
+            top: 150px;
+            left: 0px;
+        }
+        #crd5{
+            top:50px;
+            left: 0px;
+        }
+        #crd6{
+            top: 0px;
+            left: 0px;
+        }
+        /* #crd5{
+            bottom: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        } */
+    </style>
+</head>
+<body>
+    <div id="wrap">
+    <div class="box" id="crd1">1번</div>
+    <div class="box" id="crd2">2번</div>
+    <div class="box" id="crd3">3번</div>
+    <div class="box" id="crd4">4번</div>
+    <div class="box" id="crd5">5번</div>
+    <div class="box" id="crd6">6번</div>
+    </div>
+</body>
+</html>

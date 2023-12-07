@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position속성 relative 연습</title>
+
+    <style>
+        .box1{
+            width: 300px;
+            background-color: yellow;
+            padding: 30px;
+            box-sizing: border-box;
+
+            float: left;
+            margin: 10px;        
+            
+            /*박스모델 기본값이 position:static이기에 box1이 기준점이 되어서
+            box2,box3가 원하는 값으로 이동하게 된다.*/
+        }
+        .box2{
+            width: 300px;
+            background-color: #0094ff;
+            padding: 30px;
+            box-sizing: border-box;
+
+            position: relative;
+            float: left;
+            /*box1을 기준으로 top,left등에 양,음에 값을 주어서 이동할 수 있다.*/
+
+
+            top: 60px;
+            left: -310px;
+            margin-right: 10px;
+            /*이값을 box1의 기준값을 생각해서 이동하고 모양을 꾸민다.*/       
+                     
+        }
+        .box3{
+            width: 300px;
+            background-color: red;
+            padding: 30px;
+            box-sizing: border-box;
+
+            position: relative;
+            float: left;
+            
+            top: 110px;
+            left: -620px;
+            
+             /*이값을 box1의 기준값을 생각해서 이동하고 모양을 꾸민다.*/ 
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">박스1</div>
+    <div class="box2">박스2</div>
+    <div class="box3">박스3</div>
+</body>
+</html>
