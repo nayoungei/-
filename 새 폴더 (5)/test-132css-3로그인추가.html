@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2단 레이아웃 만들기 연습</title>
+    
+    <style>
+        div{
+            border: 1px solid #ccc;
+        }
+        #container{
+            width: 1024px;
+            padding: 20px;
+            margin: 0px auto;/*좌우센터정렬*/
+            font-family: Arial, Helvetica, sans-serif;
+            border: none;
+        }
+        /* test-127.html 파일을 참조해서 붙여넣기 */
+        /* =============header메뉴 1차 수정 시작======================= */
+        #header{
+            padding: 20px;
+            margin-bottom: 20px;/*아래요소 들과의 간격*/
+            background-color: rgb(3,124,185);
+            overflow: hidden;
+        }
+         h1{
+            width: 25%; /*h1 메뉴제목이 차지하는 너비비율*/
+            float: left;
+            color: white;
+            font-size: 2.5em;
+            text-indent: 10px;
+            text-shadow: 3px 4px 4px black;
+        }
+        .nav_Menu{
+            width: 50%;
+            float: left;
+        }
+        .nav_Login{
+            width: 20%;
+            float: right;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        label{
+            color: white;
+            font-weight: 800;
+            font-size: 0.9em;
+        }
+        .ul1{
+            list-style-type: none;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+        .ul2{
+            list-style-type: none;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+
+        .ul1 li{
+            display: inline;
+            float: left;
+            font-size: 1.05em;
+            
+        }
+        .menu1{
+            margin: 5px;
+            padding: 10px;
+        }
+
+        .ul2 li{
+            display: inline;
+            float: left;
+            font-size: 1.05em;
+            
+        }
+        .menu2{
+            margin: 5px;
+            padding: 10px;
+        }
+
+        /* 네이게이션 메뉴1번에 hover 기능부여 */
+        .menu1:hover{
+            background-color: black;
+            border-radius: 50%;
+        }
+        /* 네이게이션 메뉴2번에 hover 기능부여 */
+        .menu2:hover{
+            background-color: blue;
+            border-radius: 50%;
+        }
+        /*<a>링크로 걸려있는 메뉴에 대한 글씨와 밑줄을 제거 */
+        a:link, a:visited{
+            color: white;
+            text-decoration: none;
+        }
+        /* ============header메뉴 1차 수정 끝======================== */
+        
+
+        /* 로그인버튼 / 취소버튼 스타일 적용부분 */
+        .button-container{
+            margin-top: 5px;
+            border: none ;/*버튼을 감싸고 있는 div테두리 없애기*/
+        }
+        .login-button, .cancel-button{
+            background-color: rgb(3,124,185);
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            font-size: 0.9em;
+            font-weight: 550;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+        .login-button:hover, .cancel-button:hover{
+            background-color: black;
+            border-radius: 50%;
+        } 
+        
+        /* =====로그인버튼 / 취소버튼 스타일 적용 끝========== */
+
+        /* ==================================== */
+        #content{
+            width: 662px;
+            padding: 20px;
+            float: left; 
+            margin-bottom: 20px;
+        }
+        #rightSidebar{
+            width: 262px;
+            padding: 20px;
+            float: right; 
+            margin-bottom: 20px;
+            background-color: azure;
+        }
+        #footer{
+            clear: both; 
+            padding: 20px;
+            background-color: black;
+            color: #ccc;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>Fusion Restaurant</h1>
+            <nav class="nav_Menu">
+                <ul class="ul1">
+                    <li class="menu1"><a href="#">Western course meal</a></li>
+                    <li class="menu1"><a href="#">Korean course meal</a></li>                                            
+                </ul>
+                <ul class="ul2">                         
+                    <li class="menu2"><a href="#">Chinese course meal</a></li>            
+                    <li class="menu2"><a href="#">General course meal</a></li>                        
+                </ul>
+            </nav>
+            <nav class="nav_Login">
+                <form name="loginForm" action="#" method="post" autocomplete="off">
+                    <label for="loginId">아이디</label>
+                    <input id="loginId" name="loginId" type="text" 
+                    placeholder="아이디" title="4자 이상 15자 특수기호포함@#$" required 
+                    style="width:160px; height:20px; padding: 2px 10px;" />
+                    
+                    <label for="loginPwd">비밀번호</label>
+                    <input id="loginPwd" name="loginPwd" type="password" 
+                    placeholder="비밀번호" title="4자 이상 13자 특수기호포함 #$@" required 
+                    style="width:160px; height:20px; padding: 2px 10px;"/> 
+
+                    <!-- 로그인버튼 / 취소버튼 생성하기 -->
+                    <div class="button-container">
+                        <button class="login-button" id="loginButton">로그인</button>
+                        <button class="cancel-button" id="cancelButton">취소</button>
+                    </div>
+                </form>
+                
+                             
+            </nav>
+        </div>
+        <div id="rightSidebar">
+            <h2>사이드바(R)</h2>
+            <ul>
+                <li>제1항의 지시를 받은 당해 행정기관은 이에 응하여야 한다. 의원을 제명하려면 국회재적의원 
+                    3분의 2 이상의 찬성이 있어야 한다.</li>
+                <li>대한민국의 경제질서는 개인과 기업의 경제상의 자유와 창의를 존중함을 기본으로 한다.</li>
+                
+            </ul>
+        </div>
+        <div id="content">
+            <h2>본문주요기사</h2>
+            <p>재의의 요구가 있을 때에는 국회는 재의에 붙이고, 재적의원과반수의 출석과 
+                출석의원 3분의 2 이상의 찬성으로 전과 같은 의결을 하면 그 법률안은 법률로서 확정된다.
+                 국민의 모든 자유와 권리는 국가안전보장·질서유지 또는 공공복리를 위하여 필요한 경우에 
+                 한하여 법률로써 제한할 수 있으며, 제한하는 경우에도 자유와 권리의 본질적인 내용을 침해할 수 없다.</p>
+            <p>국가는 균형있는 국민경제의 성장 및 안정과 적정한 소득의 분배를 유지하고, 
+                시장의 지배와 경제력의 남용을 방지하며, 경제주체간의 조화를 통한 경제의 
+                민주화를 위하여 경제에 관한 규제와 조정을 할 수 있다. 국회의원의 선거구와 비례대표제
+                 기타 선거에 관한 사항은 법률로 정한다. 선거운동은 각급 선거관리위원회의 관리하에 
+                 법률이 정하는 범위안에서 하되, 균등한 기회가 보장되어야 한다.</p>
+        </div>
+        <div id="footer">
+            <h2>푸터</h2>
+            <p>농업생산성의 제고와 농지의 합리적인 이용을 위하거나 불가피한 사정으로 발생하는 농지의 
+                임대차와 위탁경영은 법률이 정하는 바에 의하여 인정된다.</p>
+        </div>
+    </div>
+    <!-- 로그인버튼/취소버튼에 대한 자바스크립를 선언하기 -->
+    <script>
+        //로그인버튼 클릭시 이벤트 처리 "첫 번째 방식!""
+        document.getElementById("loginButton").addEventListener("click", function(){
+               
+        var userId = document.getElementById("loginId").value;
+        var userPwd = document.getElementById("loginPwd").value;
+        
+         //로그인버튼 클릭시 이벤트 처리 "두 번째 방식!""
+         //환영메세지 띄우기!
+        //alert(`${userId}님 로그인 됐습니다!!`);
+
+        //로그인버튼 클릭시 이벤트 처리 "세 번째 방식!""
+        //이 부분은 아이디 비번 둘 중에 하나라도 값이 없으면, 오류 메세지를 띄우고
+        //두값이 모두 참이면 else 부분에 알람창을 보여 준다!
+
+        //if(userId ==='' || userPwd ===''){
+            //이부분은 두 값중에 하나 또는 두 값이 빈 값(0거짓)이면
+            //아래 내용을 출력하는 하고!
+            //두 값이 다 채워지면 else부분을 출력한다.
+           //alert("아이디/비빌번호를 채워주세요!");            
+        //}else{
+           // alert(`${userId}님 로그인 됐습니다!!`);
+        }
+            
+
+        //이 부분부터 서버로 userId와 userPwd를 전송하는 코드를 작성
+        //예를 든다면, AJAX나 Fetch API를 사용해서 DB서버로 데이터값을
+        //전송하도록 작성하는 부분입니다.    
+
+        });
+
+        //취소버튼 클릭시 이벤트 처리
+        document.getElementById("cancelButton").addEventListener("click", function(){
+            alert(`다음에 만나뵙겠습니다!!`);
+        });
+    </script>
+</body>
+</html>

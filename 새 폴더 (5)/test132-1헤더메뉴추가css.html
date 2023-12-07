@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2단 레이아웃 만들기 연습</title>
+    <style>
+        /* *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }  */
+
+        div{
+        border: 1px solid #ccc;
+        }
+         
+        #container{
+            width: 1024px;
+            padding: 20px;
+            margin: 0 auto; /*가운데 정렬*/
+        } 
+
+        #header{
+            padding: 20px;
+            margin-bottom: 20px; /*아래 요소들과으 간격(마진)*/
+            background-color: rgb(215, 88, 88);
+            overflow: hidden;
+        }
+        /*test-127css.html 파일을 참조해서 새롭게 헤더메뉴 추가*/
+        #header h1 {
+            width:30%;
+	        float:left;	
+	        color:#fff;
+            font-size: 2.5em;
+            text-indent: 10px; 
+            text-shadow: 3px 4px 4px black;    
+        }
+        .nav_Menu{
+            width: 50%;
+             float: left; 
+        }
+        .nav_Login{
+            width: 20%;
+            float: right;
+            padding: 10px;
+            margin-top: 10px;          
+        }
+        label{
+            color: white;
+            font-weight: 800;
+        }
+         .ul1{
+            list-style: none;            
+            font-size: 1.1em;
+            font-weight: bold;                  
+        }
+        .ul2{
+            list-style: none;            
+            font-size: 1.1em;
+            font-weight: bold;                  
+        }
+        .ul1 li{
+            display: inline;
+            float: left;
+        }
+         .menu1{
+            margin: 5px;
+            padding: 10px ;
+        }
+        .ul2 li{
+            display: inline;
+            float: left;
+        }
+         .menu2{
+            margin: 5px;
+            padding: 10px ;
+        }
+        /* 네비게이션 메뉴1번에 hover 기능 부여 */
+        .menu1:hover{
+            background-color: black; 
+            border-radius: 50%;               
+        }
+        /* 네비게이션 메뉴2번에 hover 기능 부여 */
+        .menu2:hover{
+            background-color: blue; 
+            border-radius: 50%;               
+        }
+      
+         a:link, a:visited{
+            color: white;
+            text-decoration: none;
+        } 
+         /* 새로운 로그인/ 취소 CSS 스타일 적용부분 */
+        .button-container {
+            margin-top: 5px;
+            border: none; /* 테두리 제거 */
+        }
+        /* 새로운 로그인/ 취소 CSS 스타일 적용부분*/
+        .login-button, .cancel-button {
+            background-color: rgb(3, 124, 185);
+            color: white;
+            border: none; /* 테두리 제거 */
+            padding: 5px 10px;
+            font-size: 0.9em;
+            font-weight: 550;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+
+        .login-button:hover, .cancel-button:hover {
+            background-color: black; 
+            border-radius: 50%;      
+        }
+              
+        #contents{
+            width: 662px; /*너비*/
+            padding: 20px; /*패딩*/
+            float: left; /*왼쪽으로 플로팅*/
+            margin-bottom: 20px;
+        }
+        #sidebar{
+            width: 262px;
+            padding: 20px;
+            float: right; /*오른쪽으로 플로팅*/
+            margin-bottom: 20px;
+            background-color: aliceblue;
+        }
+        #footer{
+            clear: both;
+            padding: 20px;
+            background-color: black;
+            color: white;
+        }          
+    </style>
+
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>퓨젼레스토랑</h1>
+                <nav class="nav_Menu">            
+                    <ul class="ul1">
+                        <li class="menu1"><a href="#" >Western course meal</a></li>
+                        <li class="menu1"><a href="#" >Korean course meal</a></li>                        
+                    </ul>
+                    <ul class="ul2">
+                        <li class="menu2"><a href="#" >Chinese course meal</a></li>
+                        <li class="menu2"><a href="#" >Japanese course meal</a></li>
+                    </ul>
+                </nav>
+                <nav class="nav_Login">
+                    <form action="#" method="post" autocomplete="off" name="login_FormId" class="form1">
+                        <label for="userId">아이디</label>
+                        <input type="text" id="userId" name="userId" placeholder="아이디" title="4자 이상 15자 특수기호 #$ 포함" required
+                        style="width: 160px; height: 20px; padding: 2px 10px;">
+                    </form>
+
+                    <form action="#" method="post" autocomplete="off" name="login_FormPwd" class="form2">
+                        <label for="userPwd">비밀번호</label>
+                        <input type="password" id="userPwd" name="userPwd" placeholder="비밀번호" title="4자 이상 13자 특수기호 #$ 포함" 
+                        required style="width: 160px; height: 20px; padding: 2px 10px;">
+                        
+                            <!-- 로그인 버튼과 취소 버튼 추가 -->
+                            <div class="button-container" >
+                                <button class="login-button" id="loginButton">로그인</button>
+                                <button class="cancel-button" id="cancelButton">취소</button>
+                            </div>
+                    </form> 
+                </nav>
+        </div>
+        <div id="sidebar">
+            <h2>사이드바</h2>
+                <ul>
+                    <li>전직대통령의 신분과 예우에 관하여는 법률로 정한다. 제2항과 제3항의 처분에 대하여는 법원에 제소할 수 없다.</li>
+                    <li>법률이 헌법에 위반되는 여부가 재판의 전제가 된 경우에는 법원은 헌법재판소에 제청하여 그 심판에 의하여 재판한다.</li>
+                </ul>
+        </div>
+        <div id="contents">
+            <h2>본문</h2>
+            <p>누구든지 체포 또는 구속의 이유와 변호인의 조력을 받을 권리가 있음을 고지받지 아니하고는 체포 또는 구속을 당하지 아니한다. 체포 또는 구속을 당한 자의 가족등 법률이 정하는 자에게는 그 이유와 일시·장소가 지체없이 통지되어야 한다. 국회의 정기회는 법률이 정하는 바에 의하여 매년 1회 집회되며, 국회의 임시회는 대통령 또는 국회재적의원 4분의 1 이상의 요구에 의하여 집회된다.</p>
+
+            <p>모든 국민은 근로의 권리를 가진다. 국가는 사회적·경제적 방법으로 근로자의 고용의 증진과 적정임금의 보장에 노력하여야 하며, 법률이 정하는 바에 의하여 최저임금제를 시행하여야 한다. 원장은 국회의 동의를 얻어 대통령이 임명하고, 그 임기는 4년으로 하며, 1차에 한하여 중임할 수 있다. 예비비는 총액으로 국회의 의결을 얻어야 한다. 예비비의 지출은 차기국회의 승인을 얻어야 한다.</p>
+        </div>
+        <div id="footer">
+            <h2>푸터</h2>
+            <p>모든 국민은 인간다운 생활을 할 권리를 가진다. 행정권은 대통령을 수반으로 하는 정부에 속한다.</p>
+        </div>
+    </div>
+    <script src="./js/test132-1.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box-sizing 속성 연습</title>
+
+    <!-- 1.box-sizing속성값이 제공하는 두 가지 속성값이 
+    어떤식으로 적용되는지? 알아보겠습니다.  -->
+
+    <style>
+        *{         
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box; 
+        }
+
+        div{
+            float: left;
+            margin-right: 20px;
+        }
+
+        .box1{
+             box-sizing: content-box; 
+
+            width: 300px; 
+            height: 150px;
+            margin: 10px;
+            padding: 30px;
+            border: 2px solid red;
+        }
+        .box2{
+            /* box-sizing: border-box; */
+
+            width: 300px;
+            height: 150px;
+            margin: 10px;
+            padding: 30px;
+            border: 2px solid blue;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="box1">box-sizing = "content-box"</div>
+    <div class="box2">box-sizing = "boder-box"</div>
+</body>
+</html>

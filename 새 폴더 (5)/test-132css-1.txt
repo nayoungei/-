@@ -1,0 +1,146 @@
+<title>2단 레이아웃 만들기 연습</title>
+    <!-- header메뉴 추가 연습 (test-127css.html 참고해서)-->
+    
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        div{
+            border: 1px solid #ccc;
+        }
+        #container{
+            width: 1024px;
+            padding: 20px;
+            margin: 0px auto;
+        }
+        #header{
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: blue;
+            overflow: hidden;
+        }
+        h1{
+            color: white;
+            width: 25%;
+            float: left;
+        }
+        .nav_Menu{
+            width: 75%;
+            float: left;
+            margin-bottom: 20px;
+        }
+        .nav_Menu ul{
+            list-style: none;
+        }
+        .nav_Menu ul li{
+            float: left;
+            margin-right: 10px;
+            color: white;                
+        }
+        .menu1:hover{
+            background-color: grey;
+        }
+        a:link, a:visited{
+            color: white;
+            text-decoration: none;
+        }
+        .nav_Menu ul li:hover{
+            color: white;
+            font-weight: bold;            
+        }
+        .nav_Login{
+            float: right;
+            color: white;            
+        }
+        #content{
+            width: 662px;
+            padding: 20px;
+            float: left; 
+            margin-bottom: 20px;
+        }
+        #rightSidebar{
+            width: 262px;
+            padding: 20px;
+            float: right;
+            margin-bottom: 20px;
+            background-color: azure;
+        }
+        #footer{
+            clear: both;
+            padding: 20px;
+            background-color: black;
+            color: #ccc;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>퓨젼레스토랑</h1>
+            <nav class="nav_Menu">
+                <ul>
+                    <li class="menu1"><a href="#">양식코스</a></li>
+                    <li class="menu1"><a href="#">한식코스</a></li>            
+                    <li class="menu1"><a href="#">중식코스</a></li>            
+                    <li class="menu1"><a href="#">일반코스</a></li>                        
+                </ul>
+            </nav>
+            <nav class="nav_Login">
+            <form name="loginForm" action="#" method="post" autocomplete="off">
+                <label for="loginId">아이디</label>
+                <input id="loginId" name="loginId" type="text" 
+                placeholder="아이디" title="4자 이상 15자 특수기호포함@#$" required 
+                style="width:100px; height:20px; padding: 2px 10px;" />
+                
+                <label for="loginPwd">비밀번호</label>
+                <input id="loginPwd" name="loginPwd" type="password" 
+                placeholder="비밀번호" title="4자 이상 13자 특수기호포함 #$@" required 
+                style="width:100px; height:20px; padding: 2px 10px;"/>
+
+            </form>                
+            </nav>
+        </div>
+        <div id="rightSidebar">
+            <h2>사이드바(R)</h2>
+            <ul>
+                <li>제1항의 지시를 받은 당해 행정기관은 이에 응하여야 한다. 의원을 제명하려면 국회재적의원 
+                    3분의 2 이상의 찬성이 있어야 한다.</li>
+                <li>대한민국의 경제질서는 개인과 기업의 경제상의 자유와 창의를 존중함을 기본으로 한다.</li>
+                
+            </ul>
+        </div>
+        <div id="content">
+            <h2>양식코스 기사</h2>
+            <p>재의의 요구가 있을 때에는 국회는 재의에 붙이고, 재적의원과반수의 출석과 
+                출석의원 3분의 2 이상의 찬성으로 전과 같은 의결을 하면 그 법률안은 법률로서 확정된다.
+                 국민의 모든 자유와 권리는 국가안전보장·질서유지 또는 공공복리를 위하여 필요한 경우에 
+                 한하여 법률로써 제한할 수 있으며, 제한하는 경우에도 자유와 권리의 본질적인 내용을 침해할 수 없다.</p>
+            <p>국가는 균형있는 국민경제의 성장 및 안정과 적정한 소득의 분배를 유지하고, 
+                시장의 지배와 경제력의 남용을 방지하며, 경제주체간의 조화를 통한 경제의 
+                민주화를 위하여 경제에 관한 규제와 조정을 할 수 있다. 국회의원의 선거구와 비례대표제
+                 기타 선거에 관한 사항은 법률로 정한다. 선거운동은 각급 선거관리위원회의 관리하에 
+                 법률이 정하는 범위안에서 하되, 균등한 기회가 보장되어야 한다.</p>
+        </div>
+        <div id="content">
+            <h2>한식코스 기사</h2>
+            <p>재의의 요구가 있을 때에는 국회는 재의에 붙이고, 재적의원과반수의 출석과 
+                출석의원 3분의 2 이상의 찬성으로 전과 같은 의결을 하면 그 법률안은 법률로서 확정된다.
+                 국민의 모든 자유와 권리는 국가안전보장·질서유지 또는 공공복리를 위하여 필요한 경우에 
+                 한하여 법률로써 제한할 수 있으며, 제한하는 경우에도 자유와 권리의 본질적인 내용을 침해할 수 없다.</p>
+            <p>국가는 균형있는 국민경제의 성장 및 안정과 적정한 소득의 분배를 유지하고, 
+                시장의 지배와 경제력의 남용을 방지하며, 경제주체간의 조화를 통한 경제의 
+                민주화를 위하여 경제에 관한 규제와 조정을 할 수 있다. 국회의원의 선거구와 비례대표제
+                 기타 선거에 관한 사항은 법률로 정한다. 선거운동은 각급 선거관리위원회의 관리하에 
+                 법률이 정하는 범위안에서 하되, 균등한 기회가 보장되어야 한다.</p>
+        </div>
+        <div id="footer">
+            <h2>푸터</h2>
+            <p>농업생산성의 제고와 농지의 합리적인 이용을 위하거나 불가피한 사정으로 발생하는 농지의 
+                임대차와 위탁경영은 법률이 정하는 바에 의하여 인정된다.</p>
+        </div>
+    </div>
+</body>
+</html>

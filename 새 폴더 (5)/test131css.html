@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스 모델-float속성 연습3</title>
+
+    <style>
+         *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        div{
+            padding: 20px;
+            margin: 20px;
+        }
+        .box1{
+            background: #ffd800;
+            float: left;
+        }
+        .box2{
+            clear: both;
+            background: #0094ff;
+            
+        }
+        .box3{
+            
+            background: #00ff21;
+            
+        }
+        .box4{                   
+            background: purple;
+            float: right;
+                        
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box1">박스1</div>
+    <div class="box2">박스2</div>
+    <div class="box3">박스3</div>
+    <div class="box4">박스4</div>    
+</body>
+</html>

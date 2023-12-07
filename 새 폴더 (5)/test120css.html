@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        div{
+            width: 400px;
+            height: 300px;
+            display: inline-block;
+            margin: 15px;
+            border: 2px solid black;
+            border-radius: 20px;
+           
+        }
+        .box1{
+            box-shadow: 2px -4px 10px 0px black;
+        }
+       .box2{
+        box-shadow: 5px 5px 15px 7px gray;
+       }
+        .box1, .box2{
+           background: url(./image/pic1.jpg);
+           background-size: cover;
+           
+           color: white;
+           font-size: 2em;
+           font-weight: bold;
+           
+           /* 문장을 가운데 정렬해주세요 */
+           display: inline-flex;
+           justify-content: center;
+           align-items: center;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">그림자 효과<span style="color: black;">1</span></div>
+    <div class="box2">그림자 효과<span style="color: blue;">2</span></div>
+</body>
+</html>

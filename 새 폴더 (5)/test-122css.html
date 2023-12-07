@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스 모델-마진속성 & 박스 모델-중앙정렬 연습</title>
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100vw; 
+            /*전체 브라우저화면에 너비를 100% 비율로 사용*/
+            height: 100vh;
+            /*전체 브라우저화면에 높이를 100% 비율로 사용*/
+        }
+        div{
+            width: 200px;
+            height: 100px;
+            background: #0094ff;
+        }
+        .box1{margin: 30px 50px 30px 50px;} 
+        .box2{margin: 30px 50px;}
+        .box3{margin: 50px;}
+        .box4{margin: 30px 5px 10px;} /*마진값은 가장 큰값이 적용된다.*/
+
+        /* 이제 .box5번을 margin이라는 속성값을 활용해서
+        브라우저상에 너비와 폭에 가운에 위치시키기 */
+
+        .box5{
+            margin-top: 0;
+            margin-bottom: 0;
+            margin-left: auto;
+            margin-right: auto;            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box1">요소1</div>
+    <div class="box2">요소2</div>
+    <div class="box3">요소3</div>
+    <div class="box4">요소4</div>
+    <br><hr><br>
+    <div class="box5">box5-중앙배치</div>
+</body>
+</html>

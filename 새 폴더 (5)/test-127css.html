@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>복습문제 네비게이션(NAV)메뉴작성연습</title>
+
+     <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        header{
+            width: 90%;
+            /* margin: 0 auto; */
+            margin-right: auto ;
+            margin-left: auto;
+            background-color: rgb(3,124,185);
+            padding: 10px;
+            overflow: hidden;
+        }
+        h1{
+            width: 30%;
+            float: left;
+            color: white;
+            font-size: 2em;
+        }
+        header .nav_Menu{
+            width: 70%;
+            float: left;
+        }
+        header .nav_Login{
+            float: right;
+            margin-bottom: 5px;
+            margin-top: 10px;
+        }
+
+        header ul{
+            list-style: none;
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+        header ul li{
+            display: inline;
+            float: left;            
+        }
+        .menu1{
+            border: 1px solid black;
+            margin: 10px;
+            padding: 10px 20px;
+        }
+        .menu1:hover{
+            background-color: grey;
+        }
+        a:link, a:visited{
+            color: white;
+            text-decoration: none;
+        }
+
+    </style>
+    <!-- 
+    ① 목록의 블릿을 없애주세요.
+    ② 목록의 항목을 가로로 배치합니다.
+    ③ 각 항목에 1픽셀짜리 검은색 실선(테두리)을 표시합니다.
+    ④ 각 항목의 상하 패딩은 10px, 좌우 패딩은 20px로 지정합니다.
+    ⑤ 각 항목의 네 방향 마진은 10px로 지정합니다.
+    ⑥ header 의 크기는 전체 화면의 90%를 유지 합니다.
+    ⑦ 제목글자의 너비는 header 너비의 40%, 네비게이션 
+    너비는 header의 60% 설정
+    ⑧ 아이디와 로그인 관련하여 <nav>메뉴를 별도로 만들어서 코드 작성하기
+    - 단, 데이터 추출이 가능하게 코드를 작성해 주세요.
+     -->
+</head>
+<body>
+    <header>
+        <h1>네비게이션메뉴</h1>
+        <nav class="nav_Menu">
+            <ul>
+                <li class="menu1"><a href="#">양식코스</a></li>
+                <li class="menu1"><a href="#">한식코스</a></li>            
+                <li class="menu1"><a href="#">중식코스</a></li>            
+                <li class="menu1"><a href="#">일반코스</a></li>                        
+            </ul>
+        </nav>
+        <nav class="nav_Login">
+            <form name="loginForm" action="#" method="post" autocomplete="off">
+                <label for="loginId">아이디</label>
+                <input id="loginId" name="loginId" type="text" 
+                placeholder="아이디" title="4자 이상 15자 특수기호포함@#$" required 
+                style="width:200px; height:30px; padding: 2px 10px;" />
+                
+                <label for="loginPwd">비밀번호</label>
+                <input id="loginPwd" name="loginPwd" type="password" 
+                placeholder="비밀번호" title="4자 이상 13자 특수기호포함 #$@" required 
+                style="width:200px; height:30px; padding: 2px 10px;"/>
+
+            </form>                
+        </nav>
+    </header>
+</body>
+</html>

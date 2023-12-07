@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2단 레이아웃 만들기 연습</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvl1jCYTdI13EaZmjk8eGUhr70OVmSNaM&libraries=places"></script>
+    <!-- test132css-1.html을 다른이름 복사후 콘텐츠 부분 추가 연습 -->
+    
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        div{
+            border: 1px solid #ccc;            
+        }
+        #container{
+            width: 1024px;
+            padding: 20px;
+            margin: 0px auto;
+             border: none; 
+
+        }
+        #header{
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: blue;
+            overflow: hidden;
+        }
+        h1{
+            color: white;
+            width: 25%;
+            float: left;
+        }
+        .nav_Menu{
+            width: 75%;
+            float: left;
+            margin-bottom: 20px;
+        }
+        .nav_Menu ul{
+            list-style: none;
+        }
+        .nav_Menu ul li{
+            float: left;
+            margin-right: 10px;
+            color: white;                
+        }
+        .menu1:hover{
+            background-color: grey;
+        }
+        a:link, a:visited{
+            color: white;
+            text-decoration: none;
+        }
+        .nav_Menu ul li:hover{
+            color: white;
+            font-weight: bold;            
+        }
+        .nav_Login{
+            float: right;
+            color: white;            
+        }
+        #content{
+            width: 662px;
+            padding: 20px;
+            float: left; 
+            margin-bottom: 20px;
+
+            border-radius: 10px;
+        }
+        #RsideBarAll{
+            float: right;
+            border: none;
+        }
+        #rightSidebar1{
+            width: 302.015px; /*262px; 기존값*/
+            padding: 20px;
+            /* float: right; */
+            margin-bottom: 20px;
+            background-color: azure;
+
+            list-style-position: inside;
+            border-radius: 10px;
+        }
+        #rightSidebar2{
+            width: 302.015px;
+            padding: 20px;
+            /* float: right; */
+            margin-bottom: 20px;
+            background-color: rgb(242, 242, 176);
+
+            list-style-position: inside;
+            border-radius: 10px;
+        }
+        #rightSidebar3{
+            width: 302.015px;
+            padding: 20px;
+            /* float: right;  */
+            margin-bottom: 20px;
+            background-color: rgba(109, 213, 85, 0.616);
+
+            list-style-position: inside;
+            border-radius: 10px;
+        }
+        #rightSidebar4{
+            width: 302.015px;
+            padding: 20px;
+            /* float: right;  */
+            margin-bottom: 20px;
+            background-color: black;
+            color: white;
+
+            list-style-position: inside;
+            border-radius: 10px;
+        }
+        #rightSidebar5{
+            width: 302.015px;
+            padding: 20px;
+            /* float: right;  */
+            margin-bottom: 20px;
+            background-color: white;
+            color: white;
+
+            list-style-position: inside;
+            border-radius: 10px;
+
+            background-position: center;
+        }
+        #rightSidebar6{
+            width: 302.015px;
+            padding: 20px;
+            /* float: right;  */
+            margin-bottom: 20px;
+            background-color: white;
+            color: white;
+
+            list-style-position: inside;
+            border-radius: 10px;
+
+            background-position: center;
+        }
+        #rightSidebar7{
+            width: 302.015px;
+            padding: 20px;
+            /* float: right;  */
+            margin-bottom: 20px;
+            background-color: white;
+            color: white;
+
+            list-style-position: inside;
+            border-radius: 10px;
+
+            background-position: center;
+        }
+        #footer{
+            clear: both;
+            padding: 20px;
+            background-color: black;
+            color: #ccc;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>퓨젼레스토랑</h1>
+            <nav class="nav_Menu">
+                <ul>
+                    <li class="menu1"><a href="#">양식코스</a></li>
+                    <li class="menu1"><a href="#">한식코스</a></li>            
+                    <li class="menu1"><a href="#">중식코스</a></li>            
+                    <li class="menu1"><a href="#map" title="구글지도검색진행합니다">음식점지도검색</a></li>                        
+                </ul>
+            </nav>
+            <nav class="nav_Login">
+            <form name="loginForm" action="#" method="post" autocomplete="off">
+                <label for="loginId">아이디</label>
+                <input id="loginId" name="loginId" type="text" 
+                placeholder="아이디" title="4자 이상 15자 특수기호포함@#$" required 
+                style="width:100px; height:20px; padding: 2px 10px;" />
+                
+                <label for="loginPwd">비밀번호</label>
+                <input id="loginPwd" name="loginPwd" type="password" 
+                placeholder="비밀번호" title="4자 이상 13자 특수기호포함 #$@" required 
+                style="width:100px; height:20px; padding: 2px 10px;"/>
+
+            </form>                
+            </nav>
+        </div>
+        <div id="RsideBarAll">
+            <div id="rightSidebar1">
+                <h2>사이드바(R)</h2>
+                <ul>
+                    <li>제1항의 지시를 받은 당해 행정기관은 이에 응하여야 한다. 의원을 제명하려면 국회재적의원 
+                        3분의 2 이상의 찬성이 있어야 한다.</li>
+                    <li>대한민국의 경제질서는 개인과 기업의 경제상의 자유와 창의를 존중함을 기본으로 한다.</li>
+                    
+                </ul>
+            </div>
+            <div id="rightSidebar2">
+                <h2>사이드바(R)</h2>
+                <ul>
+                    <li>제1항의 지시를 받은 당해 행정기관은 이에 응하여야 한다. 의원을 제명하려면 국회재적의원 
+                        3분의 2 이상의 찬성이 있어야 한다.</li>
+                    <li>대한민국의 경제질서는 개인과 기업의 경제상의 자유와 창의를 존중함을 기본으로 한다.</li>
+                    
+                </ul>
+            </div>
+            <div id="rightSidebar3">
+                <h2>사이드바(R)</h2>
+                <ul>
+                    <li>제1항의 지시를 받은 당해 행정기관은 이에 응하여야 한다. 의원을 제명하려면 국회재적의원 
+                        3분의 2 이상의 찬성이 있어야 한다.</li>
+                    <li>대한민국의 경제질서는 개인과 기업의 경제상의 자유와 창의를 존중함을 기본으로 한다.</li>
+                    
+                </ul>
+            </div>
+            <div id="rightSidebar4">
+                <h2>사이드바(R)</h2>
+                <ul>
+                    <li>제1항의 지시를 받은 당해 행정기관은 이에 응하여야 한다. 의원을 제명하려면 국회재적의원 
+                        3분의 2 이상의 찬성이 있어야 한다.</li>
+                    
+                </ul>
+            </div>
+            <div id="rightSidebar5">
+                <a href="https://blog.naver.com/PostView.naver?blogId=happyshuya&logNo=222070239367" target="_blank" title="행복한 슈야 블로그이동">
+                    <img src="./image/베스트1.gif" alt="슈야 난 짱이니까!" width="270px" height="270px" ></a>
+                
+            </div>
+            <div id="rightSidebar6">
+                <a href="https://www.instagram.com/happy_shuya/" target="_blank" title="슈야사이트 이동">
+                    <img src="./image/베스트2.gif" alt="슈야 열일중!" width="270px" height="270px" ></a>
+                
+            </div>
+            <div id="rightSidebar7">
+                <a href="https://www.instagram.com/happy_shuya/" target="_blank" title="슈야사이트 이동">
+                    <img src="./image/베스트3.gif" alt="슈야 화장중!" width="270px" height="270px" ></a>
+                
+            </div>
+        </div>
+        <div id="content">
+            <h2><mark>양식코스 기사</mark></h2>
+            <p>재의의 요구가 있을 때에는 국회는 재의에 붙이고, 재적의원과반수의 출석과 
+                출석의원 3분의 2 이상의 찬성으로 전과 같은 의결을 하면 그 법률안은 법률로서 확정된다.
+                 국민의 모든 자유와 권리는 국가안전보장·질서유지 또는 공공복리를 위하여 필요한 경우에 
+                 한하여 법률로써 제한할 수 있으며, 제한하는 경우에도 자유와 권리의 본질적인 내용을 침해할 수 없다.</p>
+            <p>국가는 균형있는 국민경제의 성장 및 안정과 적정한 소득의 분배를 유지하고, 
+                시장의 지배와 경제력의 남용을 방지하며, 경제주체간의 조화를 통한 경제의 
+                민주화를 위하여 경제에 관한 규제와 조정을 할 수 있다. 국회의원의 선거구와 비례대표제
+                 기타 선거에 관한 사항은 법률로 정한다. 선거운동은 각급 선거관리위원회의 관리하에 
+                 법률이 정하는 범위안에서 하되, 균등한 기회가 보장되어야 한다.</p>
+                 <!-- iframe을 통한 새로운 소식 -->
+                 <iframe src="https://www.walkerhill.com/grandwalkerhillseoul/dining/TheBuffet" frameborder="3" style="border:3;" width="600" height="250"></iframe>
+                <br><br>
+                 <iframe src="https://ckjumpup.imweb.me/57/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=6598131&t=board" frameborder="3" style="border:3;" width="600" height="250"></iframe>
+        </div>
+        <div id="content">
+            <h2><mark>한식코스 기사</mark></h2>
+            <p>재의의 요구가 있을 때에는 국회는 재의에 붙이고, 재적의원과반수의 출석과 
+                출석의원 3분의 2 이상의 찬성으로 전과 같은 의결을 하면 그 법률안은 법률로서 확정된다.
+                 국민의 모든 자유와 권리는 국가안전보장·질서유지 또는 공공복리를 위하여 필요한 경우에 
+                 한하여 법률로써 제한할 수 있으며, 제한하는 경우에도 자유와 권리의 본질적인 내용을 침해할 수 없다.</p>
+            <p>국가는 균형있는 국민경제의 성장 및 안정과 적정한 소득의 분배를 유지하고, 
+                시장의 지배와 경제력의 남용을 방지하며, 경제주체간의 조화를 통한 경제의 
+                민주화를 위하여 경제에 관한 규제와 조정을 할 수 있다. 국회의원의 선거구와 비례대표제
+                 기타 선거에 관한 사항은 법률로 정한다. 선거운동은 각급 선거관리위원회의 관리하에 
+                 법률이 정하는 범위안에서 하되, 균등한 기회가 보장되어야 한다.</p>
+                 <iframe src="https://lounge.josunhotel.com/heritage/" frameborder="3" style="border:3;" width="600" height="250"></iframe>
+
+        </div>
+        <div id="content">
+            <h2><mark>중식코스 기사</mark></h2>
+            <p>재의의 요구가 있을 때에는 국회는 재의에 붙이고, 재적의원과반수의 출석과 
+                출석의원 3분의 2 이상의 찬성으로 전과 같은 의결을 하면 그 법률안은 법률로서 확정된다.
+                 국민의 모든 자유와 권리는 국가안전보장·질서유지 또는 공공복리를 위하여 필요한 경우에 
+                 한하여 법률로써 제한할 수 있으며, 제한하는 경우에도 자유와 권리의 본질적인 내용을 침해할 수 없다.</p>
+            <p>국가는 균형있는 국민경제의 성장 및 안정과 적정한 소득의 분배를 유지하고, 
+                시장의 지배와 경제력의 남용을 방지하며, 경제주체간의 조화를 통한 경제의 
+                민주화를 위하여 경제에 관한 규제와 조정을 할 수 있다. 국회의원의 선거구와 비례대표제
+                 기타 선거에 관한 사항은 법률로 정한다. 선거운동은 각급 선거관리위원회의 관리하에 
+                 법률이 정하는 범위안에서 하되, 균등한 기회가 보장되어야 한다.</p>
+                 <iframe src="https://www.shilla.net/seoul/dining/viewDining.do?contId=PAR#ad-image-0" frameborder="3" style="border:3;" width="600" height="250"></iframe>
+
+        </div>
+        <div id="content">
+            <h2 id="map"><mark>음식점지도검색</mark></h2>
+            <p>재의의 요구가 있을 때에는 국회는 재의에 붙이고, 재적의원과반수의 출석과 
+                출석의원 3분의 2 이상의 찬성으로 전과 같은 의결을 하면 그 법률안은 법률로서 확정된다.
+                 국민의 모든 자유와 권리는 국가안전보장·질서유지 또는 공공복리를 위하여 필요한 경우에 
+                 한하여 법률로써 제한할 수 있으며, 제한하는 경우에도 자유와 권리의 본질적인 내용을 침해할 수 없다.</p>
+            <p>국가는 균형있는 국민경제의 성장 및 안정과 적정한 소득의 분배를 유지하고, 
+                시장의 지배와 경제력의 남용을 방지하며, 경제주체간의 조화를 통한 경제의 
+                민주화를 위하여 경제에 관한 규제와 조정을 할 수 있다. 국회의원의 선거구와 비례대표제
+                 기타 선거에 관한 사항은 법률로 정한다. 선거운동은 각급 선거관리위원회의 관리하에 
+                 법률이 정하는 범위안에서 하되, 균등한 기회가 보장되어야 한다.</p>
+                 <iframe  width="600"  height="350"  frameborder="1" style="border:1 solid red"
+                   src="https://www.google.com/maps/embed/v1/view?key=AIzaSyAvl1jCYTdI13EaZmjk8eGUhr70OVmSNaM&center=37.5720,126.9807&zoom=12" allowfullscreen>
+                 </iframe>
+                <!-- iframe태그를 활용하여 구글지도 삽입연습 -->
+        </div>
+
+        <!-- 구글 지도 API내용을 삽입하여 검색에 활용하기 연습 부분!! -->
+        <div id="content">           
+            <h2><em>구글검색하기...</em></h2>
+            <div id="map1" style="height: 400px; width: 100%; border:none"></div>
+            <input id="search-input1" type="text" placeholder="장소 검색" style="width: 250px; height: 30px; padding: 5px 15px;" title="검색하고 싶은 단어를 입력하세요^^">
+            <button onclick="searchPlaces()" style="font-size: 1.1em; font-weight: 600; background-color: black; color: white; cursor: pointer;"><i>검색하기</i></button>
+        </div>
+
+        <div id="footer">
+            <h2>푸터</h2>
+            <p>농업생산성의 제고와 농지의 합리적인 이용을 위하거나 불가피한 사정으로 발생하는 농지의 
+                임대차와 위탁경영은 법률이 정하는 바에 의하여 인정된다.</p>
+        </div>
+    </div>
+
+    <script>
+        //Google 지도 초기화 및 검색창 설정 스크립트 코드 값 활용하기
+        var map;
+        var searchBox;
+        function initMap(){
+            var mapOption = {
+                center:{lat: 37.5656, lng:126.9780},//초기 지도 중심 좌표(성울)
+                zoom: 14, //초기 확대 수준
+            };
+            map = new google.maps.Map(document.getElementById("map1"),mapOption);
+
+            //검색창을 지도와 연결
+            var input = document.getElementById("search-input1");//ID "search-input1" 텍스트값을 가져와서 input 초기화
+            searchBox = new google.maps.places.SearchBox(input);
+        }
+
+        //검색 함수 정의
+        function searchPlaces(){
+            var places = searchBox.getPlaces();
+            if(places.length == 0){
+                alert(`장소를 찾을 수 없습니다.`);
+                return;
+            }
+
+            //검색결과를 지도에 표시
+            var bounds = new google.maps.LatLngBounds();
+            places.forEach(function(place){
+                if(place.geometry.viewport){
+                    bounds.union(place.geometry.viewport);
+                }else{
+                    bounds.extend(place.geometry.location);
+                }
+            });
+            map.fitBounds(bounds);
+        }
+        //Google Maps Javascript API 스크립트가 로드된 후 inintMap 함수 호출
+        google.maps.event.addDomListener(window, 'load', initMap);
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box-sizing 속성 연습</title>
+    <!-- 1. box-sizing 속성 값이 제공하는 두가지 속성 값이 어떤 식으로 적용되는지 알아 보겠습니다 -->
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        div{
+            float: left;
+            margin-right: 20px;
+        }
+        .box1{
+            width: 300px;
+            height: 150px;
+            margin: 10px;
+            padding: 30px;
+            border: 2px solid red;
+        }
+        .box2{
+            box-sizing: border-box;
+            width: 300px;
+            height: 150px;
+            margin: 10px;
+            padding: 30px;
+            border: 2px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">box-sizing = "content-box"</div>
+    <div class="box2">box-sizing = "border-box"</div>
+</body>
+</html>

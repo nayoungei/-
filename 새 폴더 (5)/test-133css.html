@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2단 레이아웃 만들기 연습</title>
+    <!-- div 박스모델을 이용해서 메이페이지 작성 연습 -->
+    
+    <style>
+        div{
+            border: 1px solid red;
+           
+        }
+        ul li{
+            list-style-type: none;
+        }
+        #container{
+            width: 960px;
+            padding: 20px;
+            margin: 0px auto;
+            /* border: none; 나중에 설정 확인하기*/
+        }
+        #header{
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: azure;
+
+        }
+        #left-Sidebar{           
+            width: 200px;
+            padding: 20px;
+            float: left; 
+            margin-right: 20px;
+            margin-bottom: 20px;
+            background-color: azure;
+
+            box-sizing: border-box;/*이 설정값은 width값 안에서 모든 콘텐츠가 보이라는 설정값*/
+            border-radius: 5%;
+        }
+        #content{
+            width: 520px;
+            padding: 20px;
+            float: left;  
+            margin-bottom: 20px;
+
+            box-sizing: border-box;/*이 설정값은 width값 안에서 모든 콘텐츠가 보이라는 설정값*/
+
+            border-top-left-radius: 5%;
+            border-top-right-radius: 10%;
+            border-bottom-right-radius: 5%;
+            border-bottom-left-radius: 10%;
+        }
+        #right-Sidebar{
+            width: 200px;
+            padding: 20px;
+            float: right; 
+            margin-left: 20px;
+            margin-bottom: 20px;
+            background-color: azure;
+
+            box-sizing: border-box;/*이 설정값은 width값 안에서 모든 콘텐츠가 보이라는 설정값*/
+            border-radius: 5%;
+        }
+        #footer{
+            clear: both; 
+            padding: 20px;
+            background-color: black;
+            color: #ccc;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>3단 레이아웃 정하기^^</h1>
+        </div>
+        <div id="left-Sidebar">
+            <h2>사이드바(L)</h2>
+            <ul>
+                <li><mark>KOREA</mark>제1항의 지시를 받은 당해 행정기관은 이에 응하여야 한다. 의원을 제명하려면 국회재적의원 
+                    3분의 2 이상의 찬성이 있어야 한다.</li>
+                <li>대한민국의 경제질서는 개인과 기업의 경제상의 자유와 창의를 존중함을 기본으로 한다.</li>
+                
+            </ul>
+        </div>
+        <div id="content">
+            <h2>본문주요기사</h2>
+            <p>재의의 요구가 있을 때에는 국회는 재의에 붙이고, 재적의원과반수의 출석과 
+                출석의원 3분의 2 이상의 찬성으로 전과 같은 의결을 하면 그 법률안은 법률로서 확정된다.
+                 국민의 모든 자유와 권리는 국가안전보장·질서유지 또는 공공복리를 위하여 필요한 경우에 
+                 한하여 법률로써 제한할 수 있으며, 제한하는 경우에도 자유와 권리의 본질적인 내용을 침해할 수 없다.</p>
+            <p>국가는 균형있는 국민경제의 성장 및 안정과 적정한 소득의 분배를 유지하고, 
+                시장의 지배와 경제력의 남용을 방지하며, 경제주체간의 조화를 통한 경제의 
+                민주화를 위하여 경제에 관한 규제와 조정을 할 수 있다. 국회의원의 선거구와 비례대표제
+                 기타 선거에 관한 사항은 법률로 정한다. 선거운동은 각급 선거관리위원회의 관리하에 
+                 법률이 정하는 범위안에서 하되, 균등한 기회가 보장되어야 한다.</p>
+        </div>
+        <div id="content">
+            <h2>본문주요기사</h2>
+            <p>재의의 요구가 있을 때에는 국회는 재의에 붙이고, 재적의원과반수의 출석과 
+                출석의원 3분의 2 이상의 찬성으로 전과 같은 의결을 하면 그 법률안은 법률로서 확정된다.
+                 국민의 모든 자유와 권리는 국가안전보장·질서유지 또는 공공복리를 위하여 필요한 경우에 
+                 한하여 법률로써 제한할 수 있으며, 제한하는 경우에도 자유와 권리의 본질적인 내용을 침해할 수 없다.</p>
+            <p>국가는 균형있는 국민경제의 성장 및 안정과 적정한 소득의 분배를 유지하고, 
+                시장의 지배와 경제력의 남용을 방지하며, 경제주체간의 조화를 통한 경제의 
+                민주화를 위하여 경제에 관한 규제와 조정을 할 수 있다. 국회의원의 선거구와 비례대표제
+                 기타 선거에 관한 사항은 법률로 정한다. 선거운동은 각급 선거관리위원회의 관리하에 
+                 법률이 정하는 범위안에서 하되, 균등한 기회가 보장되어야 한다.</p>
+        </div>
+        
+        <div id="right-Sidebar">
+            <h2>사이드바(R)</h2>
+            <ul>
+                <li><mark>SEOUL</mark>제1항의 지시를 받은 당해 행정기관은 이에 응하여야 한다. 의원을 제명하려면 국회재적의원 
+                    3분의 2 이상의 찬성이 있어야 한다.</li>
+                <li>대한민국의 경제질서는 개인과 기업의 경제상의 자유와 창의를 존중함을 기본으로 한다.</li>
+                
+            </ul>
+        </div>
+        <div id="footer">
+            <h2>푸터</h2>
+            <p>농업생산성의 제고와 농지의 합리적인 이용을 위하거나 불가피한 사정으로 발생하는 농지의 
+                임대차와 위탁경영은 법률이 정하는 바에 의하여 인정된다.</p>
+        </div>
+    </div>
+</body>
+</html>
