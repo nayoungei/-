@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹 문서 동영상 배경으로 지정하기 연습2</title>
+    <style>
+    #container{
+        position: relative;
+        text-align: center;
+        margin-top: 30%;
+        margin-left: 30%;
+        color:black;
+        font-weight: bold;
+    }
+    h2{
+        font-size: 2em;
+    }
+    h1{
+        font-size: 3.5em;
+    }
+    a:link, a:visited{
+        text-decoration: none;
+        color: gold;
+    }
+    a:hover{
+        text-shadow: 1px 2px 3px white;
+    }
+    #bg1{
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width: auto;
+        height: auto;
+        min-width: 100%;
+        min-height:100%;
+        z-index: 100%;
+        background: url('./media/ring.mp4')left top;
+        background-size: cover;
+    }
+</style>
+</head>
+<body>
+    <video src="./media/ring.mp4" autoplay muted loop width="600" poster="./media/ring.mp4" id="bg1"></video>
+    <div id="container">
+    <h2>사랑&#9829;은 보석보다 아름 답습니다 보석은 사랑을 &#9829; 전합니다</h2>
+    <h1><a href="http://mywebhome8.dothome.co.kr/portfolio-Web-%EA%B9%80%EB%82%98%EC%98%81/nyoung1.html">쥬얼리 주식회사 co.Ltd</a></h1>
+    </div>
+</body>
+</html>

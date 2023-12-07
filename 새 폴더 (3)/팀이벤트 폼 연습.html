@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼(form)연습</title>
+    <style>
+        /* *{
+            margin: 0;
+            padding: 0;
+        } */
+        thead{
+            background-color: rgb(7, 145, 129);
+            color: white;
+            font-weight: bold;
+        }
+         ul > li{
+            list-style: none;
+        }
+        table{
+            border: 5px solid rgb(7, 145, 129);
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <table>
+            <thead>
+                <tr>
+                    <td>
+                        <h1>팀 이벤트</h1>
+                        <p>예정된 팀 이벤트에서 무엇을 할지 정해 주세요</p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><b>홍길동 님. 양식을 제출하면 소유자가 이름과 전자 메일 주소를 볼수 있습니다.</b></td>
+                </tr>
+                <tr>
+                   <td>
+                    <ol type="1">
+                       <li>어디로 가야 하나요?
+                           <ul>
+                            <li>
+                                <label><input type="radio" name="museum" value=""/>기차 박물관</label>
+                            </li>
+                            <li>
+                                <label><input type="radio" name="museum" value=""/>자동차 박물관</label>
+                            </li>
+                            <li>
+                                <label><input type="radio" name="museum" value=""/>비행기 박물관</label>
+                            </li>
+                           </ul>
+                       </li> 
+                    </ol>
+                   </td> 
+                </tr>
+                <tr>
+                    <td>
+                     <ol type="1" start="2">
+                        <li>어느 요일에 가야 하나요?
+                            <ul>
+                             <li>
+                                 <label><input type="radio" name="Day of the week" value=""/>월요일</label>
+                             </li>
+                             <li>
+                                 <label><input type="radio" name="Day of the week" value=""/>수요일</label>
+                             </li>
+                             <li>
+                                 <label><input type="radio" name="Day of the week" value=""/>금요일</label>
+                             </li>
+                            </ul>
+                        </li> 
+                     </ol>
+                    </td> 
+                 </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>

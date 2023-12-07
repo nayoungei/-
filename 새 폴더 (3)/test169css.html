@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>track태그를 활용한 비디오 자막 넣기 연습</title>
+    <!-- paintin.vtt 라는 파일을 작성합니다 작성시 메모장을 이용헤도 되고 , 또는 vb 편집기에서 작성후 저장해도 됩니다 -->
+</head>
+<body>
+    <h1>비디오 영상에  track태그를 활용한 자막 넣기</h1>
+    <video autoplay muted loop width="600">
+        <source src="./media/Painting.mp4" type="video/mp4" codes="v9">
+        <source src="./media/Painting.webm" type="video/webm" codes="H.264/AVC">
+        <source src="./media/Painting.ovg" type="video/ogv" codes="thora">
+        <track kind="subtitles" src="./media/Painting1.vtt" srclang="KO" label="korean" default>
+    </video>
+</body>
+</html>
