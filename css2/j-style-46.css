@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+/*부모 요소 초기화 설정*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#container{
+    width: 420px;
+    height: 420px;
+    border: 4px dashed rgb(90,86,86);
+    border-radius: 7%;
+
+    outline: 2px dashed rgb(233, 232, 232);
+    outline-offset: -10px;
+
+    margin: 0px auto;
+    padding-top: 20px;
+    text-align: center;
+}

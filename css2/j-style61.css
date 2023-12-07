@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+/* 부모 요소 초기화 */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#content{
+    border: 2px double skyblue;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#content > P{
+    font-size: 14px;
+    line-height: 20px;
+}
+#detail{
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    background-color: #eee;
+}
+#close{
+    text-align: right;
+    margin-right: 20px;
+}
+a:link, a:visited{
+    text-transform: none;
+}
+a:hover{
+    background-color: #eee;
+}
+ul > li{
+    list-style: none;
+}

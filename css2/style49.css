@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+/*웹 문서 초기화 부분*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/*웹 문서 아웃라인 설정부분*/
+#container{
+    width: 520px;
+    border: 2px solid black;
+    background-color: yellow;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+#p{
+    color: red;
+    font-weight: bold;
+}

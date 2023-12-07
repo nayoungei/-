@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+/*웹 문서 초기화*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*웹 문서 아웃라인 적용 부분*/
+#container{
+    width: 520px;
+    background-color: yellow;
+    border: 1px solid black;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+/*다중선택 글자 스타일 적용 부분*/
+.underline{
+    text-decoration: underline;
+    background-color: bisque;
+    font-weight: bold;
+}

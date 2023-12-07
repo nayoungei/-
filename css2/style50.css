@@ -1,0 +1,26 @@
+@charset "utf-8"; /*웹 문서에서 한글사용 가능하겠금 인코딩*/
+
+/*웹 문서 초기화 부분*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*웹 문서 아웃라인 스타일 적용부분*/
+#container{
+    width: 520px;
+    border: 2px solid black;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/*글자색 스타일 적용_(부모 요소)*/
+body{
+    color: blue;
+}
+
+h2{
+    color: red;
+}

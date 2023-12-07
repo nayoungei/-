@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+/*웹 문서 초기설정 부분*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*웹 문서 아웃라인 설정 부분_대신에 꼭! 한번 만 선언한다.*/
+#container{
+    width: 520px;
+    border: 1px solid black;
+    margin: 50px auto;
+    
+    padding: 20px;
+}
+
+/*문자 스타일 적용 부분*/
+h2.accent{
+    background-color: black;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+}
+h2.bluetext{
+    color: blue;
+}

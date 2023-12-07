@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+/*웹 문서 초기화*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/*부모 요소 스타일 적용*/
+body{
+    font-family: "맑은 고딕", 돋움, 굴림;
+    background-color: black;
+    color: orange;
+    padding-top: 100px;
+    padding-left: 400px;
+}
+
+/*자식 요소에 별도에 글꼴과 색상 지정 부분*/
+h1.h1text{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: blue;
+    font-weight: bold;
+}

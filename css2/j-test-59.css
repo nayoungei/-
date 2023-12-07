@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* 부모요소 초기화 부분 */
+
+*{
+    /* margin: 0px;
+    padding: 0px; */
+    box-sizing: border-box;
+ }
+#container{
+    width: 520px;
+    height: auto;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1.5px solid #222;
+    border-radius: 5%;
+    outline: red;
+    outline-offset: -17px;
+    box-shadow: 3px 3px 4px black;
+}
+fieldset{
+    margin-bottom: 20px;
+    line-height: 20px;
+    border: 1px solid #989898;
+}
+#total{
+    width: 350px;
+    border: none;
+    background: rgb(88,88,86);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px;
+}

@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;800&family=Nanum+Pen+Script&family=Noto+Serif+KR:wght@500&display=swap');
+/*웹 문서 초기화*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*웹 문서 부모 요소인 글자 폰트 지정부분*/
+body{
+    font-family:'Nanum Pen Script', 돋움;
+    color: blue;
+}
+
+p.bold{
+    font-weight: bold;
+}
+
+p.lighter{
+    font-weight: lighter;
+}
+
+p.bolder{
+    font-weight: bolder;
+}

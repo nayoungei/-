@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+/*웹 문서 초기화*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*웹 문서 아웃라인 스타일 적용부분*/
+#container{
+    width: 450px;
+    height: auto;
+    margin: 40px auto;
+    padding: 10px;
+    border: 2px solid black;
+    line-height: 2em;
+}
+
+/*문자 스타일 적용부분*/
+.accent{
+    font-weight: bold;
+    font-variant: small-caps;
+    font-size: 1.5em;
+}
+
+h1{
+    text-decoration: underline;
+}

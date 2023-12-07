@@ -1,0 +1,61 @@
+@charset "utf-8";
+/*부모 요소 초기화 설정*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#container{
+    width: 700px;
+    margin: 20px auto;
+}
+h1{
+    font-size: 2.5em;
+    text-align: center;
+}
+form{
+    margin-top: 50px;
+}
+input[type="text"]{
+    float: left;
+    width: 300px;
+    padding: 12px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    font-size: 20px;
+}
+input:focus{
+    outline: none;
+}
+
+.btn1{
+    width: 100px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    padding: 12px;
+    margin-left: 30px;
+    font-size: 20px;
+}
+.btn2{
+    width: 150px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    padding: 12px;
+    margin-left: 30px;
+    font-size: 20px;
+}
+button:hover{
+    background-color: black;
+    color: white;
+    font-weight: 700;
+}
+hr{
+    clear: both;
+    visibility: hidden;
+}
+
+#nameList{
+    font-size: 20px;
+    text-indent: 50px;
+    line-height: 1.5;
+}

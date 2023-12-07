@@ -1,0 +1,38 @@
+@charset "utf8"; /*인코딩방식-한글지원*/
+
+/*글자 스타일 적용*/
+label{
+    color: red;
+    /*width: 80px;*/
+    float: left;
+}
+.sub-button{
+    background-color:yellowgreen;
+}
+label.title0{
+    font-weight: bold;
+    color: yellowgreen;
+}
+label.title1{
+    font-weight: bold;
+    color: blue;
+}
+label.title2{
+    font-weight: bold;
+    color: purple;
+}
+label.title3{
+    font-weight: bold;
+    color: green;
+}
+/*Table 스타일 적용*/
+table,td{
+    border: 2px solid black; 
+    border-collapse: collapse;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+th{
+    background-color: aquamarine;
+}

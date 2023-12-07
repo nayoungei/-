@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+/*웹 문서 초기화 부분*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+h2{
+    font-size: 20px;
+    color: orange;
+} /*주석문처리*/

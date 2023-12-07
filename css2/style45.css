@@ -1,0 +1,30 @@
+@charset "utf-8";
+/*웹 문서 초기화 부분*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*컨테이너 스타일 적용 부분*/
+#container{
+    width: 520px;
+    border: 2px solid black;
+    margin: 50px auto;
+    padding: 20px;
+}
+/*문자 스타일 적용 부분*/
+h2.accent{
+    background-color: #222;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+}
+.browntext{
+    color: brown;
+    background-color: yellow;
+    
+} 
+.boldtext{
+    font-weight: bold;
+}

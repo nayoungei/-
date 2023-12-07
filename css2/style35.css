@@ -1,0 +1,81 @@
+@charset "utf-8";
+/*웹 문서 스타일 초기화*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/*웹 문서 전체 적용 스타일부분*/
+#container{
+    width: 520px;
+    border: 5px solid black;
+    padding: 20px 40px;
+    margin: 30px auto;
+    
+}
+
+hr{
+    border: 1;
+    background-color:rgb(250, 214, 7);
+    height: 3px;
+}
+/*문자 모양 꾸미기*/
+ul{
+    list-style: none;
+}
+label.title{
+    padding-left: 60px;
+    color:green;
+    font-weight: bold;
+    font-family: inherit;
+    width: 60px;
+    float: left;
+}
+#li1{
+    line-height: 30px;
+}
+#li2{
+    /* padding-top: 10px; */
+}
+#web1{
+    padding-left: 60px;
+}
+#web1>li{
+    padding-bottom: 5px;
+}
+
+h1{
+    background-color: rgb(11, 91, 212);
+    color: white;
+    text-align: center;
+    line-height: 1.5em;
+}
+p{
+    line-height: 1.2em;
+}
+
+
+/*접수하기&다시쓰기 버튼 속성*/
+div.sub1_res1{
+    text-align: justify;
+}
+
+#sub1{
+    width: 80px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    color: yellowgreen;
+    background-color: black;
+    
+}
+#res1{
+    width: 80px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    color: yellowgreen;
+    background-color: red; 
+    
+}

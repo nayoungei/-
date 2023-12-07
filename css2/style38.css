@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+/*웹 문서 초기화 적용 부분*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/*웹 문서 section 영역 스타일 적용 부분*/
+section{
+    width: 500px;
+    padding: 15px;
+    border: 5px solid gray;
+    background-color: yellow;
+}
+p{
+    font-size: 0.9em;
+    font-weight: bold;
+    line-height: 2.0;
+}

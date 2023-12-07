@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+/*웹 문서 초기화*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*웹 문서 레이아웃 설정*/
+#container{
+    width: 520px;
+    border: 2px solid orange;
+    background-color: rgb(248, 247, 244);
+    padding: 20px;
+    margin: 50px auto;
+}
+/*여러개의 태그(선택자)를 한번에 묶어서 적용
+하고자 할때는 ,(콤마)로 구분합니다.*/
+
+h2, h3, h4{
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*hr 태그 선에 대한 수정*/
+hr{
+    height: 5px;
+    background-color: blue;
+    border: 0;
+}

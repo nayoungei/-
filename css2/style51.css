@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+/*웹 문서 초기화 작업*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*웹 문서 아웃라인 스타일 적용부분*/
+#container{
+    width: 520px;
+    border: 2px solid black;
+    margin: 50px auto;
+    padding: 10px;
+}
+
+/*부모 요소의 boody에 대한 스타일 적용 부분*/
+body{
+    color: blue;
+    background-color: yellowgreen;
+}
+/*자식 요소인 h2 글자에 대한 스타일 적용부분*/
+h2{
+    font-size: 20px;
+    color: red;
+}
+
+/*자식 요소(child)클래스 선택자에 대한 스타일 적용
+부모 요소에 배경색이 적용 되지 않습니다.*/
+div.child{
+    background-color: yellow;
+ 
+}

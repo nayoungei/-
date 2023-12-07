@@ -1,0 +1,38 @@
+@charset "utf=8";
+
+/*웹 문서 초기화 부분*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*웹 문서 아웃라인 설정 값*/
+#container{
+    width: 520px;
+    border: 2px solid black;
+    background-color: rgb(248, 247, 244);
+    margin: 50px auto;
+    padding: 20px;/*좌 우,위 아래 20픽셀만큼 여백이 발생*/
+}
+
+/*문자 스타일 적용 부분*/
+/*id 선택자인 #(샾)은 동일 웹 문서에서 서로다른 
+첨자(선택자, 태그)값에 따라 중복 사용은 되지만, 
+되도록 사용하지 않는 방향으로 합니다.*/
+#abc{
+    color: red;
+}
+/*가로선에 대한 스타일 적용*/
+hr.underline1{
+    background-color: yellowgreen;
+    height: 2px;
+    border: 0;
+}
+
+/*class 선택자 .(점)선택자는 동일 웹 문서에서
+서로다른 첨자(선택자, 태그)값에 따라 중복 사용을
+해도 되지만, 다른 이름으로 하자.*/
+.def{
+    color: blue;
+}

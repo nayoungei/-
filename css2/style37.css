@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+/*웹 문서 초기화 부분*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*웹 문서 글자 스타일 적용 부분*/
+h2{ /*h2라는 선택자에 스타일 적용*/
+    font-size: 20px;
+    color: orange;
+ }
+ p{
+    color: blue;
+ }

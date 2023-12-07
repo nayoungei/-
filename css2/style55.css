@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Nanum DdarEGeEomMaGa';
+    src: url('../font/NanumDdarEGeEomMaGa.eot')format('eot');
+} 
+/*웹 문서 초기화*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*부모 요소에서 왼쪽 마진 기준에서 padding 값을
+100px 만클 적용*/
+
+body{
+    padding-left: 100px;
+    color: red;
+    font-size: 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*@font-face 속성 적용 설치 부분(무료 폰트
+설치 후 적용하기*/
+
+p.w-font{
+    font-family:'Nanum DdarEGeEomMaGa';
+    font-size: 60px;
+    font-weight: bold;
+}

@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;800&family=Nanum+Pen+Script&family=Noto+Serif+KR:wght@500&display=swap');
+
+/*웹 문서 초기화*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*웹 폰트 글꼴 스타일 적용부분_(구글 웹폰트가
+적용이 안되면 돋움체로 적용하라느 겁니다.)*/
+p.ng-font{
+    font-family:'Nanum Pen Script', 돋움;
+    color: blue;
+}
+/*p태그 선택자에 대한 글자 크기 적용 부분*/
+p{
+    font-size: 80px;
+}
