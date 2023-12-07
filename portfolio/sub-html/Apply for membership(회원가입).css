@@ -1,0 +1,108 @@
+@charset "utf-8";
+
+/*부모 요소 초기화 적용 부분*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#container{
+    width: 600px;
+    margin: 30px auto;
+    border: 1px solid #9f9c9c;
+    border-radius: 10px;
+    padding: 30px 20px 30px 20px;
+}
+/*공통 부분 스타일 적용*/
+h1, h2{
+    text-indent: 20px;/*들여쓰기(제목)*/
+}
+ul{
+    list-style-type: none;
+}
+ul li{
+    clear: both;
+}
+.field{
+    float: left;
+    width: 100px;
+    font-weight: bold;
+    line-height: 45px;
+    text-align: right;    
+    margin-right: 15px;
+}
+input[type="text"],input[type="password"],input[type="email"]{
+    float: left;
+    width: 250px;
+    height: 35px;
+    border: 1px solid #9f9c9c;
+    border-radius: 7px;
+    padding: 7px;
+    margin: 7px 0;    
+}
+.radio1{
+    line-height: 55px;
+}
+#buttons > li{
+    display: inline-block;
+}
+button{
+    width: 250px;
+    height: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #9f9c9c;
+    background: #eee;
+    font-size: 0.9em;
+}
+.btnBlack{
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    border-radius: 7px;
+}
+.btnGray{
+    background-color: gray;
+    color: white;
+    font-weight: 600px;
+    border-radius: 7px;
+}
+.btn:hover{
+    cursor: pointer;
+}
+.bb1000{
+    border-bottom: 1px solid gray;
+    margin-bottom: 5px;
+    width: 230px;
+}
+.bt1ccc{
+    border-top: 1px solid #ccc;
+}
+
+
+/**footer 스타일 적용 부분**/
+footer{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 120px;
+    background-color: rgb(241, 234, 234);
+    text-align: center;
+}
+address{
+    font-style: normal;
+    font-weight: 500;
+}
+small{
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+a{
+ color: #333;
+ text-decoration: none;   
+}

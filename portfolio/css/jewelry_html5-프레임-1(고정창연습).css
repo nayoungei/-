@@ -1,0 +1,283 @@
+@charset "utf-8";
+
+/*****웹 페이지 초기화 부분*****/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;    
+}
+
+
+
+
+/*****웹 페이지 공통부분 초기화*****/
+li{
+    list-style-type: none;
+     float: left; 
+}
+a{
+    text-decoration: none; 
+}
+a:hover{
+    color: black;
+    font-weight: 400;
+    text-shadow: 1px 1.5px 2px blue;
+}
+img{
+    vertical-align: top;
+}
+/*이미지에 "vertical-align: top;"이라는 CSS 스타일을 적용하면
+이미지가 텍스트 함께 표시될 때 이미지의 상단 부분이 텍스트의 
+맨 위에 위치하도록 조정됩니다.
+이미지는 글자처럼 기본행간을 가진 태그이기 여백 제거 */
+address{
+    font-style: normal;
+}
+small{
+    font-size: 100%;    
+}
+
+/***** style.css *****/
+/*박스모델 마진,패딩,테두리 적용부분*/
+
+/***** margin *****/
+    .mr10{margin-right: 10px;}
+    .mr16{margin-right: 16px;}
+    .mr17{margin-right: 17px;}
+
+/**** padding ****/
+    .pl10{padding-left: 10px;}
+    .pl15{padding-left: 15px;}
+    .pr10{padding-right: 10px;}
+    .pr15{padding-right: 15px;}
+
+/**** border ****/
+    
+.bt1ddd{border-top: 1px solid #ddd;}
+.bt1000{border-top: 1px solid #000;}
+.bb1000{border-bottom: 1px solid #000;}
+.bb4000{border-bottom: 4px solid #000;}
+.bl1000{border-left: 1px solid #000;}
+.bl1ddd{border-left: 1px solid #ddd;}
+.br1ddd{border-right: 1px solid #ddd ;}
+
+
+/*****웹 페이지 CSS부분 header / nav(gnb)*****/
+#wrap{
+    min-width: 1110px;
+}
+/*ID선택자 wrap이 가진 HTML요소는 화면 너비가 1110보다 작아지지 않도록
+최소 너비를 1110px 유지하게 하며, 브라우저 창의 크기가 1110px 미만으로
+줄어들대 요소의 크기를 자동으로 줄이지 않고 유지하게 해 줍니다.
+이것은 주로 레이아웃을 설계하거나 요소의 최소 크기를 정의하는데 사용합니다.*/
+
+/**/
+.hidden{
+    font-size: 0px;
+    line-height: 0px;
+    width: 0px;
+    height: 0px;
+    visibility: hidden;
+}
+/*웹 문서상에 주요 단락(gnb/lnb/fnb/img 등~)을 수정하고자
+h2, h3제목 태그로 위치를 지정했던 문장들이 보이지 않게 
+공통 클래스 선택자로 묶어서 처리한 부분*/
+
+header{
+    width: 1110px;
+    height: 52px;
+    margin: 40px auto;    
+}
+header > div{
+    float: left;
+}
+#logo{
+    width: 23%;
+    height: 52px;
+}
+#header_right{
+    width: 77%;
+    height: 52px;
+}
+#gnb{
+    float: right;
+    font-size: 12px;
+}
+
+
+
+
+/*****웹 페이지 CSS부분 nav(lnb) 주메뉴 스타일적용*****/
+ #lnb{
+    width: 100%;
+    height: 40px;
+}
+#lnb > ul{
+    width: 1110px;
+    height: 40px;
+    margin: 0px auto;
+}
+#lnb > ul > li > a{
+    display: block;
+    line-height: 40px;
+    font-weight: 700;
+}
+
+
+
+/*****웹 페이지 CSS부분 section 부분 스타일적용*****/
+section{
+    width: 100%;
+}
+
+#main_banner{
+    width: 100%;
+    height: 393px;
+    background-image: url(../images/image_slide_3.jpg);
+    background-position: center;
+}
+
+
+/*****웹 페이지 CSS부분 section에 slide show 부분 타일적용*****/
+.slide{
+    min-width: 1110px; 
+    min-height: 393px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide > ul{
+    width: 300%;
+    height: 100%;
+    position: absolute; 
+    top: 0;
+    left: 0;
+
+    animation: imgSlide 13s infinite;
+}
+
+@keyframes imgSlide {
+    0%{left: 0;}
+    30%{left: 0;}
+
+    33%{left: -100%;}
+    63%{left: -100%;}
+
+    66%{left: -200%;}
+    96%{left: -200%;}
+}
+
+.slide > ul > li{
+    /*부모요소인 ul의 1/3*/
+    width: 33.333333%;
+    overflow: hidden; 
+    /*영역보다 큰 요소를 포함할때 사용*/
+    float: left;
+}
+
+.slide > ul > li > a{
+    display: block;
+    width: 2000px;
+    height: 393px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);    
+}
+.slide > ul > li > a > img{
+    width: 100%;
+    vertical-align: top;
+} 
+/*****웹 페이지 CSS부분 section에 slide show 부분 타일적용*****/
+
+
+
+/*****주요 상품 배너 모음 적용부분*****/
+#banner{
+    width: 1110px;
+    height: 130px;
+    margin: 20px auto;
+}
+#banner li{
+    background-color: black;
+}
+
+
+
+/*****주요 상품 BEST Product배너 모음 적용부분*****/
+#best{
+    width: 1110px;
+    height: 334px;
+    margin: 20px auto;
+}
+#best h3{
+    height: 30px;
+    font-weight: 200;
+}
+
+
+
+/****aside 광고 고정 창 하나 만들기****/
+#ad-container {
+    position: fixed;
+    top: 300px;
+    right: 0px;
+    width: 270px; /* 광고창의 가로 크기 조절 */
+    height: auto; /* 광고창의 세로 크기 조절 */
+   
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+    padding: 7px 10px 7px 10px;
+  
+    box-shadow: 3px 3px 4px black, -3px -3px 4px black;
+    
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+
+
+/*****footer*****/
+footer{
+    width: 1110px;
+    height: 120px;
+    margin: 0px auto;
+}
+
+footer > div{
+    float: left;
+}
+
+#bottom_logo{
+
+    width: 253px;
+    height: 90px;
+    margin-top: 30px;
+}
+#footer_right{
+    width: 857px;
+    height: 120px;
+}
+#fnb{
+    width: 857px;
+    height: 30px;
+    font-size: 14px;
+    font-weight: bold;
+}
+ #fnb a{
+    display: block;
+    line-height: 30px;
+ }
+
+ #address{
+    width: 857px;
+    height: 90px;
+    font-size: 12px;
+    line-height: 1.5;
+ }
+
+ #address address{
+    height: 60px;
+ }
+ #address a{
+    font-weight: bold;
+ }
